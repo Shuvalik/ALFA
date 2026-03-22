@@ -1,0 +1,363 @@
+
+html{ 
+    scroll-behavior: smooth;
+}
+html, body {
+  width: 100%;  
+}
+body {
+    font-family: $base-font;
+    font-weight: 400;
+    color: $font-color;
+    @include font(12, 18);
+    font-family: 'MontserratAlternates-Regular';
+    scroll-behavior: smooth;
+    position: relative;
+    background-color: $bg-color;
+    /*@media only screen and (max-width: $xl-deck) {
+      @include font(30, 45);
+    }
+    @media only screen and (max-width: $l-deck) {
+      @include font(26, 36);
+    }
+    @media only screen and (max-width: $s-deck) {
+      @include font(24, 32);
+    }
+    @media only screen and (max-width: $tablet) {
+      @include font(20, 28);
+    }
+    @media only screen and (max-width: $mobile) {
+      @include font(18, 26);
+    }*/
+} 
+.container {
+    width: 100%;
+    //max-width: $base-width;
+    margin-inline: auto;
+    margin: 0 20px;
+    max-width: calc(100% - 40px);
+    /*@media only screen and (max-width: $xl-deck) {
+      margin: 0 $space-container;
+      max-width: calc(100% - 100px);
+    }
+    @media only screen and (max-width: $s-deck) {
+      margin: 0 25px;
+      max-width: calc(100% - 50px);
+    }
+    @media only screen and (max-width: $tablet) {
+      margin: 0 15px;
+      max-width: calc(100% - 30px);
+    }*/
+}
+/*
+.page-wrap {
+  //display: flex;
+  //flex-direction: column;
+  //min-height: 100vh;
+  //position: relative;
+}
+footer {
+  min-height: 100vh;
+  @media only screen and (max-width: $mobile) {
+      min-height: auto;
+  }
+}
+main {
+  flex-grow: 1;
+  > :first-child {
+    padding-top: 240px;
+    @media only screen and (max-width: $xl-deck) {
+      padding-top: 190px;
+    }
+    @media only screen and (max-width: $l-deck) {
+      padding-top: 150px;
+    }
+    @media only screen and (max-width: $s-deck) {
+      padding-top: 120px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+      padding-top: 220px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+      padding-top: 130px;
+    }
+  }
+  > section {
+    min-height: 100vh;
+    padding-top: 1px;
+    overflow: hidden; /*!!!
+    @media only screen and (max-width: $tablet) {
+      min-height: auto;
+    }
+  }
+}
+.twoColumns {
+    display: flex;
+    @media only screen and (max-width: $land-tablet) {
+      flex-direction: column;
+    }
+    > * {
+        width: 50%;
+        @media only screen and (max-width: $land-tablet) {
+          width: 100%;
+        }
+    }
+}
+// .twoColumns {
+//     display: flex;
+//     justify-content: space-between;
+//     @media only screen and (max-width: 960px) {
+//       flex-direction: column;
+//     }
+//     > div {
+//       max-width: 50%;
+//       flex: 1 0 fit-content;
+//       @media only screen and (max-width: 960px) {
+//         max-width: 100%;
+//       }
+//     }
+// }
+// .threeColumns {
+//   display: flex;
+//   justify-content: space-between;
+//   > div {
+//     max-width: 33%;
+//     flex: 1 0 fit-content;
+//   }
+// }
+a {
+  color: $navy-color;
+  font-family: 'MontserratAlternates-Bold';
+  &:hover {
+    text-decoration: none;
+  }
+}
+p {
+  margin-bottom: 15px;
+  @media only screen and (max-width: $s-deck) {
+    margin-bottom: 5px;
+  }
+}
+strong {
+  font-family: 'MontserratAlternates-SemiBold';
+}
+.h1 {
+  color: $navy-color;
+  font-family: 'MontserratAlternates-Bold';
+  @include font(100, 120);
+  -webkit-text-stroke: 1px #7CC8F6;
+  text-stroke: 1px #7CC8F6;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  @media only screen and (max-width: $xl-deck) {
+    @include font(80, 90);
+  }
+  @media only screen and (max-width: $m-deck) {
+    @include font(60, 70);
+	}
+  @media only screen and (max-width: $tablet) { 
+    @include font(30, 40);
+    -webkit-text-stroke: unset;
+    text-stroke: unset;
+    -webkit-background-clip: unset;
+    -moz-background-clip: unset;
+    background-clip: unset;
+  }
+  @media only screen and (max-width: $mobile) { 
+    @include font(22, 30);
+  }
+}
+.h2 {
+  @include font(90, 110);
+  font-family: 'MontserratAlternates-SemiBold';
+  color: $navy-color;
+  @media only screen and (max-width: $xl-deck) { 
+    @include font(70, 80);
+  }
+  @media only screen and (max-width: $l-deck) { 
+    @include font(60, 70);
+  }
+  @media only screen and (max-width: $s-deck) { 
+    @include font(50, 60);
+  }
+  @media only screen and (max-width: $land-tablet) {
+    @include font(38, 50);
+  }
+  @media only screen and (max-width: $tablet) { 
+    @include font(30, 40);
+  }
+  @media only screen and (max-width: $mobile) { 
+    @include font(22, 30);
+  }
+}
+.h3 {
+  @include font(70, 80);
+  font-family: 'MontserratAlternates-SemiBold';
+  color: $navy-color;
+}
+.h4 {
+  @include font(50, 60);
+  font-family: 'MontserratAlternates-SemiBold';
+  margin-bottom: 20px;
+  @media only screen and (max-width: $xl-deck) {
+    @include font(40, 50);
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: $l-deck) {
+    @include font(30, 38);
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: $s-deck) {
+    @include font(22, 28);
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: $tablet) {
+    @include font(18, 24);
+  }
+}
+.h5 {
+  @include font(38, 46);
+  font-family: 'MontserratAlternates-SemiBold';
+  margin-bottom: 16px;
+  @media only screen and (max-width: $xl-deck) {
+    @include font(30, 36);
+    margin-bottom: 5px;
+  }
+  @media only screen and (max-width: $l-deck) {
+    @include font(26, 32);
+  }
+  @media only screen and (max-width: $m-deck) {
+    @include font(24, 30);
+  }
+  @media only screen and (max-width: $mobile) {
+    @include font(20, 26);
+  }
+}
+.markGreenColor {
+  color: $main-color;
+}
+.markBlueColor {
+  color: $blue-color;
+}
+.markYellowColor {
+  color: $yellow-color;
+}
+.number {
+  @include font(100, 110);
+  font-family: 'MontserratAlternates-Bold';
+  padding-left: 43px;
+  @media only screen and (max-width: $xl-deck) { 
+    @include font(70, 80);
+    padding-left: 43px;
+  }
+  @media only screen and (max-width: $s-deck) { 
+    @include font(60, 70);
+    padding-left: 23px;
+  }
+  @media only screen and (max-width: $tablet) { 
+    @include font(50, 60);
+  }
+}
+.pointArrow {
+  @include font(70, 70);
+  font-family: 'Caveat-Regular';
+  align-self: flex-end;
+  @media only screen and (max-width: $xl-deck) {
+    @include font(56, 60);
+  }
+  @media only screen and (max-width: $s-deck) {
+    @include font(40, 40);
+  }
+  @media only screen and (max-width: $tablet) {
+    @include font(22, 30);
+  }
+  span {
+    transform: rotate(2.53deg);
+    display: inline-block;
+    @media only screen and (max-width: $land-tablet) {
+      transform: rotate(-28.61deg);
+      position: relative;
+      top: -60px;
+      right: 0;
+    }
+    @media only screen and (max-width: $tablet) {
+      top: -30px;
+    }
+    @media only screen and (max-width: $mobile) {
+      top: -5px;
+    }
+  }
+  .desc_show {
+    display: block;
+    @media only screen and (max-width: $xl-deck) {
+      min-width: 350px;
+    }
+    @media only screen and (max-width: $s-deck) {
+      max-width: 350px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+      display: none;
+    }
+  }
+}
+.rightText {
+  text-align: right;
+}
+.error {
+  @include font(14, 20);
+  color: red;
+  text-align: left;
+  @media only screen and (max-width: $mobile) {
+    @include font(12, 28);
+  }
+}
+.bg-green {
+  background-color: $green-lightest-color;
+}
+.bg-yellow {
+  background-color: $yellow-light-color;
+}
+.bg-blue {
+  background-color: $blue-light-color;
+}
+//subpages
+.blueTheme {
+  section:first-child::before,
+  .pointList {
+    background-color: $blue-light-color;
+  }
+  .form .container::after {
+    background-image: url("./../../assets/images/loop-blue.svg");
+  }
+}
+.greenTheme {
+  section:first-child::before, 
+  .itemsList li .iconHolder, 
+  .itemsList li.changeOrder>div .iconHolder, 
+  .imgHolder::before,
+  .pointList,
+  .form .container .twoColumns .imgHolder::before {
+    background-color: $green-lightest-color;
+  }
+  .form .container::after {
+    background-image: url("./../../assets/images/loop-green.svg");
+  }
+}
+.yellowTheme {
+  section:first-child::before, 
+  .itemsList li .iconHolder, 
+  .itemsList li.changeOrder>div .iconHolder, 
+  .imgHolder::before,
+  .pointList,
+  .form .container .twoColumns .imgHolder::before {
+    background-color: $yellow-light-color;
+  }
+  .form .container::after {
+    background-image: url("./../../assets/images/loop-yellow.svg");
+  }
+}
+.longWord {
+  overflow-wrap: anywhere;
+}*/

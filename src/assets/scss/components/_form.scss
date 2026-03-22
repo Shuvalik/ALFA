@@ -1,0 +1,86 @@
+/*form {
+    font-family: 'MontserratAlternates-SemiBold';
+}
+label {
+    color: $grey-color;
+}
+input {
+    border-radius: 15px;
+    width: 100%;
+    color: $navy-color;
+    @include font(40, 60);
+    border: 0;
+    padding: 14px;
+    @media only screen and (max-width: $xl-deck) {
+        @include font(30, 50);
+        padding: 14px 10px;
+    }
+    @media only screen and (max-width: $m-deck) {
+        @include font(28, 46);
+        padding: 10px 10px;
+    }
+    @media only screen and (max-width: $tablet) {
+        @include font(22, 28);
+    }
+    @media only screen and (max-width: $mobile) {
+        @include font(18, 26);
+        border-radius: 8px;
+    }
+    &::placeholder {
+        color: $grey-color;
+    }
+}
+input:focus {
+    border: 0;
+    outline: none;
+    &::placeholder {
+        color: $grey-color;
+    }
+}
+.fildSection {
+    position: relative;
+    margin-bottom: 70px;
+    @media only screen and (max-width: $xl-deck) {
+        margin-bottom: 40px;
+    }
+    @media only screen and (max-width: $mobile) {
+        margin-bottom: 30px;
+    }
+    label {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        transition: all 0.4s ease;
+    }
+    input:focus + label, input:not(:placeholder-shown) + label {
+        top: -40px;
+        @include font(30, 40);
+        @media only screen and (max-width: $m-deck) {
+            top: -30px;
+            @include font(28, 36);
+        }
+        @media only screen and (max-width: $s-deck) {
+            @include font(24, 32);
+        }
+        @media only screen and (max-width: $tablet) {
+            @include font(20, 26);
+        }
+        @media only screen and (max-width: $mobile) {
+            @include font(18, 26);
+        }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 9999s ease-in-out 0s;
+    }
+}
+.input-error {
+    @include font(12, 16);
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}*/

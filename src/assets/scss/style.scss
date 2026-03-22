@@ -1,84 +1,18 @@
-@import "fonts";
-@import "hamburger";
-@import "animate";
 
-$dark: #333;
+@import "base/reset";
+@import "base/typography";
 
-@mixin fz($px) {
-  font-size: calc($px / 16)*1rem;
-}
+@import "helpers/variables";
+@import "helpers/mixins";
 
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "base/base";
 
-body {
-  background-color: #fff;
-  color: $dark;
-  font-family: 'Roboto', sans-serif;
-  @include fz(20);
-}
+//@import "components/stylishDetails";
+@import "components/links_buttons";
+@import "components/boxes";
+@import "components/form";
 
-img {
-  vertical-align: top;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+@import "sections/header";
+@import "sections/footer";
+@import "sections/sections";
 
-button, a, input[type=button], input[type=reset], input[type=submit] {
-  transition: all .2s ease;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background: rgba(#fff, .1);
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(#118db1, .7);
-  border-radius: 5px;
-  &:hover {
-      background: rgba(#118db1, 1);    
-  }
-}
-
-.container {
-  width: min(90%, 1660px);
-  margin-inline: auto;
-}
-
-.page-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-@import "header";
-
-main {
-  flex-grow: 1;
-  padding: 80px 0 50px;
-}
-
-/*
-Example
-*/
-.flex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
-  img {
-    max-width: 300px;
-  }
-}
-
-@import "footer";
-
-@import "response";

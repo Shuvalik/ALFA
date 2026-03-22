@@ -1,0 +1,134 @@
+.stylishCornerTreeColor {
+    position: relative;
+    &::after {
+        content: ' ';
+        width: 37px;
+        height: 24px;
+        border-top-width: 14px;
+        border-top-style: solid;
+        border-image: linear-gradient(to right, $orange-color 27%, $orange-light-color 27%, $orange-light-color 64%, $vialet-color 64%, $vialet-color 100%) 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to right, $orange-color 64%, transparent 64%, transparent 100%);
+    }
+    &::before {
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 0;
+        top: 24px;
+        background-color: $vialet-color;
+        z-index: 1;
+    }
+    &.btnHolder {
+        overflow: hidden;
+        &::after {
+            height: 18px;
+            width: 28px;
+            border-top-width: 10px;
+            transition: all 0.8s ease;
+        }
+        &::before {
+            top: 18px;
+            transition: all 0.8s ease;
+        }
+    }
+    &.btnHolder:has(.btn:hover) {
+        overflow: hidden;
+        &::after {
+            display: none;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    &.rightCorner {
+        &.bigger {
+            &::after {
+                left:auto;
+                right: -9px;
+                top: 10px;
+                transform: rotate(90deg);
+                width: 52px;
+                height: 34px;
+                border-top-width: 20px;
+            }
+            &::before {
+                left:auto;
+                top: 1px;
+                right: 34px;
+                width: 14px;
+                height: 14px;
+            }
+        }
+        &.smaller {
+            &::after {
+                left:auto;
+                right: -4px;
+                transform: rotate(90deg);
+                width: 27px;
+                height: 19px;
+                border-top-width: 11px;
+                top: 26px;
+            }
+            &::before {
+                left:auto;
+                top: 22px;
+                width: 8px;
+                height: 8px;
+                right: 19px;
+            }
+        }
+    }
+}
+.rightColorFullLine {
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        height: 100%;
+        z-index: 1;
+        @include colorline(bottom)
+    }
+}
+.topRightColorLine {
+    position: relative;
+    margin-top: 40px;
+    &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: -24px;
+        width: 346px;
+        height: 24px;
+        @include colorlineVar2(right)
+    }
+}
+
+.bottonRightColorLine {
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        bottom: -18px;
+        width: 346px;
+        height: 18px;
+        @include colorlineVar2(right)
+    }
+}
+.pixelBlue {
+    @include pixel(16, $blue-color);
+}
+.pixelViolete {
+    @include pixel(16, $vialet-color);
+}
+
+.pixelOrange {
+    @include pixel(28, $orange-light-color);
+}

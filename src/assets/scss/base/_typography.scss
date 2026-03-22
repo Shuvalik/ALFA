@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-Regular.woff2') format('woff2'),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-Light.woff2') format('woff2'),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.woff2') format('woff2'),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.woff2') format('woff2'),
+      url('../fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraLightItalic';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+      url('../fonts/Montserrat_Alternates/Montserrat-ExtraLightItalic.woff2') format('woff2'),
+      url('../fonts/Montserrat_Alternates/Montserrat-ExtraLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+      url('../fonts/Montserrat_Alternates/Montserrat-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Montserrat_Alternates/Montserrat-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Caveat-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+      url('../fonts/Caveat-Regular.woff2') format('woff2'),
+      url('../fonts/Caveat-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Caveat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+      url('../fonts/Caveat-Bold.woff2') format('woff2'),
+      url('../fonts/Caveat-Bold.woff') format('woff');
+}

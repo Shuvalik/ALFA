@@ -1,0 +1,196 @@
+/*#footer {
+    .bigLogo {
+        display: block;
+    }
+    .titleBox {
+        font-family: 'MontserratAlternates-SemiBold';
+        @include font(65, 70);
+        margin-bottom: 30px;
+        @media only screen and (max-width: $xl-deck) {
+            @include font(40, 45);
+            margin: 0;
+        }
+        @media only screen and (max-width: $s-deck) {
+            @include font(30, 35);
+        }
+        @media only screen and (max-width: $land-tablet) {
+            text-align: center;
+            @include font(26, 32);
+        }
+    }
+    address {
+        background: $yellow-light-color;
+        border-radius: 25px;
+        padding: 52px 0 1px 43px;
+        font-style: normal;
+        margin: 10px 0 25px;
+        @media only screen and (max-width: $xl-deck) {
+            padding: 30px 0 1px 35px;
+        }
+        @media only screen and (max-width: $l-deck) {
+            padding: 20px 0 1px 20px;
+        }
+        @media only screen and (max-width: $s-deck) {
+            padding: 10px 0 1px 10px;
+        }
+        @media only screen and (max-width: $land-tablet) {
+            margin: 0;
+        }
+        a {
+            font-family: 'MontserratAlternates-SemiBold';
+            @include font(35, 40);
+            display: block;
+            width: 100%;
+            position: relative;
+            @media only screen and (max-width: $xl-deck) {
+                @include font(28, 36);
+            }
+            @media only screen and (max-width: $m-deck) {
+                @include font(26, 34);
+            }
+            @media only screen and (max-width: $s-deck) {
+                @include font(24, 32);
+            }
+            @media only screen and (max-width: $land-tablet) {
+                @include font(20, 28);
+            }
+            @media only screen and (max-width: $mobile) {
+                @include font(18, 26);
+            }
+            &::after {
+                content: '';
+                width: 0;
+                height: 1px;
+                background-color: $navy-color;
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all .3s ease;
+                }
+                &:hover {
+                    &::after {
+                            width: 100%;
+                        }
+                }
+        }
+        > div {
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            margin-bottom: 7px;
+            svg {
+                flex: 0 0 100px;
+                margin-right: 40px;
+                @media only screen and (max-width: $xl-deck) {
+                   margin-right: 20px;
+                   flex: 0 0 85px;
+                }
+                @media only screen and (max-width: $l-deck) {
+                   margin-right: 10px;
+                   flex: 0 0 65px;
+                   height: 120px;
+                }
+                @media only screen and (max-width: $s-deck) {
+                   flex: 0 0 45px;
+                   height: 100px;
+                }
+                @media only screen and (max-width: $mobile) {
+                    height: 80px;
+                }
+            }
+        }
+    }
+    .blueBox {
+        background: $blue-light-color;
+        border-radius: 25px;
+        padding: 45px 22px 1px;
+        @media only screen and (max-width: $xl-deck) {
+            padding: 30px 35px 1px;
+        }
+        @media only screen and (max-width: $m-deck) {
+            padding: 20px 30px 1px;
+        }
+        @media only screen and (max-width: $land-tablet) {
+            padding: 20px 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media only screen and (max-width: $mobile) {
+            margin-bottom: 20px;
+        }
+        .titleBox {
+            margin-bottom: 45px;
+            @media only screen and (max-width: $xl-deck) {
+                margin-bottom: 25px;
+            }
+        }
+        .sotial-links {
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+            @media only screen and (max-width: $xl-deck) {
+                padding: 0;
+            }
+            a {
+                svg path, 
+                svg rect {
+                    fill-opacity: 1;
+                }
+                svg {
+                    @media only screen and (max-width: $m-deck) {
+                        width: 110px;
+                        height: auto;
+                        display: inline-block;
+                    }
+                    @media only screen and (max-width: $s-deck) {
+                        width: 90px;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        width: 75px;
+                    }
+                }
+            }
+        }
+    }
+    .twoColumns > * {
+        width: 38%;
+        @media only screen and (max-width: $l-deck) {
+            width: 40%;
+        }
+        @media only screen and (max-width: $land-tablet) {
+            width: 100%;
+            display: flex;
+            gap: 4%;
+            > * {
+                width: 48%;
+                &.bigLogo {
+                    width: 100%;
+                    max-width: 600px;
+                }
+            }
+
+        }
+        @media only screen and (max-width: $tablet) {
+            flex-direction: column;
+            gap: 20px 0;
+            width: 100%;
+            > * {
+                width: 100%;
+            }
+        }
+        &.logoHolder {
+            width: 62%;
+            @media only screen and (max-width: $l-deck) {
+                width: 60%;
+            }
+            @media only screen and (max-width: $land-tablet) {
+                width: 100%;
+                /*.bigLogo {
+                    height: 120px;///!!!
+                }
+            }
+        } 
+    }
+}*/

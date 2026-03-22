@@ -1,0 +1,212 @@
+// links
+/*.phone {
+  background: linear-gradient(to bottom, $blue-color, $navy-color);
+  background-clip: text;
+  -webkit-background-clip:text;
+  position: relative;
+  @media only screen and (max-width: $land-tablet) {
+    text-align: right;
+  }
+  &::after {
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: $navy-color;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all .3s ease;
+    }
+    &:hover {
+      &::after {
+            width: 100%;
+        }
+      }
+  a {
+    @include font(50, 60);
+    color: $navy-color;
+    @media only screen and (max-width: $xl-deck) {
+      @include font(40, 50);
+    }
+    @media only screen and (max-width: $m-deck) {
+      @include font(30, 40);
+    }
+    @media only screen and (max-width: $tablet) {
+      @include font(20, 30);
+    }
+    @media only screen and (max-width: $mobile) {
+      @include font(16, 24);
+    }
+    &:hover {
+      color:rgba(0,0,0,0);
+    }
+  }
+}
+.sotial-links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+  @media only screen and (max-width: $xl-deck) {
+    gap: 70px;
+  }
+  @media only screen and (max-width: $tablet) {
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  a {
+    display: block;
+    &:hover svg {
+      transform: scale(1.1);
+      transition: all .3s ease;
+      path, rect {
+        fill-opacity: 1;
+      }
+    }
+    svg {
+      @media only screen and (max-width: $xl-deck) {
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+      }
+      @media only screen and (max-width: $tablet) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+// buttons 
+.btn {
+  border: 0;
+  outline: none;
+  position: relative;
+  z-index: 0;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 384px;
+  height: 100px;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-color;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  font-family: 'MontserratAlternates-Regular';
+  @include font(50, 60);
+  @media only screen and (max-width: $xl-deck) {
+    @include font(40, 50);
+    max-width: 340px;
+  }
+  @media only screen and (max-width: $l-deck) {
+    @include font(30, 40);
+  }
+  @media only screen and (max-width: $m-deck) {
+    height: 80px;
+    max-width: 265px;
+  }
+  @media only screen and (max-width: $tablet) {
+    @include font(18, 26);
+    height: 43px;
+    //max-width: 160px;
+  }
+  @media only screen and (max-width: $mobile) {
+    @include font(16, 22);
+    border-radius: 13px;
+  }
+  &:hover {
+    background-color: #158509;
+  }
+}
+.my-gradient {
+  overflow: hidden;
+  span {
+    z-index: 2;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-120%) skew(45deg,0);
+    width: 200%;
+    z-index: 1;
+    transition: all .8s ease;
+    background: linear-gradient(to right, $main-color, #9acd3e);
+  }
+  &:hover{
+    &::before {
+      transform: translateX(-25%);
+    }
+  }
+}
+.holderBtnArrow {
+  position: sticky;
+  bottom: 5%;
+  left: 92%;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  @media only screen and (max-width: $m-deck) {
+    left: 90%;
+	}
+  @media only screen and (max-width: $s-deck) {
+    width: 80px;
+    height: 80px;
+    left: calc(100vw - 105px);
+	}
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
+  svg {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .arrow-down {
+    display: block;
+    border-radius: 50px;
+    svg {
+      transition: all .8s ease;
+      path {
+        stroke: #2C4058;
+      }
+    }
+    &:hover {
+      svg {
+        transform: scale(1.15);
+        path {
+          fill: #868282;
+          
+        }
+      }
+    }
+    &[name-diraction=up] {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.maskLink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  &:hover {
+    + img {
+      transform: scale(1.4);
+      transition: all .8s ease;
+    }
+    + .h4 {
+      text-decoration: underline;
+    }
+  }
+}*/

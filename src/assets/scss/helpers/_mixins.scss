@@ -1,0 +1,21 @@
+@mixin font($size-px, $lh) {
+    font-size: calc($size-px / 16) * 1rem;
+    line-height: calc($lh / $size-px);
+}
+@mixin circle($wh) {
+	width: $wh + px;
+	height: $wh + px;
+	border-radius: 50%;
+}
+// @mixin pixel($size, $color) {
+// 	position: relative;
+// 	&::before {
+// 		content: ' ';
+// 		width: $size + px;
+// 		height: $size + px;
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		background-color: $color;
+// 	}
+// }

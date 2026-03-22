@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,56 +29,1146 @@
   <meta property="og:image:height" content="630">
 
   <link rel="stylesheet" href="./assets/css/style.min.css">
-  <link rel="stylesheet" href="./assets/css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./assets/css/main.min.css"> -->
 </head>
+
 <body>
   <div class="page-wrap">
     <header id="header">
-  <div class="container">
-    <div id="logo">
-      <a href="/">LOGO</a>
-    </div>
-    <nav id="main-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-    <main>
+  <div class="headerMain">
       <div class="container">
-        <h1>Hello world!</h1>
-
-        <div class="flex">
-          <picture>
-            <source type="image/avif" srcset="./assets/images/1.avif" />
-            <source type="image/webp" srcset="./assets/images/1.webp" />
-            <img src="./assets/images/1.jpg" alt="">
-          </picture>
-  
-          <picture>
-            <source type="image/avif" srcset="./assets/images/2.avif" />
-            <source type="image/webp" srcset="./assets/images/2.webp" />
-            <img src="./assets/images/2.png" alt="">
-          </picture>
-  
-          <img src="./assets/images/twitter.svg" alt="">
+        <div class="logo">
+          <a href="." class="logoImage">
+            <picture>
+              <!-- <source media="(max-width: 767px)" data-srcset="./assets/images/logo-mob.png" 
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="/> -->
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="lazy"
+                data-src="./assets/images/logo.png" />
+            </picture>
+          </a>
+          <h1 id="h1">
+            <a href=".">
+              
+            </a>
+          </h1>
         </div>
-        
+        <div class="phone">
+          <a href="tel:+380676998752">
+            +38(067)699 87 52
+          </a>
+        </div>
+        <div class="holderButton">
+          <button id="contactBtn" class="btn my-gradient" onclick="showContactForm()">
+          <span>
+            Записатись
+          </span>
+        </button>
+        </div>
+          <!-- <button id="hamburger" class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button> -->
+    </div>
+  </div>
+  <!-- <nav id="mainMenu" class="container">
+    <ul>
+      <li><a href=".#who-are-we">Про нас</a></li>
+      <li><a href="./sadochok.html">Садочок</a></li>
+      <li><a href="./pochatkova-shkola.html">Початкова школа</a></li>
+      <li><a href="./serednya-shkola.html">Середня школа</a></li>
+      <li><a href="./starsha-shkola.html">Старша школа</a></li>
+      <li><a href=".#contact-us">Контакти</a></li>
+    </ul>
+  </nav>
+  <div class="overlight"></div> -->
+</header>
+<!-- 
+    <main>
+      <section id="main-part" class="campaign">
+        <div id="first-bg" class="bg-image-holder">
+          <picture>
+            <source media="(min-width: 768px)"
+              data-srcset="./assets/images/foto.jpg 1x, ./assets/images/foto@2x.jpg 2x, ./assets/images/foto@3x.jpg 3x" />
+            <source media="(min-width: 360px)" data-srcset="./assets/images/foto-mob.jpg" />
+            <img class="lazy" data-src="./assets/images/foto@3x.jpg"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+          </picture>
+        </div>
+        <div class="text-holder ">
+          <div class="container">
+            <h1 class="h1">З нами діти отримують задоволення від навчання</h1>
+            <ul class="sotial-links">
+              <li>
+                <a href="https://www.facebook.com/harmony.km.ua" target="_blank" rel="noreferrer nofolow"
+                  title="Facebook">
+                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M150 106.425C150 133.725 133.725 150 106.425 150H97.5C93.375 150 90 146.625 90 142.5V99.225C90 97.2 91.65 95.475 93.675 95.475L106.875 95.25C107.925 95.175 108.825 94.425 109.05 93.375L111.675 79.05C111.9 77.7 110.85 76.425 109.425 76.425L93.45 76.65C91.35 76.65 89.7 75 89.625 72.975L89.325 54.6C89.325 53.4 90.3 52.3501 91.575 52.3501L109.575 52.05C110.85 52.05 111.825 51.0751 111.825 49.8001L111.525 31.7999C111.525 30.5249 110.55 29.55 109.275 29.55L89.025 29.8501C76.575 30.0751 66.675 40.275 66.9 52.725L67.275 73.35C67.35 75.45 65.7 77.1 63.6 77.175L54.6 77.325C53.325 77.325 52.3501 78.3 52.3501 79.575L52.5751 93.825C52.5751 95.1 53.55 96.075 54.825 96.075L63.825 95.925C65.925 95.925 67.575 97.575 67.65 99.6L68.325 142.35C68.4 146.55 65.025 150 60.825 150H43.575C16.275 150 0 133.725 0 106.35V43.575C0 16.275 16.275 0 43.575 0H106.425C133.725 0 150 16.275 150 43.575V106.425Z"
+                      fill="#001C2A" fill-opacity="0.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/harmony.km.ua/" target="_blank" rel="noreferrer nofolow"
+                  title="Instagram">
+                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M44.0791 0.45C52.0792 0.0833181 54.6292 0 75 0C95.3748 0 97.9207 0.0874772 105.916 0.45C113.904 0.812523 119.358 2.08336 124.129 3.9375C129.133 5.82143 133.666 8.77323 137.412 12.5875C141.227 16.3336 144.179 20.8668 146.063 25.8708C147.916 30.6417 149.183 36.0959 149.55 44.0791C149.917 52.0792 150 54.6292 150 75C150 95.3707 149.913 97.9207 149.55 105.921C149.187 113.904 147.916 119.358 146.063 124.129C144.146 129.059 141.579 133.246 137.412 137.412C133.666 141.227 129.133 144.179 124.129 146.063C119.358 147.916 113.904 149.183 105.921 149.55C97.9207 149.917 95.3707 150 75 150C54.6292 150 52.0792 149.913 44.0791 149.55C36.0959 149.187 30.6417 147.916 25.8708 146.063C20.9416 144.146 16.7542 141.579 12.5875 137.412C8.77254 133.666 5.82055 129.133 3.9375 124.129C2.08336 119.358 0.816682 113.904 0.45 105.921C0.0833181 97.9207 0 95.3748 0 75C0 54.625 0.0874772 52.0792 0.45 44.0834C0.812523 36.0959 2.08336 30.6417 3.9375 25.8708C5.82143 20.8671 8.77323 16.3342 12.5875 12.5875C16.3336 8.77254 20.8667 5.82055 25.8708 3.9375C30.6417 2.08336 36.0959 0.816682 44.0791 0.45ZM105.308 13.95C97.3998 13.5916 95.025 13.5125 75 13.5125C54.975 13.5125 52.6 13.5916 44.6917 13.95C37.3792 14.2833 33.4083 15.5041 30.7666 16.5333C27.2667 17.8917 24.7666 19.5166 22.1416 22.1416C19.5209 24.7666 17.8917 27.2667 16.5333 30.7666C15.5041 33.4083 14.2833 37.3792 13.95 44.6917C13.5916 52.6 13.5125 54.975 13.5125 75C13.5125 95.025 13.5916 97.3998 13.95 105.308C14.2833 112.621 15.5041 116.592 16.5333 119.234C17.7348 122.491 19.6513 125.438 22.1416 127.859C24.5614 130.349 27.5087 132.265 30.7666 133.467C33.4083 134.496 37.3792 135.717 44.6917 136.05C52.6 136.409 54.9708 136.488 75 136.488C95.0291 136.488 97.3998 136.409 105.308 136.05C112.621 135.717 116.592 134.496 119.234 133.467C122.733 132.108 125.234 130.484 127.859 127.859C130.349 125.439 132.265 122.491 133.467 119.234C134.496 116.592 135.717 112.621 136.05 105.308C136.409 97.3998 136.488 95.025 136.488 75C136.488 54.975 136.409 52.6 136.05 44.6917C135.717 37.3792 134.496 33.4083 133.467 30.7666C132.108 27.2667 130.484 24.7666 127.859 22.1416C125.234 19.5209 122.733 17.8917 119.234 16.5333C116.592 15.5041 112.621 14.2833 105.308 13.95ZM65.4239 98.1198C68.46 99.3777 71.7136 100.025 75 100.025C81.6375 100.025 88.0023 97.3882 92.6952 92.6952C97.3889 88.0023 100.025 81.6368 100.025 75C100.025 68.3632 97.3889 61.9977 92.6952 57.3046C88.0023 52.6115 81.6375 49.975 75 49.975C71.7136 49.975 68.46 50.6223 65.4239 51.8799C62.387 53.1375 59.6286 54.9808 57.3048 57.3046C54.9811 59.6284 53.1377 62.387 51.8801 65.4232C50.6225 68.4593 49.9752 71.7136 49.9752 75C49.9752 78.2864 50.6225 81.5407 51.8801 84.5768C53.1377 87.613 54.9811 90.3716 57.3048 92.6952C59.6286 95.0189 62.387 96.8625 65.4239 98.1198ZM47.7413 47.741C54.9708 40.5115 64.7761 36.4499 75 36.4499C85.2245 36.4499 95.0298 40.5115 102.259 47.741C109.488 54.9705 113.55 64.7761 113.55 75C113.55 85.2239 109.488 95.0291 102.259 102.259C95.0298 109.488 85.2245 113.55 75 113.55C64.7761 113.55 54.9708 109.488 47.7413 102.259C40.5117 95.0291 36.4502 85.2239 36.4502 75C36.4502 64.7761 40.5117 54.9705 47.7413 47.741ZM122.098 42.1935C123.807 40.4845 124.767 38.1668 124.767 35.75C124.767 33.3331 123.807 31.0154 122.098 29.3065C120.389 27.5975 118.071 26.6375 115.654 26.6375C113.238 26.6375 110.92 27.5975 109.211 29.3065C107.502 31.0154 106.542 33.3331 106.542 35.75C106.542 38.1668 107.502 40.4845 109.211 42.1935C110.92 43.9024 113.238 44.8625 115.654 44.8625C118.071 44.8625 120.389 43.9024 122.098 42.1935Z"
+                      fill="#001C2A" fill-opacity="0.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@harmony_private_school" target="_blank" rel="noreferrer nofolow"
+                  title="TikTok">
+                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="150" height="150" rx="25" fill="#001C2A" fill-opacity="0.5" />
+                    <path
+                      d="M106.703 0H81.4238V102.174C81.4238 114.348 71.7012 124.348 59.6016 124.348C47.5021 124.348 37.7793 114.348 37.7793 102.174C37.7793 90.2175 47.2861 80.4346 58.9536 80V54.3479C33.242 54.7825 12.5 75.8696 12.5 102.174C12.5 128.696 33.6741 150 59.8178 150C85.9611 150 107.135 128.478 107.135 102.174V49.7825C116.642 56.7392 128.309 60.8696 140.625 61.0871V35.4348C121.612 34.7826 106.703 19.1304 106.703 0Z"
+                      fill="white" fill-opacity="0.9" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="who-are-we">
+        <div class="container">
+          <div class="rightLogo">
+            <h2 class="h2"><span class="markGreenColor">Хто </span>ми?</h2>
+            <a href="/" class="smallLogo">
+              <picture>
+                <source media="(max-width: 767px)"
+                  data-srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  class="lazy" data-src="./assets/images/minLogo.png" />
+              </picture>
+            </a>
+          </div>
+          <div class="summerText">
+            <a href="/" class="mobSmallLogo">
+              <picture>
+                <source media="(max-width: 767px)" data-srcset="./assets/images/minLogo-mob.png"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  class="lazy"
+                  data-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+              </picture>
+            </a>
+            <p>
+              Приватний ліцензований заклад освіти,<br />
+              що поєднує традиції та інновації. <br /></p>
+            <p>Заклад, який приділяє велику увагу якісній<br />
+              академічній складовій з усіх предметів (hard skills),<br />
+              а також розвитку особистісних якостей,<br />
+              завдяки яким учні успішно взаємодіють<br />
+              в команді під час розв’язання будь-яких питань (soft skills).
+            </P>
+          </div>
+          <div class="spotList">
+            <div>
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#calendar"></use>
+              </svg>
+              <span class="number">30+</span>
+              <span class="text">років на ринку освітніх послуг</span>
+            </div>
+            <div>
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#student"></use>
+              </svg>
+              <span class="number">500+</span>
+              <span class="text">випускників</span>
+            </div>
+            <div>
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#teacher"></use>
+              </svg>
+              <span class="number">50+</span>
+              <span class="text">професійних педагогів</span>
+            </div>
+            <div>
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#student-cat"></use>
+              </svg>
+              <span class="number">100+</span>
+              <span class="text">учнів щороку</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why-choose-us" class="why-choose">
+        <div class="container">
+          <h2 class="h2">
+            <span class="markGreenColor">Чому</span> варто обрати “Гармонію”?
+          </h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide item bg-green">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#childer-in-class"></use>
+                </svg>
+                <p class="title">Невеликі класні колективи</p>
+                <p>Максимум 15 дітей в класі, атмосфера</p>
+              </div>
+              <div class="swiper-slide item bg-yellow">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#human-resources-businessman"></use>
+                </svg>
+                <p class="title">Забезпечуємо виконання Держстандартів</p>
+                <p>Документи про освіту державного зразка</p>
+              </div>
+              <div class="swiper-slide item bg-blue">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#form-validation-check-double"></use>
+                </svg>
+                <p class="title">Безпека</p>
+                <p>Закрита територія, відеонагляд, укриття відповідає вимогам ДСНС</p>
+              </div>
+              <div class="swiper-slide item bg-green">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#edit-pen-write-paper"></use>
+                </svg>
+                <p class="title">Підготовка до ЗНО/НМТ</p>
+                <p>Інтенсив та особлива увага предметам ЗНО/НМТ</p>
+              </div>
+              <div class="swiper-slide item bg-yellow">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#alert-alarm-clock"></use>
+                </svg>
+                <p class="title">Школа повного дня</p>
+                <p>Працюємо з 8:30 до 18:00, виконуємо домашку в ліцеї</p>
+              </div>
+              <div class="swiper-slide item bg-blue">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#accounting-invoice"></use>
+                </svg>
+                <p class="title">Знижки на вартість навчання</p>
+                <p>Гнучка система знижок та бонусів</p>
+              </div>
+              <div class="swiper-slide item bg-green">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#human-resources-rating-man"></use>
+                </svg>
+                <p class="title">Мотивація учнів</p>
+                <p>Власна система оцінювання, електронний щоденник</p>
+              </div>
+              <div class="swiper-slide item bg-yellow">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#job-seach-man"></use>
+                </svg>
+                <p class="title">Збалансований розвиток дитини</p>
+                <p>Психологічний, медичний, логопедичний супровід</p>
+              </div>
+              <div class="swiper-slide item bg-blue">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#optimization-configuration"></use>
+                </svg>
+                <p class="title">Проєктна діяльність</p>
+                <p>Практичне застосування знань</p>
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#arrow_up"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#arrow_down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="button-markHolder">
+            <button onclick="showContactForm()" class="btn my-gradient"><span>Записатись <br />на пробний день</span></button>
+            <div class="pointArrow">
+              <svg class="desc_show">
+                <use xlink:href="assets/images/icons-sprite.svg#arrow_06"></use>
+              </svg>
+              <span>спробуйте безкоштовно</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="departments" class="departments">
+        <div class="container">
+          <h2 class="h2">
+            <span class="markBlueColor">Безперервна </span>освіта
+          </h2>
+          <div class="boxLinkList">
+            <div class="boxLink">
+              <div class="imgHolder">
+                <a href="./sadochok.html" class="maskLink"></a>
+                <img data-src="./assets/images/content-image/box-img1.jpg"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="Садочок 3-6 років" class="lazy" />
+              </div>
+              <div class="item-text">
+                <div class="title-box">
+                  <a href="./sadochok.html" class="maskLink"></a>
+                  <h4 class="h4">Садочок 3-6 років</h4>
+                </div>
+                <p>(змішана група)</p>
+              </div>
+            </div>
+            <div class="boxLink">
+              <div class="imgHolder">
+                <a href="/" class="maskLink"></a>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./assets/images/content-image/box-img2.jpg" alt="Початкова школа" class="lazy" />
+              </div>
+              <div class="item-text">
+                <div class="title-box">
+                  <a href="/" class="maskLink"></a>
+                  <h4 class="h4">Початкова школа</h4>
+                </div>
+                <p>1-4 класи</p>
+              </div>
+            </div>
+            <div class="boxLink">
+              <div class="imgHolder">
+                <a href="/" class="maskLink"></a>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="Середня школа" data-src="./assets/images/content-image/box-img3.jpg" class="lazy" />
+              </div>
+              <div class="item-text">
+                <div class="title-box">
+                  <a href="/" class="maskLink"></a>
+                  <h4 class="h4">Середня школа</h4>
+                </div>
+                <p>5-9 класи</p>
+              </div>
+            </div>
+            <div class="boxLink">
+              <div class="imgHolder">
+                <a href="/" class="maskLink"></a>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./assets/images/content-image/box-img4.jpg" alt="Старша школа" class="lazy" />
+              </div>
+              <div class="item-text">
+                <div class="title-box">
+                  <a href="/" class="maskLink"></a>
+                  <h4 class="h4">Старша школа</h4>
+                </div>
+                <p>10-11 класи</p>
+              </div>
+            </div>
+          </div>
+          <button onclick="showContactForm()" class="btn my-gradient"><span>Записатись на співбесіду прямо зараз</span></button>
+        </div>
+      </section>
+      <section id="price" class="price">
+        <div class="container">
+          <h2 class="h2">Вартість <span class="markYellowColor">послуг</span></h2>
+          <ul class="priceList">
+            <li>
+              <span>Садочок</span>
+              <span class="markYellowColor">9 000 грн/міс</span>
+            </li>
+            <li>
+              <span>
+                <span>Початкова школа </span><span class="normalText">(1-4 класи)</span>
+              </span>
+              <span class="markYellowColor">від 8 500 грн/міс</span>
+            </li>
+            <li>
+              <span>
+                <span>Середня школа </span><span class="normalText">(5-9 класи)</span>
+              </span>
+              <span class="markYellowColor">від 9 000 грн/міс</span>
+            </li>
+            <li>
+              <span>
+                <span>Старша школа </span><span class="normalText">(10-11 класи)</span>
+              </span>
+              <span class="markYellowColor">10 000 грн/міс</span>
+            </li>
+            <li>
+              <span>
+                <span>Вступний внесок </span><span class="normalText">(сплачується одноразово)</span>
+              </span>
+              <span class="markYellowColor">3 000 грн</span>
+            </li>
+          </ul>
+          <h2 class="h2"><span class="markYellowColor">Знижки </span>та вигідні пропозиції</h2>
+          <ol class="discountList">
+            <li>
+              <strong>Безкоштовний день</strong> <br />
+              Ваша дитина на цілий день стає повноцінним учнем ліцею
+            </li>
+            <li>
+              <strong>5%, 7% та 10% знижки</strong> <br />
+              Якщо в закладі навчаються двоє та більше дітей з однієї родини
+            </li>
+            <li>
+              <strong>5% знижки</strong> при оплаті за 5 місяців
+              навчання (семестр) одним платежем до початку семестру
+            </li>
+            <li>
+              <strong>10% знижки</strong> <br />
+              при оплаті за 10 місяців навчання (навчальний рік) до 1 серпня
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="enter-to-school" class="enterToSchool">
+        <div class="container">
+          <h2 class="h2">Як <span class="markBlueColor">стати </span>нашим учнем?</h2>
+          <ul class="stepList">
+            <li>
+              <div class="iconHolder">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#business-deal-handshake"></use>
+                </svg>
+              </div>
+              <div>
+                <p class="title markBlueColor">КРОК 1</p>
+                <p>Познайомтесь з ліцеєм</p>
+              </div>
+            </li>
+            <li>
+              <div class="iconHolder">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#collaboration-team-chat"></use>
+                </svg>
+              </div>
+              <div>
+                <p class="title markBlueColor">КРОК 2</p>
+                <p>Пройдіть співбесіду</p>
+              </div>
+            </li>
+            <li>
+              <div class="iconHolder">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#edit-pencil"></use>
+                </svg>
+              </div>
+              <div>
+                <p class="title markBlueColor">КРОК 3</p>
+                <p>Подайте заяву та необхідні документи</p>
+              </div>
+            </li>
+            <li>
+              <div class="iconHolder">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#office-file-text"></use>
+                </svg>
+              </div>
+              <div>
+                <p class="title markBlueColor">КРОК 4</p>
+                <p>Укладіть договір та внесіть вступний внесок</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="documentsList">
+            <li>Свідоцтво про народження (копія)</li>
+            <li>Свідоцтво про здобуття базової середньої освіти (при вступі у 10-11 клас)</li>
+            <li>Паспорт (копія) дитини, якщо їй виповнилось 14 років</li>
+            <li>Особова справа учня (при переході з іншого закладу освіти)</li>
+            <li>Паспорт (копія) одного з батьків</li>
+            <li>Відомість поточних/семестрових оцінок (при переході з іншого закладу освіти протягом навчального року)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="free-day" class="freeDay">
+        <div class="container">
+          <div class="rightLogo">
+            <h2 class="h2">Спробуйте <span class="markBlueColor">безкоштовний </span>день!</h2>
+            <a href="/" class="smallLogo">
+              <picture>
+                <source media="(max-width: 767px)" data-srcset="./assets/images/minLogo-mob.png"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  class="lazy" data-src="./assets/images/minLogo.png" />
+              </picture>
+            </a>
+          </div>
+          <div class="rightText">
+            <p>Запрошуємо Вашу дитину в ліцей
+              на один день, який вона
+              проведе, як повноправний учень ”Гармонії!</p>
+          </div>
+          <div class="colorsBox">
+            <div class="bg-yellow">Відвідає уроки за розкладом</div>
+            <div class="bg-blue">Познайомиться з педагогами</div>
+            <div class="bg-yellow">Познайомиться з ліцеїстами</div>
+            <div class="bg-blue">Спробує наше харчування</div>
+            <div class="bg-blue bigBox">Після проведеного дня в ліцеї Ваша дитина зможе
+              самостійно прийняти рішення щодо подальшого навчання, враховуючи власний досвід та відчуття,
+              які в неї виникали протягом дня</div>
+            <button onclick="showContactForm()" class="btn my-gradient"><span>Спробувати безкоштовний день</span></button>
+          </div>
+        </div>
+      </section>
+      <section id="review" class="review">
+        <div class="container">
+          <h2 class="h2">Що ще <span class="markGreenColor">важливо</span> знати про “Гармонію”?</h2>
+          <div class="twoColumns">
+            <ul class="valueList">
+              <li>
+                <div class="iconHolder">
+                  <svg>
+                    <use xlink:href="assets/images/icons-sprite.svg#human-resources-employee-crown-woman"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="title">Відстежуємо успіхи кожного.</p>
+                  <p>Ліцей використовує в роботі
+                    комплексну платформу
+                    централізованого управління
+                    освітнім процесом School Today</p>
+                </div>
+              </li>
+              <li>
+                <div class="iconHolder">
+                  <svg>
+                    <use xlink:href="assets/images/icons-sprite.svg#design-tool-pen-brush-cup"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="title">Працюємо в трикутнику
+                    “батьки-дитина-школа”.</p>
+                  <p>Для підтримки дитини,
+                    розвитку її талантів та
+                    особистості</p>
+                </div>
+              </li>
+              <li>
+                <div class="iconHolder">
+                  <svg>
+                    <use xlink:href="assets/images/icons-sprite.svg#newspaper-read-man"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="title">Звільняємо бітьків від
+                    необхідності виконувати д/з.</p>
+                  <p>А також готувати реферати,
+                    проєкти, робити поробки. Все
+                    це учні виконують самостійно.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img1.jpg" alt="Пані Оксана">
+                    </div>
+                    <p class="title">Пані Оксана, <br />
+                      мати учениці 2 класу</p>
+                    <p>“Вдячні ліцею за розуміння, турботу, терпіння, підтримку! Дякуємо за знання! Донька із
+                      задоволенням
+                      чекає на свій другий клас! ”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img2.jpg" alt="Пані Валентина">
+                    </div>
+                    <p class="title">Пані Валентина,<br />
+                      мати учениці 2 класу</p>
+                    <p>“Приємно бачити, коли доня біжить із задоволенням в школу, просить не запізнюватись, щоб не
+                      пропустити щось цікаве, і
+                      засмучується, коли треба пропустити день в школі! Щаслива дитина - головний орієнтир. ”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img3.jpg" alt="Пані Світлана">
+                    </div>
+                    <p class="title">Пані Світлана, <br /> мати учня 5 класу та учениці 11 класу</p>
+                    <p>“Найкращим досягненням вчителя є небажання дитини його відпускати, вам це вдалося! Ви залишили в
+                      дитячих сердечках частинку себе, яку вони будуть пам’ятати довгі роки! ”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img4.jpg" alt="Пані Наталія">
+                    </div>
+                    <p class="title">Пані Наталія, <br /> мати учня 6 класу</p>
+                    <p>“Гармонія” - це маленькі затишні класи, індивідуальний підхід, атмосфера підтримки і цінності
+                      кожної дитини. Справжня родинна школа!”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img5.jpg" alt="Софія">
+                    </div>
+                    <p class="title">Софія, <br /> учениця 10 класу</p>
+                    <p>“Вчителі “Гармонії” доброзичливі і розуміють, як нас змотивувати до навчання. Їм вдається складне
+                      зробити простим та зрозумілим.”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                    </div>
+                    <p class="title">Аліса, <br /> учениця 11 класу</p>
+                    <p>“Гармонія- це школа, в якій вчителі стають друзями, завжди допоможуть та підтримають. Це місце,
+                      де
+                      панує комфорт та дружня атмосфера.”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img7.jpg" alt="Михайло">
+                    </div>
+                    <p class="title">Михайло, <br /> учень 11 класу</p>
+                    <p>“Моя школа - це місце, де я відкрив для себе безмежний світ спілкування. Спільнота учнів - це
+                      справжнє джерело натхнення та підтримки. Я вдячний за можливість навчатися тут! ”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img8.jpg" alt="Пані Євгенія">
+                    </div>
+                    <p class="title">Пані Євгенія, <br /> мати учениці 2 класу</p>
+                    <p>“Дякую ліцею за волонтерську діяльність. Це надважливо, як для наших військових, так і для наших
+                      дітей, і для нас самих. Це іще одна із причин пишатися нашим ліцеєм і людьми, які там працюють.”
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img9.jpg" alt="Владислав">
+                    </div>
+                    <p class="title">Владислав, <br /> учень 10 класу</p>
+                    <p>“Мудрий не той, хто знає багато, а той, хто знає потрібне". У “Гармонії” можна дізнатися, саме
+                      те,
+                      що вам потрібно.”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img10.jpg" alt="Пані Валентина">
+                    </div>
+                    <p class="title">Пані Валентина, <br /> колишня педагог ліцею</p>
+                    <p>“Вдячна “Гармонії” за стартовий досвід педагогічної діяльності. Почуваю себе впевнено та
+                      конкурентоспроможно на новому місці роботи.”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img11.jpg" alt="Ілона">
+                    </div>
+                    <p class="title">Ілона, <br /> випускниця “Гармонії”</p>
+                    <p>“Навчання у “Гармонії” дозволило мені успішно скласит ЗНО, вступити в омріяний ВНЗ,
+                      працевлаштуватись. Вдячна ліцею за приємні спогади та чудовтй старт!”</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="contentHolder">
+                    <div class="imgHolder">
+                      <img src="assets/images/content-image/review-img12.jpg" alt="Пані Ольга">
+                    </div>
+                    <p class="title">Пані Ольга, <br /> мати двох випускників, бабуся учениці 5 класу</p>
+                    <p>“Гармонія” - територія любові, підтримки та віри у кожного учня. Рекомендую ліцей тим батькам,
+                      які
+                      хочуть бачити свою
+                      дитину всебічно розвиненою та освіченою особистістю.”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#arrow_up"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg>
+                  <use xlink:href="assets/images/icons-sprite.svg#arrow_down"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-team" class="team">
+        <div class="container">
+          <h2 class="h2"><span class="markGreenColor">Команда</span> “Гармонії”</h2>
+          <div class="swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img1.jpg" alt="Валентина Проскуровська">
+                  </div>
+                  <p class="title">Валентина Проскуровська, <br /> засновниця “Гармонії”</p>
+                  <p>“Для ефективного освітнього процесу потрібні не стільки інвестиції,
+                    скільки небайдужі люди”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img2.jpg" alt="Людмила Висоцька">
+                  </div>
+                  <p class="title">Людмила Висоцька, <br /> директорка ХПЛ “Гармонія”</p>
+                  <p>“Нам усім необхідно навчитись довіряти школі, педагогам, дітям”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img3.jpg" alt="Олена Анікіна">
+                  </div>
+                  <p class="title">Олена Анікіна, <br /> директорка ПДВЗ “Гармонія”</p>
+                  <p>“Не існує жодної ідеальної освітньої установи, було б адаптуватись”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img4.jpg" alt="Вікторія Тимофієва">
+                  </div>
+                  <p class="title">Вікторія Тимофієва,<br /> вчителька 1 класу</p>
+                  <p>“Важливо створити атмосферу довіри і підтримки, де кожен учень почуватиметься цінним і натхненним
+                    до навчання.”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img5.jpg" alt="Іванна Марусій">
+                  </div>
+                  <p class="title">Іванна Марусій, <br /> вчителька 3 класу</p>
+                  <p>“Завдання вчителя - не просто передати знання, а створити простір,
+                    де учні можуть мріяти, досліджувати й розкривати свої таланти.”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img6.jpg" alt="Марина Тєряєва">
+                  </div>
+                  <p class="title">Марина Тєряєва, <br /> адміністраторка, вихователька ГПД</p>
+                  <p>“Розвиток можливий лише там, де немає місця страху, агресії та примусу”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img7.jpg" alt="Аліна Мельник">
+                  </div>
+                  <p class="title">Аліна Мельник, <br /> психологиня</p>
+                  <p>“Абсолютно всі діти можуть одночасно поскаржитися, попросити поради/допомоги, посумувати,
+                    обійнятися і просто весело та
+                    комфортно провести час зі своєю шкільною психологинею”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img8.jpg" alt="Людмила Євтушенко">
+                  </div>
+                  <p class="title">Людмила Євтушенко, <br /> вчителька природничих наук</p>
+                  <p>“Переконана, що існує більше, ніж одна правильна відповідь. Люблю слухати дітей, завдяки чому їх
+                    краще пізнаю та ціную”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img9.jpg" alt="Владислав">
+                  </div>
+                  <p class="title">Ірина Польовчик, <br /> асистентка вчителя</p>
+                  <p>“Дитина для мене - маленька особистість. Не лише я можу її чомусь навчити, а й вона - мене”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img10.jpg" alt="Наталія Муштрук">
+                  </div>
+                  <p class="title">Наталія Муштрук, <br /> вчителька німецької мови</p>
+                  <p>“Мої учні - це вільні думкою, розумні та самостійні діти, які точно знають, чого хочуть від життя”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img11.jpg" alt="Людмила Андрейкова">
+                  </div>
+                  <p class="title">Людмила Андрейкова, <br /> вчителька історії</p>
+                  <p>“Питання “ЧОМУ?” повинне бути присутнім на кожному уроці історії”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img12.jpg" alt="Катерина Подлєснова">
+                  </div>
+                  <p class="title">Катерина Подлєснова, вчителька англійської мови</p>
+                  <p>“Щодня коригую свої тактики та методи ведення уроків, щоб гарантувати продуктивний урок
+                    кожному учневі”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img13.jpg" alt="Владислав Підгорний">
+                  </div>
+                  <p class="title">Владислав Підгорний, <br /> вчитель фізичної культури</p>
+                  <p>“Здоров’я – це наше найбільше багатство! Як вчитель фізкультури, я допомагаю дітям розкривати свій
+                    потенціал через рух
+                    та здоровий спосіб життя. Нехай кожен день буде повний енергії та радості!”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img14.jpg" alt="Олеся Жук">
+                  </div>
+                  <p class="title">Олеся Жук, <br /> вчителька української мови</p>
+                  <p>“Вважаю мову головним здобутком нашої нації, найціннішим джерелом, яке показує, якими ми були, які
+                    ми є і якими можемо стати”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img15.jpg" alt="Інна Зарубіна">
+                  </div>
+                  <p class="title">Інна Зарубіна, <br /> вчителька мистецтва</p>
+                  <p>“Мене мотивують та надихають талановиті люди. Всіляко підтримую творчі експерименти учнів
+                    та сама беру в них участь.”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img16.jpg" alt="Ірина Стародуб">
+                  </div>
+                  <p class="title">Ірина Стародуб, <br /> вчителька фізики</p>
+                  <p>“Фізика - це елементарно, неосяжно, дивно,
+                    складно, динамічно...
+                    та як завгодно, але не нудно!”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img17.jpg" alt="Вікторія Полтавська">
+                  </div>
+                  <p class="title">Вікторія Полтавська, вчителька української мови</p>
+                  <p>“Учитель - це людина, яка може робити важкі речі легкими. Адже правильно навчає той, хто навчає
+                    цікаво”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img18.jpg" alt="Ольга Ткачишина">
+                  </div>
+                  <p class="title">Ольга Ткачишина, <br /> вчителька 2 класу</p>
+                  <p>“Щоб вести дітей за собою, необхідно самому рухатися, не зупиняючись”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="contentHolder">
+                  <div class="imgHolder">
+                    <img src="./assets/images/content-image/team-img19.jpg" alt="Ольга Гоцка">
+                  </div>
+                  <p class="title">Ольга Гоцка, <br /> вчителька географії</p>
+                  <p>“Навчаю дітей цінувати те, що мають і знають, але не зупинятися на досягнутому”</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#arrow_up"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg>
+                <use xlink:href="assets/images/icons-sprite.svg#arrow_down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us" class="form">
+        <div class="container">
+          <h2 class="h2">Познайомтесь з нашим ліцеєм</h2>
+          <div class="twoColumns">
+            <form id="contact" autocomplete="off">
+              <div class="holder">
+                <div class="mainFormContent">
+                <div class="fildSection">
+                  <input type="text" autocomplete="off" placeholder=" " id="name" value="">
+                  <label for="name">Як до Вас можна звертатись?</label>
+                  <span class="error">Будь-ласка вкажіть ваше ім'я</span>
+                </div>
+                <div class="fildSection">
+                  <input type="text" autocomplete="off" id="phone" value="" placeholder="+38(0__)___-__-__">
+                  <label for="phone"></label>
+                  <span class="error">Будь-ласка вкажіть ваш номер телефону</span>
+                </div>
+                <div class="fildSection">
+                  <input type="text" autocomplete="one-time-code" placeholder=" " id="email" value="">
+                  <label for="email">Ваш email</label>
+                  <span class="error">Будь-ласка вкажіть ваш email</span>
+                </div>
+                <button type="submit" class="btn my-gradient">
+                  <span>Записатись на співбесіду</span>
+                </button>
+              </div>
+              <div class="resultMessage animate__flipInX" data-wow-duration="1s" data-wow-iteration="1">
+                <div class="successMessage">
+                  <p>Дякуємо!</p>
+                  <p>Ваш запис зареєстровано.</p>
+                  <p>Наш менеджер зв’яжеться з Вами найближчим часом.</p>
+                </div>
+                <div class="errorMessage">
+                  <p>Уппс..</p>
+                  <p>Схоже щось пішло не так.</p>
+                  <p>Спробуйте пізніше.</p>
+                </div>
+                <a href="/" id="reiterate" class="btn greyBtn"><span>Повторити</span></a>
+              </div>
+              </div>
+              <p>Відправляючи форму Ви даєте інформовану
+                згоду на обробку персональних даних</p>
+            </form>
 
-      </div>
+            <div class="imgHolder">
+              <picture>
+                <source media="(max-width: 767px)" data-srcset="./assets/images/contact-img-mob.jpg" />
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./assets/images/contact-img.jpg" class="lazy" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer id="footer">
   <div class="container">
     <p>&copy;2023. All right reserved.</p>
   </div>
-</footer>
+</footer> -->
+
   </div>
+  <!-- <div class="holderBtnArrow">
+    <div class="wow animate__pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">
+      <a href="#who-are-we" data-scroll class="arrow-down" id="arrow-nav">
+        <svg width="42" height="40" viewBox="0 0 42 40" fill="#d9d9d9" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24.9048 19.111C24.9606 19.1669 24.9885 19.231 24.9885 19.3036C24.9885 19.3761 24.9606 19.4403 24.9048 19.4961L21.0041 23.3968C20.9483 23.4526 20.8841 23.4805 20.8116 23.4805C20.7391 23.4805 20.6749 23.4526 20.6191 23.3968L16.7184 19.4961C16.6626 19.4403 16.6347 19.3761 16.6347 19.3036C16.6347 19.231 16.6626 19.1669 16.7184 19.111L17.1369 18.6925C17.1927 18.6367 17.2569 18.6088 17.3295 18.6088C17.402 18.6088 17.4662 18.6367 17.522 18.6925L20.8116 21.9821L24.1012 18.6925C24.157 18.6367 24.2212 18.6088 24.2937 18.6088C24.3663 18.6088 24.4305 18.6367 24.4863 18.6925L24.9048 19.111Z"
+            fill="#d9d9d9" />
+          <path opacity="0.5"
+            d="M40.5447 20C40.5447 30.7685 31.7958 39.5 21.0011 39.5C10.2064 39.5 1.45746 30.7685 1.45746 20C1.45746 9.23147 10.2064 0.5 21.0011 0.5C31.7958 0.5 40.5447 9.23147 40.5447 20Z"
+            stroke="#2C4058" />
+        </svg>
+      </a>
+    </div>
+  </div> -->
+  <script src="./assets/js/all.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 
   <script src="./assets/js/all.min.js"></script>
+
   <script src="./assets/js/main.min.js"></script>
+
+  <script>
+    $(function () {
+      //2. Получить элемент, к которому необходимо добавить маску
+      //$("#field2").mask("+38(099)999-99-99");
+      $("#phone").inputmask({ "mask": "+38 (999) 999-99-99" });
+
+      function setDisabled(state, button) {
+        if (state) {
+          button.disabled = true;
+        } else { button.disabled = false; };
+      }
+
+
+      function findErrors(form, name, phone, email) {
+        let err = false;
+        if (name === '') {
+          $(form).find('#name').siblings('.error').show();
+          err = true;
+        } else {
+          $(form).find('#name').siblings('.error').hide();
+        };
+        if (phone === '') {
+          $(form).find('#phone').siblings('.error').show();
+          err = true;
+        } else {
+          $(form).find('#phone').siblings('.error').hide();
+        };
+        if (email === '') {
+          $(form).find('#email').siblings('.error').show();
+          err = true;
+        } else {
+          $(form).find('#email').siblings('.error').hide();
+        };
+        return err;
+      }
+      /*call functions */
+
+      new WOW().init();
+      let lazyLoadInstance = new LazyLoad();
+      /* events defenition */
+      $('a[data-scroll]').on('click', function (e) {
+        e.preventDefault();
+
+        if (this.hasAttribute('name-diraction')) { this.removeAttribute('name-diraction') };
+        const href = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(href).offset().top }, 1000);
+        let nextHref = document.getElementById(href.slice(1)).nextElementSibling;
+        if (nextHref != null && href != '#footer')
+          $(this).attr('href', '#' + nextHref.id)
+        else if (href == '#contact-us') {
+          $(this).attr('href', '#footer');
+        } else {
+          $(this).attr('href', '#main-part');
+          this.setAttribute('name-diraction', 'up');;
+        }
+      });
+
+      $('#hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('#mainMenu').slideToggle();
+        $('#mainMenu').toggleClass('open');
+      });
+
+      $('#contact').on('submit', function (e) {
+        e.preventDefault();
+        setDisabled(true, e);
+        let name =  $(this).find('#name').val(),
+            phone = $(this).find('#phone').val(),
+            email = $(this).find('#email').val();
+        let errors = findErrors(this, name, phone, email);
+        if (errors) {
+          setDisabled(false, e);
+          return false
+        }
+        const msg = `
+                <b>Contact us</b>
+                <b>Name: </b> ${name}
+                <b>Email: </b> ${email}
+                <b>Phone: </b> ${phone}`;
+        const apiToken = "5937002187:AAEg04lEC08E5fgb6mTAv0dOJBsZapEcZE0";
+        const chatId = "-1001738000762";
+        fetch(`https://api.telegram.org/bot${apiToken}/sendMessage`, {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: msg,
+            parse_mode: 'HTML'
+          })
+        })
+        .then(response => {
+          $(".mainFormContent").css('visibility', 'hidden');
+            if (response.ok) {
+              $(".successMessage").show();
+              
+              $(".errorMessage").hide();
+            } else {
+              $(".errorMessage").show();
+              
+              $(".successMessage").hide();
+            }
+            const element = document.querySelector('.resultMessage');
+            element.classList.add('wow');
+            new WOW().init();
+          })
+          .finally(() => {
+            setDisabled(false, e);
+            this.reset();
+          });
+      });
+      $('#reiterate').on('click', function (e) {
+        e.preventDefault();
+        $(".resultMessage").css('visibility', 'hidden');
+        $(".mainFormContent").css('visibility', 'visible');
+    });
+  });
+    
+  
+  function showContactForm() {
+    $('html, body').animate({ scrollTop: $('#contact-us').offset().top }, 1000);
+  }
+  
+  if (Swiper != "undefined") {
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        effect: "cards",
+        grabCursor: true,
+        // autoplay: {
+        //   delay: 5000,
+        // },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
+
+      const swiper2 = new Swiper('.swiper2', {
+        loop: true,
+        direction: 'vertical',
+        grabCursor: true,
+        spaceBetween: 5,
+        // autoplay: {
+        //   delay: 5000,
+        // },
+        navigation: {
+          nextEl: '.swiper2 .swiper-button-next',
+          prevEl: '.swiper2 .swiper-button-prev',
+        }
+      });
+
+
+      const swiper3 = new Swiper('.swiper3', {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        grabCursor: true,
+        // autoplay: {
+        //   delay: 5000,
+        // },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 12
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
+    };
+  </script>
 </body>
+
 </html>

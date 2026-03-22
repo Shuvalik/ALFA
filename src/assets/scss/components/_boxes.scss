@@ -1,0 +1,1362 @@
+/*.spotList {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    @include font(40, 50);
+    font-family: 'MontserratAlternates-SemiBold';
+    @media only screen and (max-width: $xl-deck) {
+        @include font(30, 40);
+    }
+    @media only screen and (max-width: $l-deck) {
+        @include font(26, 30);
+        gap: 40px;
+    }
+    @media only screen and (max-width: $s-deck) {
+        @include font(22, 28);
+        gap: 20px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+        flex-wrap: wrap;
+    }
+    @media only screen and (max-width: $tablet) {
+        gap: 10px;
+    }
+    @media only screen and (max-width: $mobile) {
+        gap: 10px 0;
+        @include font(20, 26);
+    }
+    > div {
+        background-color: $yellow-light-color;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+        padding: 50px 0 32px;
+        width: calc(25% - 45px);
+        @media only screen and (max-width: $xl-deck) {
+            padding: 25px;
+        }
+        @media only screen and (max-width: $l-deck) {
+            width: calc(25% - 30px);
+        }
+        @media only screen and (max-width: $s-deck) {
+            width: calc(25% - 15px);
+        }
+        @media only screen and (max-width: $land-tablet) {
+            width: calc(50% - 15px);
+        }
+        @media only screen and (max-width: $tablet) {
+            width: calc(50% - 5px);
+            padding: 20px;
+        }
+        @media only screen and (max-width: $mobile) {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            text-align: right;
+            align-items: flex-end;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        svg {
+            height: 100px;
+            margin-bottom: 7px;
+            @media only screen and (max-width: $xl-deck) {
+                height: 70px;
+                margin: 0;
+            }
+            @media only screen and (max-width: $mobile) {
+                width: 50%;
+            }
+        }
+        .number {
+            padding: 0;
+            width: 50%;
+        }
+
+    }
+}
+.boxLinkList {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    @include font(30, 40);
+    margin-bottom: 40px;
+    @media only screen and (max-width: $xl-deck) {
+        @include font(32, 32);
+        margin-bottom: 20px;
+        gap: 40px;
+    }
+    @media only screen and (max-width: $l-deck) {
+        @include font(24, 30);
+    }
+    @media only screen and (max-width: $s-deck) {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: $tablet) {
+        @include font(18, 26);
+    }
+    .boxLink {
+        width: calc(25% - 45px);
+        border-radius: 25px;
+        background: $blue-light-color;
+        padding: 14px;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: $xl-deck) {
+           width: calc(25% - 30px);
+           padding: 10px;
+           border-radius: 20px;
+        }
+        @media only screen and (max-width: $s-deck) {
+           width: calc(50% - 5px);
+           padding: 5px;
+        }
+        @media only screen and (max-width: $mobile) {
+            width: 100%;
+        }
+        .imgHolder {
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 14px;
+            max-height: 447px;
+            height: 100%;
+            position: relative;
+            @media only screen and (max-width: $xl-deck) {
+                margin-bottom: 10px;
+            }
+            @media only screen and (max-width: $s-deck) {
+                max-height: 200px;
+                margin-bottom: 5px;
+            }
+            @media only screen and (max-width: $land-tablet) {
+                min-height: 300px;
+            }
+            img {
+                aspect-ratio: 373/447 auto;
+                transition: all 0.6s ease;
+            }
+        }
+        .title-box {
+            position: relative;
+        }
+        .item-text {
+            border-radius: 16px;
+            background: $yellow-light-color;
+            padding: 17px 42px 1px;
+            flex-grow: 1;
+            @media only screen and (max-width: $xl-deck) {
+                padding: 5px 15px;
+            }
+            @media only screen and (max-width: $l-deck) {
+                padding: 5px 27px;
+            }
+            @media only screen and (max-width: $m-deck) {
+                padding: 5px 20px;
+            }
+        }
+    }
+}
+.stepList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px 50px;
+    gap: 82px 45px;
+    @include font(46, 60);
+    @media only screen and (max-width: $xl-deck) {
+        @include font(36, 40);
+    }
+    @media only screen and (max-width: $l-deck) {
+        gap: 70px 30px;
+        @include font(28, 36);
+        margin-bottom: 40px;
+    }
+    @media only screen and (max-width: $m-deck) {
+        gap: 35px 30px;
+        margin-bottom: 30px;
+    }
+    @media only screen and (max-width: $s-deck) {
+        margin: 0 0 30px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+        flex-direction: column;
+    }
+    @media only screen and (max-width: $tablet) {
+        @include font(22, 28);
+        margin-bottom: 15px;
+    }
+    @media only screen and (max-width: $mobile) {
+        @include font(18, 26);
+        gap: 40px 0;
+    }
+    li {
+        position: relative;
+        display: flex;
+        gap: 25px;
+        flex-basis: calc(50% + 30px);
+        @media only screen and (max-width: $land-tablet) {
+            align-self: flex-end;
+            width: 75%;
+        }
+        @media only screen and (max-width: $tablet) {
+            width: 80%;
+        }
+        @media only screen and (max-width: $mobile) {
+            gap: 10px;
+        }
+        &:nth-child(odd) {
+            flex-basis: calc(50% - 85px);
+            @media only screen and (max-width: $m-deck) {
+                flex-basis: calc(50% - 70px);
+            }
+            @media only screen and (max-width: $land-tablet) {
+                align-self: flex-start;
+            }
+            @media only screen and (max-width: $mobile) {
+                width: 100%;
+            }
+        }
+        &:first-child::after {
+            content: ' ';
+            background: url("./../../assets/images/step-1-2.svg") 0 0 no-repeat ;
+            background-size: contain;
+            width: 251px;
+            height: 131px;
+            position: absolute;
+            right: 0;
+            top: -45px;
+            @media only screen and (max-width: $l-deck) {
+                width: 201px;
+                height: 81px; 
+                right: -50px;
+                top: -20px; 
+            }
+            @media only screen and (max-width: $land-tablet) {
+                background-image: url("./../../assets/images/step-1-2-mob.svg");
+                left: 35px;
+                right: auto;
+                top: auto;
+                bottom: -95px;
+                width: 109px;
+                height: 101px;
+            }
+            @media only screen and (max-width: $tablet) {
+                width: 59px;
+                height: 51px;
+                bottom: -40px;
+            }
+            @media only screen and (max-width: $mobile) {
+                bottom: -50px;
+                left: 10px;
+            }
+        }
+        &:nth-child(3) {
+            &::after {
+                content: ' ';
+                background: url("./../../assets/images/step-2-3.svg") 0 0 no-repeat ;
+                background-size: contain;
+                width: 257px;
+                height: 111px;
+                position: absolute;
+                right: -26px;
+                top: -104px;
+                @media only screen and (max-width: $l-deck) {
+                    width: 207px;
+                    height: 61px;
+                    right: -56px;
+                    top: -54px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    background-image: url("./../../assets/images/step-2-3-mob.svg");
+                    width: 114px;
+                    height: 93px;
+                    right: auto;
+                    top: -85px;
+                    left: 60px;
+                }
+                @media only screen and (max-width: $tablet) {
+                    top: -35px;
+                    width: 64px;
+                    height: 43px;
+                }
+                @media only screen and (max-width: $mobile) {
+                    top: -47px;
+                    left: 20px;
+                }
+            }
+            &::before {
+                content: ' ';
+                background: url("./../../assets/images/step-3-4.svg") 0 0 no-repeat ;
+                background-size: contain;
+                width: 193px;
+                height: 40px;
+                position: absolute;
+                right: -40px;
+                bottom: -20px;
+                @media only screen and (max-width: $l-deck) {
+                    width: 143px;
+                    right: -20px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    background-image: url("./../../assets/images/step-3-4-mob.svg");
+                    bottom: -100px;
+                    left: 55px;
+                    right: auto;
+                    width: 141px;
+                    height: 135px;
+                }
+                @media only screen and (max-width: $tablet) {
+                    bottom: -49px;
+                    left: 45px;
+                    right: auto;
+                    width: 91px;
+                    height: 85px;
+                }
+                @media only screen and (max-width: $mobile) {
+                    bottom: -51px;
+                    left: 10px;
+                }
+            }
+        }
+        .iconHolder {
+            @include circle(200);
+            background-color: $blue-light-color;
+            flex:  0 0 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (max-width: $xl-deck) {
+                @include circle(150);
+                flex:  0 0 150px;
+                svg {
+                    width: 100px;
+                    display: inline-block;
+                }
+            }
+            @media only screen and (max-width: $xl-deck) {
+                @include circle(100);
+                flex:  0 0 100px;
+                svg {
+                    width: 50px;
+                    display: inline-block;
+                }
+            }
+            @media only screen and (max-width: $tablet) {
+                @include circle(75);
+                flex:  0 0 75px;
+                svg {
+                    width: 37px;
+                    display: inline-block;
+                }
+            }
+            @media only screen and (max-width: $mobile) {
+                @include circle(50);
+                flex:  0 0 50px;
+                svg {
+                    width: 25px;
+                    display: inline-block;
+                }
+            }
+        }
+        .title {
+            font-family: 'MontserratAlternates-SemiBold';
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            @media only screen and (max-width: $mobile) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.documentsList {
+    @include font(35, 40);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 86px;
+    margin: 0 30px;
+    @media only screen and (max-width: $xl-deck) {
+        @include font(30, 32);
+        gap: 20px 40px;
+    }
+    @media only screen and (max-width: $l-deck) {
+        @include font(28, 32);
+        margin: 0;
+    }
+    @media only screen and (max-width: $m-deck) {
+        gap: 15px 30px;
+        @include font(26, 32);
+    }
+    @media only screen and (max-width: $s-deck) {
+        gap: 15px 30px;
+        @include font(24, 30);
+    }
+    @media only screen and (max-width: $land-tablet) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+    @media only screen and (max-width: $tablet) {
+        @include font(16, 24);
+        gap: 10px;
+    }
+    @media only screen and (max-width: $mobile) {
+        margin-bottom: 15px;
+    }
+    li {
+        padding: 0 0 0 78px;
+        position: relative;
+        @media only screen and (max-width: $l-deck) {
+            padding: 0 0 0 58px;
+        }
+        @media only screen and (max-width: $s-deck) {
+            padding: 0 0 0 50px;
+        }
+        @media only screen and (max-width: $mobile) {
+            padding-left: 25px;
+        }
+        &:nth-child(odd) {
+            width: calc(37% - 78px);
+            @media only screen and (max-width: $l-deck) {
+                width: calc(37% - 58px);
+            }
+            @media only screen and (max-width: $s-deck) {
+                width: calc(37% - 50px);
+            }
+            @media only screen and (max-width: $land-tablet) {
+                width: 100%;
+            }
+        }
+        &:nth-child(even) {
+            width: calc(63% - 78px);
+            @media only screen and (max-width: $l-deck) {
+                width: calc(63% - 58px);
+            };
+            @media only screen and (max-width: $s-deck) {
+                width: calc(63% - 50px);
+            };
+            @media only screen and (max-width: $land-tablet) {
+                width: 100%;
+            }
+        }
+        &::before {
+            content: ' ';
+            background: url("./../../assets/images/remove-delete-sign-bold.svg") 0 0 no-repeat ;
+            width: 78px;
+            height: 72px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media only screen and (max-width: $l-deck) {
+                width: 58px;
+                height: 52px;
+                background-size: contain;
+
+            }
+            @media only screen and (max-width: $tablet) {
+                width: 28px;
+                height: 22px;
+            }
+        }
+    }
+}
+
+.valueList {
+    padding: 58px 14% 0 0;
+    @media only screen and (max-width: $xl-deck) {
+        padding: 35px 5% 0 0;
+    }
+    @media only screen and (max-width: $l-deck) {
+        padding-top: 25px;
+    }
+    @media only screen and (max-width: $m-deck) {
+        padding: 15px 20px 0 0;
+    }
+    @media only screen and (max-width: $land-tablet) {
+        padding-right: 0;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 22px;
+        @include font(30, 38);
+        margin-bottom: 10px;
+        @media only screen and (max-width: $xl-deck) {
+           margin-bottom: 20px;
+            @include font(28, 32);
+        }
+        @media only screen and (max-width: $l-deck) {
+            @include font(24, 30);
+        }
+        @media only screen and (max-width: $s-deck) {
+            gap: 15px;
+            @include font(22, 28);
+        }
+        @media only screen and (max-width: $land-tablet) {
+            @include font(20, 26);
+            justify-content: flex-start;
+        }
+        @media only screen and (max-width: $tablet) {
+            @include font(16, 22);
+            margin-bottom: 15px;
+        }
+        @media only screen and (max-width: $mobile) {
+            gap: 10px;
+        }
+        .iconHolder {
+            @include circle(100);
+            background-color: $yellow-light-color;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (max-width: $s-deck) {
+                @include circle(75);
+            }
+            @media only screen and (max-width: $tablet) {
+                @include circle(50);
+            }
+            svg {
+                display: block;
+                width: 75%;
+                height: 75%;
+            }
+        }
+    }
+    .title {
+        color: $main-color;
+        font-family: 'MontserratAlternates-SemiBold';
+        margin: 0;
+    }
+}
+//sub pages 
+.cardsList {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include font(30, 45);
+    text-align: center;
+    @media only screen and (max-width: $xl-deck) {
+        @include font(22, 30);
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    @media only screen and (max-width: $l-deck) {
+        @include font(20, 28);
+    }
+    @media only screen and (max-width: $m-deck) {
+        @include font(18, 26);
+    }
+    @media only screen and (max-width: $s-deck) {
+        gap: 12px;
+    }
+    @media only screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+    }
+    @media only screen and (max-width: $mobile) {
+        @include font(16, 22);
+    }
+    > div {
+        background-color: $blue-light-color;
+        border-radius: 25px;
+        padding: 20px;
+        width: calc(33% - 13px);
+        @media only screen and (max-width: $m-deck) {
+            padding: 15px;
+        }
+        @media only screen and (max-width: $s-deck) {
+            padding: 15px 15px 5px;
+            width: calc(33% - 4px);
+        }
+        @media only screen and (max-width: $tablet) {
+            width: 100%;
+        }
+        .imgHolder {
+            position: relative;
+            width: 100%;
+            height: 182px;
+            margin-bottom: 17px;
+            @media only screen and (max-width: $xl-deck) {
+                height: 160px;
+            }
+            @media only screen and (max-width: $m-deck) {
+                height: 140px;
+            }
+            @media only screen and (max-width: $mobile) {
+                height: auto;
+            }
+            img {
+                border-radius: 25px;
+                overflow: hidden;
+                z-index: 2;
+                position: relative;
+                display: inline-block;
+            }
+            &::before {
+                content: ' ';
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: $blue-color;
+                transform: rotate(-3deg);
+                border-radius: 25px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.itemsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0 160px;
+    @include font(34, 46);
+    margin-bottom: 20px;
+    @media only screen and (max-width: $xl-deck) {
+        gap: 0 45px;
+    }
+    @media only screen and (max-width: $l-deck) {
+        @include font(28, 36);
+    }
+    @media only screen and (max-width: $m-deck) {
+        @include font(24, 32);
+    }
+    @media only screen and (max-width: $land-tablet) {
+        grid-template-rows: repeat(10, 1fr);
+        gap: 0 80px;
+        grid-template-columns: repeat(5, 1fr);
+        &.correctMobileHeight {
+            grid-template-rows: repeat(10, auto);
+        }
+    }
+    @media only screen and (max-width: $tablet) {
+        margin-left: 0;
+        @include font(18, 24);
+    }
+    @media only screen and (max-width: $mobile) {
+        @include font(16, 18);
+    }
+    &.treeColumns {
+        grid-template-columns: repeat(6, 1fr);
+        @media only screen and (max-width: $land-tablet) {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+        li {
+            grid-column: span 2;
+            @media only screen and (max-width: $land-tablet) {
+                grid-column: span 3;
+            }
+            @media only screen and (max-width: $mobile) {
+                grid-column: span 4;
+            }
+            &.first2row {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                &.arrowVer2::after {
+                    left: 100px;
+                    @media only screen and (max-width: $l-deck) {
+                        left: 75px;
+                    }
+                    @media only screen and (max-width: $land-tablet) {
+                        left: 56%;
+                        bottom: -45px;
+                    }
+                    @media only screen and (max-width: $tablet) {
+                        left: 47%;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        left: 38%;
+                    }
+                }
+            }
+            &.last2row {
+                grid-column-start: 4;
+                grid-column-end: 7;
+                @media only screen and (max-width: $land-tablet) {
+                    grid-column: 3 / span 3;
+                }
+                &.arrowVer1::after {
+                    @media only screen and (max-width: $land-tablet) {
+                        left: -85px;
+                        right: auto;
+                        bottom: 40px;
+                        top: auto;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        bottom: 15px;
+                    }
+                }
+            }
+            &.fullRow {
+                grid-column: span 6;
+            }
+            &.arrowVer1::after {
+                @media only screen and (max-width: $land-tablet) {
+                    left: 60%;
+                    bottom: -25px;
+                }
+                @media only screen and (max-width: $tablet) {
+                    left: 57%;
+                }
+                @media only screen and (max-width: $mobile) {
+                    left: 36%;
+                }
+            }
+            &.arrowVer2::after {
+                @media only screen and (max-width: $land-tablet) {
+                    bottom: 30px;
+                }
+                @media only screen and (max-width: $mobile) {
+                    bottom: 5px;
+                }
+            }
+            &.arrowVer3::before {
+                @media only screen and (max-width: $land-tablet) {
+                    left: -95px;
+                    top: -30px;
+                    bottom: auto;
+                }
+            }
+
+        }
+    }
+    li, li.changeOrder > div {
+        position: relative;
+        text-align: center;
+        @media only screen and (max-width: $land-tablet) {
+            display: flex;
+            text-align: left;
+            grid-column: 1 / span 4;
+            &:nth-child(even) {
+                grid-column: 3 / span 3;
+            }
+        }
+        @media only screen and (max-width: $tablet) {
+            min-height: 65px;
+        }
+        @media only screen and (max-width: $mobile) {
+            gap: 5px;
+        }
+        .iconHolder {
+            @include circle(150);
+            background-color: $blue-light-color;
+            margin: 0 auto -7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (max-width: $xl-deck) {
+                @include circle(113);
+            }
+            @media only screen and (max-width: $s-deck) {
+                @include circle(75);
+            }
+            @media only screen and (max-width: $land-tablet) {
+                margin: 0;
+                flex-basis: 75px;
+                flex-shrink: 0;
+            }
+            @media only screen and (max-width: $tablet) {
+                flex-basis: 50px;
+                @include circle(50);
+            }
+            svg {
+                    width: 100px;
+                    display: inline-block;
+                    @media only screen and (max-width: $xl-deck) {
+                        width: 75px;
+                    }
+                    @media only screen and (max-width: $s-deck) {
+                        width: 50px;
+                    }
+                    @media only screen and (max-width: $tablet) {
+                        width: 25px;
+                    }
+                }
+            @media only screen and (max-width: $mobile) {
+                
+            }
+        }
+        .markBlueColor {
+            font-family: 'MontserratAlternates-SemiBold';
+        }
+        p {
+            margin-bottom: 0;
+        }
+        &.first2row {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            @media only screen and (max-width: $land-tablet) {
+                grid-column: 3 / span 3;
+                grid-row-start: auto;
+                grid-row-end: auto;
+            }
+        }
+        &.last2row {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            @media only screen and (max-width: $land-tablet) {
+                grid-column: 1 / span 4;
+            }
+        }
+        &.arrowVer1 {
+                &::after {
+                content: ' ';
+                background: url("./../../assets/images/arrowVer1.svg") 0 0 no-repeat ;
+                background-size: contain;
+                width: 205px;
+                height: 87px;
+                position: absolute;
+                right: -200px;
+                top: 0;
+                @media only screen and (max-width: $xl-deck) {
+                    right: -130px;
+                    width: 185px;
+                    height: 67px;
+                }
+                @media only screen and (max-width: $s-deck) {
+                    width: 103px;
+                    height: 44px;
+                    right: -70px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    background-image: url("./../../assets/images/arrowVer1-mob.svg");
+                    right: auto;
+                    top: auto;
+                    left: calc(50% - 40px); /*for gap 80px
+                    bottom: -40px;
+                    width: 72px;
+                    height: 36px;
+                }
+                @media only screen and (max-width: $tablet) {
+                    bottom: -30px;
+                }
+                @media only screen and (max-width: $mobile) {
+                }
+            }
+            &.last2row::after, &.fullRow::after {
+                right: 95px;
+                top: 40px;
+                transform: rotate(140deg);
+                @media only screen and (max-width: $l-deck) {
+                    right: 75px;
+                    top: 0;
+                }
+                @media only screen and (max-width: $m-deck) {
+                    right: 50px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    top: -40px;
+                }
+            }
+            @media only screen and (max-width: $land-tablet) {
+                &.correctMobileArrow::after {
+                        transform: scale(-1) rotate(-45deg);
+                        bottom: 10px;
+                        left: -75px;
+                    }
+            }
+        }
+        &.arrowVer2 {
+                &::after {
+                content: ' ';
+                background: url("./../../assets/images/arrowVer2.svg") 0 0 no-repeat ;
+                background-size: contain;
+                width: 193px;
+                height: 29px;
+                position: absolute;
+                right: -188px;
+                top: 80px;
+                @media only screen and (max-width: $xl-deck) {
+                    right: -120px;
+                    width: 173px;
+                    height: 23px;
+                }
+                @media only screen and (max-width: $s-deck) {
+                    width: 97px;
+                    height: 15px;
+                    right: -70px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    background-image: url("./../../assets/images/arrowVer2-mob.svg");
+                    left: -80px;
+                    right: auto;
+                    top: auto;
+                    bottom: 8px;
+                    width: 68px;
+                    height: 30px;
+                }
+            }
+            &.first2row::after {
+                top: auto;
+                right: auto;
+                bottom: 107px;
+                left: 123px;
+                transform: rotate(128deg);
+                @media only screen and (max-width: $l-deck) {
+                    bottom: 65px;
+                    left: 85px;
+                }
+                @media only screen and (max-width: $m-deck) {
+                    left: 65px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    transform: rotate(0deg);
+                    left: -70px;
+                    bottom: 10px;
+                }
+            }
+            @media only screen and (max-width: $land-tablet) {
+                &.correctMobileArrow::after {
+                    background-image: url("./../../assets/images/arrowVer3-mob.svg");
+                        left: calc(50% - 50px);
+                        bottom: -30px;
+                        width: 93px;
+                        height: 51px;
+                }
+            }
+        }
+        &.arrowVer3 {
+                &::before {
+                content: ' ';
+                background: url("./../../assets/images/arrowVer3.svg") 0 0 no-repeat ;
+                background-size: contain;
+                width: 468px;
+                height: 138px;
+                position: absolute;
+                left: -320px;
+                bottom: 52px;
+                @media only screen and (max-width: $xl-deck) {
+                    width: 438px;
+                    height: 108px;
+                    left: -220px;
+                    bottom: 90px;
+                }
+                @media only screen and (max-width: $s-deck) {
+                    width: 234px;
+                    height: 69px;
+                    left: -140px;
+                }
+                @media only screen and (max-width: $land-tablet) {
+                    background-image: url("./../../assets/images/arrowVer3-mob.svg");
+                    left: calc(50% - 50px);
+                    right: auto;
+                    top: auto;
+                    bottom: -30px;
+                    width: 93px;
+                    height: 51px;
+                }
+            }
+        }
+        &.lastPoint {
+            &::after {
+                display: none;
+            }
+        }
+        &.changeOrder {
+            display: grid;
+            grid-column: span 4;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            @media only screen and (max-width: $land-tablet) {
+                grid-column: span 5;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 0 80px;
+            }
+        }
+    }
+}
+.linksFooterList {
+    gap: 20px 47px;
+    @include font(26, 32);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    @media only screen and (max-width: $xl-deck) {
+        gap: 10px 27px;
+        @include font(24, 30);
+    }
+    @media only screen and (max-width: $l-deck) {
+        gap: 10px;
+        @include font(22, 28);
+        grid-template-rows: repeat(4, 85px);
+    }
+    @media only screen and (max-width: $m-deck) {
+        @include font(18, 24);
+        grid-template-rows: repeat(4, 70px);
+    }
+    @media only screen and (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 75px);
+    }
+    @media only screen and (max-width: $mobile) {
+        @include font(16, 22);
+    }
+    > * {
+        border-radius: 25px;
+        padding: 0 12px;
+        background-color: $yellow-light-color;
+        &:nth-child(even) {
+            background-color: $blue-light-color;
+        }
+        a {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            font-family: 'MontserratAlternates-Regular';
+            span {
+                align-self: center;
+            }
+            &.font40 {
+                @include font(40, 46);
+                @media only screen and (max-width: $xl-deck) {
+                    @include font(36, 42);
+                }
+                @media only screen and (max-width: $l-deck) {
+                    @include font(34, 40);
+                }
+                @media only screen and (max-width: $m-deck) {
+                    @include font(20, 26);
+                }
+            }
+            &.font30 {
+                @include font(30, 36);
+                @media only screen and (max-width: $xl-deck) {
+                    @include font(28, 34);
+                }
+                @media only screen and (max-width: $l-deck) {
+                    @include font(26, 32);
+                }
+                @media only screen and (max-width: $m-deck) {
+                    @include font(20, 26);
+                }
+                @media only screen and (max-width: $mobile) {
+                    @include font(16, 22);
+                }
+            }
+        }
+    }
+}
+.pointList {
+    border-radius: 25px;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media only screen and (max-width: $xl-deck) {
+        padding: 30px 40px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+        padding: 20px 30px;
+        gap: 20px;
+    }
+    @media only screen and (max-width: $tablet) {
+        gap: 10px;
+        padding: 15px 20px;
+    }
+    @media only screen and (max-width: $mobile) {
+        padding: 10px 15px;
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+        gap: 104px;
+        justify-content: flex-start;
+        @media only screen and (max-width: $xl-deck) {
+            gap: 40px;
+        }
+        @media only screen and (max-width: $mobile) {
+            gap: 10px;
+        }
+        svg {
+            width: 100px;
+            height: 90px;
+            flex: 0 0 100px;
+            @media only screen and (max-width: $m-deck) {
+                width: 66px;
+                height: 60px;
+                flex: 0 0 66px;
+            }
+            @media only screen and (max-width: $tablet) {
+                width: 33px;
+                height: 30px;
+                flex: 0 0 33px;
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+// Sliders
+.swiper {
+    width: 600px;
+    height: 800px;
+    @media only screen and (max-width: $xl-deck) {
+        width: 500px;
+        height: 700px;
+    }
+    @media only screen and (max-width: $l-deck) {
+        width: 400px;
+        height: 600px;
+    }
+    @media only screen and (max-width: $s-deck) {
+        width: 300px;
+        height: 500px;
+	}
+    @media only screen and (max-width: $land-tablet) {
+        margin-bottom: 100px;
+    }
+    @media only screen and (max-width: $tablet) {
+        width: 200px;
+        height: 300px;
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 50px;
+        text-align: center;
+        @include font(50, 60);
+        padding: 50px 70px;
+        @media only screen and (max-width: $xl-deck) {
+            @include font(40, 50);
+            border-radius: 40px;
+            padding: 40px 60px;
+        }
+        @media only screen and (max-width: $l-deck) {
+            @include font(30, 40);
+        }
+        @media only screen and (max-width: $s-deck) {
+            @include font(22, 30);
+        }
+        @media only screen and (max-width: $tablet) {
+            @include font(18, 26);
+            padding: 20px;
+        }
+        .title {
+            font-family: 'MontserratAlternates-SemiBold';
+            margin-bottom: 30px;
+            padding-top: 30px;
+            @media only screen and (max-width: $tablet) {
+                margin-bottom: 10px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+.swiper, .swiper2, .swiper3 {
+    .swiper-button-prev, .swiper-button-next {
+        left: -205px;
+        right: auto;
+        transform: translateY(-75px);
+        @include circle(100);
+        background: #D9D9D9;
+        @media only screen and (max-width: $s-deck) {
+            @include circle(75);
+            left: -135px;
+            transform: translateY(-65px);
+        }
+        &:hover {
+            background: #868282;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-next {
+        transform: translateY(65px);
+        @media only screen and (max-width: $s-deck) {
+            transform: translateY(55px);
+        }
+    }
+}
+@media only screen and (max-width: $land-tablet) {
+    .swiper {
+        .swiper-button-prev, .swiper-button-next {
+            left: 50%;
+            bottom: 0;
+            top: auto;
+            transform: translate(-85px, 100px) rotate(-90deg);
+        }
+        .swiper-button-next {
+            transform: translate(20px, 100px) rotate(-90deg);
+        }
+    }
+}
+.swiper2 {
+    position: relative;
+    height: 752px;
+    overflow: hidden;
+    @media only screen and (max-width: $xl-deck) {
+        height: 652px;
+    }
+    @media only screen and (max-width: $l-deck) {
+        height: 552px;
+    }
+    @media only screen and (max-width: $mobile) {
+        position: unset;
+    } 
+    .swiper-wrapper {
+        padding-left: 157px;
+        width: max-content;
+        @media only screen and (max-width: $xl-deck) {
+            padding-left: 130px;
+        }   
+        @media only screen and (max-width: $s-deck) {
+            padding-left: 80px;
+        }    
+        @media only screen and (max-width: $mobile) {
+            padding: 0;
+        }  
+    }
+    .swiper-slide {
+        height: 752px; // + 8px shadow
+        width: 602px;   // + 8px shadow
+        text-align: center;
+        @include font(30, 40);
+        @media only screen and (max-width: $xl-deck) {
+            height: 652px;
+            width: 502px;
+            @include font(24, 34);
+        }
+        @media only screen and (max-width: $l-deck) {
+            height: 552px;
+            width: 402px;
+            @include font(18, 26);
+        }
+        @media only screen and (max-width: $s-deck) {
+            height: 502px;
+            width: 352px;
+        } 
+        @media only screen and (max-width: $mobile) {
+            width: 100%;
+            max-width: 314px;
+        }
+        .contentHolder {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+            margin: 8px;
+            height: calc(100% - 16px);
+            padding: 0 11px;
+        }
+        .imgHolder {
+            @include circle(300);
+            background: #C4C4C4;
+            margin: 13px auto 30px;
+            @media only screen and (max-width: $xl-deck) {
+                @include circle(250);
+                margin: 10px auto 20px;
+            }
+            @media only screen and (max-width: $s-deck) {
+                @include circle(200);
+                margin: 10px auto 15px;
+            }
+        }
+        .title {
+            color: $main-color;
+            font-family: 'MontserratAlternates-SemiBold';
+            padding: 0 20px;
+            margin: 0;
+        }    
+    }
+    .swiper-button-prev, .swiper-button-next {
+        left: 0;
+        @media only screen and (max-width: $mobile) {
+            top: auto;
+            left: 50%;
+            transform: translate(-75px, 0);
+            bottom: -75px;
+        }
+    }
+    .swiper-button-next {
+        @media only screen and (max-width: $mobile) {
+            transform: translate(20px, 0);
+        }
+    }
+}
+.swiper3 {
+    overflow: hidden;
+    padding-bottom: 140px;
+    position: relative;
+    @media only screen and (max-width: $xl-deck) {
+        padding-bottom: 120px;
+    }
+    @media only screen and (max-width: $s-deck) {
+        padding-bottom: 90px;
+    }
+    .swiper-slide {
+        height: 748px; // + 8px shadow  
+        text-align: center;
+        @include font(30, 40);
+        @media only screen and (max-width: $xl-deck) {
+            height: 648px;
+            @include font(22, 28);
+        }
+        @media only screen and (max-width: $l-deck) {
+            height: 548px;
+        }
+        @media only screen and (max-width: $m-deck) {
+            height: 500px;
+            @include font(18, 24);
+        }
+        @media only screen and (max-width: $s-deck) {
+            height: 548px;
+        }
+        @media only screen and (max-width: $tablet) {
+            height: 448px;
+        }
+        @media only screen and (max-width: $mobile) {
+            height: 498px;
+        }
+        .contentHolder {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+            margin: 8px;
+            height: calc(100% - 12px);
+            padding: 0 15px;
+        }
+        .imgHolder {
+            @include circle(300);
+            background: #C4C4C4;
+            margin: 34px auto 30px;
+            @media only screen and (max-width: $xl-deck) {
+                @include circle(250);
+                margin: 20px auto;
+            }
+            @media only screen and (max-width: $l-deck) {
+                @include circle(200);
+            }
+            @media only screen and (max-width: $l-deck) {
+                margin: 5px auto;
+            }
+        }
+        .title {
+            color: $main-color;
+            font-family: 'MontserratAlternates-SemiBold';
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        left: 50%;
+        bottom: 0;
+        top: auto;
+        transform: translate(20px, 0) rotate(-90deg);
+    }
+    .swiper-button-prev {
+        transform: translate(-120px, 0) rotate(-90deg);
+        @media only screen and (max-width: $mobile) {
+            transform: translate(-90px, 0) rotate(-90deg);
+        }
+    }
+}*/
