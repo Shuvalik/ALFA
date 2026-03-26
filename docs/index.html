@@ -38,30 +38,23 @@
     <header id="header">
   <div class="headerMain">
       <div class="container">
-        <div class="logo">
-          <a href="." class="logoImage">
+        <div class="logoHolder">
+          <a href="." class="logo">
             <picture>
               <!-- <source media="(max-width: 767px)" data-srcset="./assets/images/logo-mob.png" 
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="/> -->
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="/> -->
               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="lazy"
                 data-src="./assets/images/logo.png" />
             </picture>
           </a>
-          <h1 id="h1">
-            <a href=".">
-              
-            </a>
-          </h1>
         </div>
-        <div class="phone">
-          <a href="tel:+380676998752">
-            +38(067)699 87 52
-          </a>
-        </div>
+        <span class="phone">
+            +38 (066) 651 51 06
+        </span>
         <div class="holderButton">
           <button id="contactBtn" class="btn my-gradient" onclick="showContactForm()">
           <span>
-            Записатись
+            Зв’язатись
           </span>
         </button>
         </div>
@@ -84,50 +77,59 @@
   </nav>
   <div class="overlight"></div> -->
 </header>
-<!-- 
+
     <main>
+      <header>
+        <h1 class="screen-reader-text">Центр сучасної освіти АЛЬФА</h1>
+      </header>
       <section id="main-part" class="campaign">
         <div id="first-bg" class="bg-image-holder">
           <picture>
-            <source media="(min-width: 768px)"
+            <!-- <source media="(min-width: 768px)"
               data-srcset="./assets/images/foto.jpg 1x, ./assets/images/foto@2x.jpg 2x, ./assets/images/foto@3x.jpg 3x" />
-            <source media="(min-width: 360px)" data-srcset="./assets/images/foto-mob.jpg" />
-            <img class="lazy" data-src="./assets/images/foto@3x.jpg"
+            <source media="(min-width: 360px)" data-srcset="./assets/images/foto-mob.jpg" /> -->
+            <img class="lazy" data-src="./assets/images/campaign.jpg"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
           </picture>
         </div>
         <div class="text-holder ">
           <div class="container">
-            <h1 class="h1">З нами діти отримують задоволення від навчання</h1>
+            <h3 class="h3">Кожна дитина -
+              <span class="boxRightText"> окрема історія успіху! </span>
+            </h3>
             <ul class="sotial-links">
               <li>
-                <a href="https://www.facebook.com/harmony.km.ua" target="_blank" rel="noreferrer nofolow"
-                  title="Facebook">
-                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M150 106.425C150 133.725 133.725 150 106.425 150H97.5C93.375 150 90 146.625 90 142.5V99.225C90 97.2 91.65 95.475 93.675 95.475L106.875 95.25C107.925 95.175 108.825 94.425 109.05 93.375L111.675 79.05C111.9 77.7 110.85 76.425 109.425 76.425L93.45 76.65C91.35 76.65 89.7 75 89.625 72.975L89.325 54.6C89.325 53.4 90.3 52.3501 91.575 52.3501L109.575 52.05C110.85 52.05 111.825 51.0751 111.825 49.8001L111.525 31.7999C111.525 30.5249 110.55 29.55 109.275 29.55L89.025 29.8501C76.575 30.0751 66.675 40.275 66.9 52.725L67.275 73.35C67.35 75.45 65.7 77.1 63.6 77.175L54.6 77.325C53.325 77.325 52.3501 78.3 52.3501 79.575L52.5751 93.825C52.5751 95.1 53.55 96.075 54.825 96.075L63.825 95.925C65.925 95.925 67.575 97.575 67.65 99.6L68.325 142.35C68.4 146.55 65.025 150 60.825 150H43.575C16.275 150 0 133.725 0 106.35V43.575C0 16.275 16.275 0 43.575 0H106.425C133.725 0 150 16.275 150 43.575V106.425Z"
-                      fill="#001C2A" fill-opacity="0.5" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/harmony.km.ua/" target="_blank" rel="noreferrer nofolow"
+                <a href="https://www.instagram.com/alfa.km.ua/" target="_blank" rel="noreferrer nofolow"
                   title="Instagram">
-                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M44.0791 0.45C52.0792 0.0833181 54.6292 0 75 0C95.3748 0 97.9207 0.0874772 105.916 0.45C113.904 0.812523 119.358 2.08336 124.129 3.9375C129.133 5.82143 133.666 8.77323 137.412 12.5875C141.227 16.3336 144.179 20.8668 146.063 25.8708C147.916 30.6417 149.183 36.0959 149.55 44.0791C149.917 52.0792 150 54.6292 150 75C150 95.3707 149.913 97.9207 149.55 105.921C149.187 113.904 147.916 119.358 146.063 124.129C144.146 129.059 141.579 133.246 137.412 137.412C133.666 141.227 129.133 144.179 124.129 146.063C119.358 147.916 113.904 149.183 105.921 149.55C97.9207 149.917 95.3707 150 75 150C54.6292 150 52.0792 149.913 44.0791 149.55C36.0959 149.187 30.6417 147.916 25.8708 146.063C20.9416 144.146 16.7542 141.579 12.5875 137.412C8.77254 133.666 5.82055 129.133 3.9375 124.129C2.08336 119.358 0.816682 113.904 0.45 105.921C0.0833181 97.9207 0 95.3748 0 75C0 54.625 0.0874772 52.0792 0.45 44.0834C0.812523 36.0959 2.08336 30.6417 3.9375 25.8708C5.82143 20.8671 8.77323 16.3342 12.5875 12.5875C16.3336 8.77254 20.8667 5.82055 25.8708 3.9375C30.6417 2.08336 36.0959 0.816682 44.0791 0.45ZM105.308 13.95C97.3998 13.5916 95.025 13.5125 75 13.5125C54.975 13.5125 52.6 13.5916 44.6917 13.95C37.3792 14.2833 33.4083 15.5041 30.7666 16.5333C27.2667 17.8917 24.7666 19.5166 22.1416 22.1416C19.5209 24.7666 17.8917 27.2667 16.5333 30.7666C15.5041 33.4083 14.2833 37.3792 13.95 44.6917C13.5916 52.6 13.5125 54.975 13.5125 75C13.5125 95.025 13.5916 97.3998 13.95 105.308C14.2833 112.621 15.5041 116.592 16.5333 119.234C17.7348 122.491 19.6513 125.438 22.1416 127.859C24.5614 130.349 27.5087 132.265 30.7666 133.467C33.4083 134.496 37.3792 135.717 44.6917 136.05C52.6 136.409 54.9708 136.488 75 136.488C95.0291 136.488 97.3998 136.409 105.308 136.05C112.621 135.717 116.592 134.496 119.234 133.467C122.733 132.108 125.234 130.484 127.859 127.859C130.349 125.439 132.265 122.491 133.467 119.234C134.496 116.592 135.717 112.621 136.05 105.308C136.409 97.3998 136.488 95.025 136.488 75C136.488 54.975 136.409 52.6 136.05 44.6917C135.717 37.3792 134.496 33.4083 133.467 30.7666C132.108 27.2667 130.484 24.7666 127.859 22.1416C125.234 19.5209 122.733 17.8917 119.234 16.5333C116.592 15.5041 112.621 14.2833 105.308 13.95ZM65.4239 98.1198C68.46 99.3777 71.7136 100.025 75 100.025C81.6375 100.025 88.0023 97.3882 92.6952 92.6952C97.3889 88.0023 100.025 81.6368 100.025 75C100.025 68.3632 97.3889 61.9977 92.6952 57.3046C88.0023 52.6115 81.6375 49.975 75 49.975C71.7136 49.975 68.46 50.6223 65.4239 51.8799C62.387 53.1375 59.6286 54.9808 57.3048 57.3046C54.9811 59.6284 53.1377 62.387 51.8801 65.4232C50.6225 68.4593 49.9752 71.7136 49.9752 75C49.9752 78.2864 50.6225 81.5407 51.8801 84.5768C53.1377 87.613 54.9811 90.3716 57.3048 92.6952C59.6286 95.0189 62.387 96.8625 65.4239 98.1198ZM47.7413 47.741C54.9708 40.5115 64.7761 36.4499 75 36.4499C85.2245 36.4499 95.0298 40.5115 102.259 47.741C109.488 54.9705 113.55 64.7761 113.55 75C113.55 85.2239 109.488 95.0291 102.259 102.259C95.0298 109.488 85.2245 113.55 75 113.55C64.7761 113.55 54.9708 109.488 47.7413 102.259C40.5117 95.0291 36.4502 85.2239 36.4502 75C36.4502 64.7761 40.5117 54.9705 47.7413 47.741ZM122.098 42.1935C123.807 40.4845 124.767 38.1668 124.767 35.75C124.767 33.3331 123.807 31.0154 122.098 29.3065C120.389 27.5975 118.071 26.6375 115.654 26.6375C113.238 26.6375 110.92 27.5975 109.211 29.3065C107.502 31.0154 106.542 33.3331 106.542 35.75C106.542 38.1668 107.502 40.4845 109.211 42.1935C110.92 43.9024 113.238 44.8625 115.654 44.8625C118.071 44.8625 120.389 43.9024 122.098 42.1935Z"
-                      fill="#001C2A" fill-opacity="0.5" />
+                  <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.6 0H7.54302C3.38322 0 0 3.28132 0 7.31585V20.6761C0 24.7106 3.38322 27.9919 7.54302 27.9919H22.6C26.7598 27.9919 30.143 24.7106 30.143 20.6761V7.31585C30.143 3.28132 26.7598 0 22.6 0ZM2.66061 7.31585C2.66061 4.70448 4.85057 2.58048 7.54302 2.58048H22.6C25.2925 2.58048 27.4824 4.70448 27.4824 7.31585V20.6761C27.4824 23.2875 25.2925 25.4114 22.6 25.4114H7.54302C4.85057 25.4114 2.66061 23.2875 2.66061 20.6761V7.31585Z"
+                      fill="#FF5B07" fill-opacity="0.5" />
+                    <path
+                      d="M15.0708 20.8009C18.9399 20.8009 22.0878 17.7479 22.0878 13.9953C22.0878 10.2427 18.9399 7.18964 15.0708 7.18964C11.2017 7.18964 8.05382 10.2427 8.05382 13.9953C8.05382 17.7479 11.2017 20.8009 15.0708 20.8009ZM15.0708 9.77146C17.4726 9.77146 19.4258 11.6659 19.4258 13.9953C19.4258 16.3247 17.4726 18.2191 15.0708 18.2191C12.6691 18.2191 10.7158 16.3247 10.7158 13.9953C10.7158 11.6659 12.6691 9.77146 15.0708 9.77146Z"
+                      fill="#FF5B07" fill-opacity="0.5" />
+                    <path
+                      d="M22.7384 8.28793C23.7808 8.28793 24.6294 7.46491 24.6294 6.45393C24.6294 5.44295 23.7808 4.61993 22.7384 4.61993C21.6961 4.61993 20.8475 5.44295 20.8475 6.45393C20.8475 7.46491 21.6961 8.28793 22.7384 8.28793Z"
+                      fill="#FF5B07" fill-opacity="0.5" />
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="https://www.tiktok.com/@harmony_private_school" target="_blank" rel="noreferrer nofolow"
-                  title="TikTok">
-                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="150" height="150" rx="25" fill="#001C2A" fill-opacity="0.5" />
+                <a href="https://t.me/ContentTeamBot" target="_blank" rel="noreferrer nofolow" title="Telegram">
+                  <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M106.703 0H81.4238V102.174C81.4238 114.348 71.7012 124.348 59.6016 124.348C47.5021 124.348 37.7793 114.348 37.7793 102.174C37.7793 90.2175 47.2861 80.4346 58.9536 80V54.3479C33.242 54.7825 12.5 75.8696 12.5 102.174C12.5 128.696 33.6741 150 59.8178 150C85.9611 150 107.135 128.478 107.135 102.174V49.7825C116.642 56.7392 128.309 60.8696 140.625 61.0871V35.4348C121.612 34.7826 106.703 19.1304 106.703 0Z"
-                      fill="white" fill-opacity="0.9" />
+                      d="M0.791038 10.9126C0.860254 10.8789 0.929467 10.8479 0.998684 10.8182C2.17819 10.2964 3.37324 9.80833 4.56687 9.32022C4.63185 9.32022 4.74061 9.25011 4.79994 9.22449C4.89176 9.18674 4.98357 9.14899 5.0768 9.11123C5.25337 9.03842 5.43136 8.96696 5.60793 8.89415C5.96249 8.74988 6.31564 8.60559 6.6702 8.45997C7.3779 8.17142 8.08703 7.88153 8.79473 7.59298C10.2116 7.01454 11.6284 6.43609 13.0452 5.85764C14.462 5.2792 15.8788 4.70075 17.2957 4.12231C18.7125 3.54386 20.1293 2.96542 21.5461 2.38697C22.963 1.80852 24.3798 1.23008 25.7966 0.651633C26.1116 0.523539 26.4534 0.329367 26.7896 0.272736C27.0736 0.225543 27.3505 0.131168 27.6344 0.0799299C28.1754 -0.0185003 28.7729 -0.0589597 29.2899 0.155429C29.4693 0.229589 29.6332 0.334768 29.773 0.465559C30.4299 1.08715 30.3381 2.1065 30.1996 2.98023C29.2306 9.06942 28.2616 15.1573 27.2911 21.2465C27.1583 22.0811 26.979 22.998 26.2868 23.5252C25.702 23.9715 24.8699 24.0227 24.1495 23.8326C23.4277 23.6425 22.7906 23.242 22.1663 22.847C19.5756 21.2101 16.9849 19.5718 14.3942 17.9349C13.7783 17.5452 13.0932 17.0382 13.1003 16.333C13.1045 15.9083 13.3701 15.5294 13.6413 15.1923C15.8916 12.3904 19.1419 10.4636 21.5575 7.78984C21.8979 7.41364 22.1663 6.73138 21.6987 6.51429C21.4204 6.38485 21.0998 6.56013 20.8469 6.72868C17.6531 8.84695 14.4592 10.9652 11.2653 13.0821C10.2229 13.7725 9.13093 14.4844 7.87514 14.6543C6.75213 14.8067 5.62066 14.5087 4.53297 14.2026C3.62186 13.9465 2.71214 13.6849 1.80526 13.4138C1.32357 13.2709 0.826333 13.1172 0.453411 12.7922C0.0804882 12.4686 -0.13282 11.9239 0.0917806 11.4924C0.231627 11.2214 0.505697 11.0502 0.792452 10.9113L0.791038 10.9126Z"
+                      fill="#FF5B07" fill-opacity="0.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@alfa61233?_r=1" target="_blank" rel="noreferrer nofolow"
+                  title="TikTok">
+                  <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.5676 6.18411V10.5826C22.7468 10.5083 21.6846 10.3334 20.5051 9.92772C18.9668 9.39879 17.8212 8.67498 17.0725 8.11424V17.0066L17.0541 16.9788C17.0669 17.1551 17.0725 17.3341 17.0725 17.5157C17.0725 21.9327 13.2444 25.5265 8.53624 25.5265C3.8281 25.5265 0 21.9314 0 17.5157C0 13.1 3.8281 9.50351 8.53624 9.50351C8.99675 9.50351 9.44879 9.53798 9.89092 9.60426V13.9404C9.46574 13.7973 9.01087 13.7204 8.53624 13.7204C6.30718 13.7204 4.49203 15.4225 4.49203 17.5157C4.49203 19.6089 6.30718 21.311 8.53624 21.311C10.7653 21.311 12.5805 19.6075 12.5805 17.5157C12.5805 17.4375 12.5791 17.3593 12.5734 17.281V0H17.259C17.2759 0.372505 17.2929 0.747662 17.3084 1.12017C17.3395 1.85325 17.6177 2.55716 18.1023 3.13381C18.6715 3.81122 19.5106 4.59864 20.6915 5.227C21.7962 5.81425 22.833 6.06613 23.5676 6.18543V6.18411Z"
+                      fill="#FF5B07" fill-opacity="0.5" />
                   </svg>
                 </a>
               </li>
@@ -137,8 +139,52 @@
       </section>
       <section id="who-are-we">
         <div class="container">
-          <div class="rightLogo">
-            <h2 class="h2"><span class="markGreenColor">Хто </span>ми?</h2>
+          <h2 class="h2"><span class="markOrangeColor">Хто </span>ми?</h2>
+          <div class="summerText">
+            <p>АЛЬФА - це не школа у звичному сенсі.</p>
+            <p>Ми вивчаємо кожну дитину і будуємо навчання навколо неї. Без шаблонів.</p>
+          </div>
+          <div class="colorsBox">
+            <div class="bg-cyan">
+              <div class="iconHolder">
+                <svg width="36" height="36">
+                  <use xlink:href="assets/images/icons-sprite.svg#find-student"></use>
+                </svg>
+              </div>
+              <div class="textHolder">
+                <p class="title">Індивідуальний підхід</p>
+                <p>Кожна дитина в центрі уваги</p>
+              </div>
+            </div>
+            <div class="bg-cyan">
+              <div class="iconHolder">
+                <svg width="37" height="30">
+                  <use xlink:href="assets/images/icons-sprite.svg#teacher"></use>
+                </svg>
+              </div>
+              <div class="textHolder">
+                <p class="title">Досвідчені педагоги</p>
+                <p>Зацікавлені в результаті</p>
+              </div>
+            </div>
+            <div class="bg-orange bigBox">
+              <div class="iconHolder">
+                <svg width="39" height="33">
+                  <use xlink:href="assets/images/icons-sprite.svg#student-with-cat"></use>
+                </svg>
+              </div>
+              <div class="textHolder">
+                <p class="title">Все під одним дахом</p>
+                <p>5 напрямків - один центр.</p>
+                <p>Без зайвих пошуків.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        <div class="rightLogo">
             <a href="/" class="smallLogo">
               <picture>
                 <source media="(max-width: 767px)"
@@ -149,59 +195,8 @@
               </picture>
             </a>
           </div>
-          <div class="summerText">
-            <a href="/" class="mobSmallLogo">
-              <picture>
-                <source media="(max-width: 767px)" data-srcset="./assets/images/minLogo-mob.png"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
-                  class="lazy"
-                  data-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-              </picture>
-            </a>
-            <p>
-              Приватний ліцензований заклад освіти,<br />
-              що поєднує традиції та інновації. <br /></p>
-            <p>Заклад, який приділяє велику увагу якісній<br />
-              академічній складовій з усіх предметів (hard skills),<br />
-              а також розвитку особистісних якостей,<br />
-              завдяки яким учні успішно взаємодіють<br />
-              в команді під час розв’язання будь-яких питань (soft skills).
-            </P>
-          </div>
-          <div class="spotList">
-            <div>
-              <svg>
-                <use xlink:href="assets/images/icons-sprite.svg#calendar"></use>
-              </svg>
-              <span class="number">30+</span>
-              <span class="text">років на ринку освітніх послуг</span>
-            </div>
-            <div>
-              <svg>
-                <use xlink:href="assets/images/icons-sprite.svg#student"></use>
-              </svg>
-              <span class="number">500+</span>
-              <span class="text">випускників</span>
-            </div>
-            <div>
-              <svg>
-                <use xlink:href="assets/images/icons-sprite.svg#teacher"></use>
-              </svg>
-              <span class="number">50+</span>
-              <span class="text">професійних педагогів</span>
-            </div>
-            <div>
-              <svg>
-                <use xlink:href="assets/images/icons-sprite.svg#student-cat"></use>
-              </svg>
-              <span class="number">100+</span>
-              <span class="text">учнів щороку</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="why-choose-us" class="why-choose">
+          
+        <section id="why-choose-us" class="why-choose">
         <div class="container">
           <h2 class="h2">
             <span class="markGreenColor">Чому</span> варто обрати “Гармонію”?
@@ -492,16 +487,6 @@
             <p>Запрошуємо Вашу дитину в ліцей
               на один день, який вона
               проведе, як повноправний учень ”Гармонії!</p>
-          </div>
-          <div class="colorsBox">
-            <div class="bg-yellow">Відвідає уроки за розкладом</div>
-            <div class="bg-blue">Познайомиться з педагогами</div>
-            <div class="bg-yellow">Познайомиться з ліцеїстами</div>
-            <div class="bg-blue">Спробує наше харчування</div>
-            <div class="bg-blue bigBox">Після проведеного дня в ліцеї Ваша дитина зможе
-              самостійно прийняти рішення щодо подальшого навчання, враховуючи власний досвід та відчуття,
-              які в неї виникали протягом дня</div>
-            <button onclick="showContactForm()" class="btn my-gradient"><span>Спробувати безкоштовний день</span></button>
           </div>
         </div>
       </section>
@@ -957,14 +942,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
     </main>
 
-    <footer id="footer">
-  <div class="container">
-    <p>&copy;2023. All right reserved.</p>
-  </div>
-</footer> -->
+    
 
   </div>
   <!-- <div class="holderBtnArrow">
@@ -1056,9 +1037,9 @@
       $('#contact').on('submit', function (e) {
         e.preventDefault();
         setDisabled(true, e);
-        let name =  $(this).find('#name').val(),
-            phone = $(this).find('#phone').val(),
-            email = $(this).find('#email').val();
+        let name = $(this).find('#name').val(),
+          phone = $(this).find('#phone').val(),
+          email = $(this).find('#email').val();
         let errors = findErrors(this, name, phone, email);
         if (errors) {
           setDisabled(false, e);
@@ -1069,8 +1050,10 @@
                 <b>Name: </b> ${name}
                 <b>Email: </b> ${email}
                 <b>Phone: </b> ${phone}`;
-        const apiToken = "5937002187:AAEg04lEC08E5fgb6mTAv0dOJBsZapEcZE0";
-        const chatId = "-1001738000762";
+        //
+        //credentiale in separate file
+        const apiToken = "";
+        const chatId = "";
         fetch(`https://api.telegram.org/bot${apiToken}/sendMessage`, {
           method: 'post',
           headers: {
@@ -1083,15 +1066,15 @@
             parse_mode: 'HTML'
           })
         })
-        .then(response => {
-          $(".mainFormContent").css('visibility', 'hidden');
+          .then(response => {
+            $(".mainFormContent").css('visibility', 'hidden');
             if (response.ok) {
               $(".successMessage").show();
-              
+
               $(".errorMessage").hide();
             } else {
               $(".errorMessage").show();
-              
+
               $(".successMessage").hide();
             }
             const element = document.querySelector('.resultMessage');
@@ -1107,15 +1090,15 @@
         e.preventDefault();
         $(".resultMessage").css('visibility', 'hidden');
         $(".mainFormContent").css('visibility', 'visible');
+      });
     });
-  });
-    
-  
-  function showContactForm() {
-    $('html, body').animate({ scrollTop: $('#contact-us').offset().top }, 1000);
-  }
-  
-  if (Swiper != "undefined") {
+
+
+    function showContactForm() {
+      $('html, body').animate({ scrollTop: $('#contact-us').offset().top }, 1000);
+    }
+
+    if (Swiper != "undefined") {
       const swiper = new Swiper('.swiper', {
         loop: true,
         effect: "cards",

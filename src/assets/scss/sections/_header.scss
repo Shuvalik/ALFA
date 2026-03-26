@@ -1,6 +1,33 @@
-header {
+header  .container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  .logoHolder {
+		flex-basis: 100%;
+		text-align: center;
+		padding: 15px 0;
+  }
+  .logo {
+		display: inline-block;
+		img {
+			max-width: 300px;
+			/*@media only screen and (max-width: $xl-deck) {
+				max-width: 440px;
+			}
+			@media only screen and (max-width: $s-deck) {
+				max-width: 340px;
+			}
+			@media only screen and (max-width: $tablet) {
+				max-width: 225px;
+			}*/
+		}
+	}
+	.phone {
+		@include font (16, 20);
+		font-family: 'MontserratAlternates-SemiBold';
+	}
 }
 /*header#header {
 	z-index: 1000;

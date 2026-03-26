@@ -49,22 +49,23 @@ body {
       max-width: calc(100% - 30px);
     }*/
 }
-/*
+
 .page-wrap {
-  //display: flex;
-  //flex-direction: column;
-  //min-height: 100vh;
-  //position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
 }
+/*
 footer {
   min-height: 100vh;
   @media only screen and (max-width: $mobile) {
       min-height: auto;
   }
-}
+}*/
 main {
   flex-grow: 1;
-  > :first-child {
+  /*> :first-child {
     padding-top: 240px;
     @media only screen and (max-width: $xl-deck) {
       padding-top: 190px;
@@ -89,8 +90,44 @@ main {
     @media only screen and (max-width: $tablet) {
       min-height: auto;
     }
-  }
+  }*/
 }
+.screen-reader-text {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.h3 {
+  @include font(16, 20);
+  font-family: 'MontserratAlternates-Bold';
+}
+.boxRightText {
+  display: block;
+  text-align: right;
+}
+
+.markOrangeColor {
+  color: $orange-color;
+}
+
+.bg-cyan {
+  background-color: $cyan-light-color;
+}
+.bg-orange {
+  background-color: #FFBB8D;
+}
+.title {
+  @include font(12, 18);
+  font-family: 'Montserrat-ExtraBold';
+}
+/*
 .twoColumns {
     display: flex;
     @media only screen and (max-width: $land-tablet) {
@@ -192,11 +229,7 @@ strong {
     @include font(22, 30);
   }
 }
-.h3 {
-  @include font(70, 80);
-  font-family: 'MontserratAlternates-SemiBold';
-  color: $navy-color;
-}
+
 .h4 {
   @include font(50, 60);
   font-family: 'MontserratAlternates-SemiBold';
@@ -234,9 +267,6 @@ strong {
   @media only screen and (max-width: $mobile) {
     @include font(20, 26);
   }
-}
-.markGreenColor {
-  color: $main-color;
 }
 .markBlueColor {
   color: $blue-color;
@@ -312,15 +342,6 @@ strong {
   @media only screen and (max-width: $mobile) {
     @include font(12, 28);
   }
-}
-.bg-green {
-  background-color: $green-lightest-color;
-}
-.bg-yellow {
-  background-color: $yellow-light-color;
-}
-.bg-blue {
-  background-color: $blue-light-color;
 }
 //subpages
 .blueTheme {

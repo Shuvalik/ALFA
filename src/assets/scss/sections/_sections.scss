@@ -1,39 +1,103 @@
 //campaign home page
-/*.campaign {
+.campaign {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
-    @media only screen and (max-width: $tablet) { 
+    padding-bottom: 30px;
+    //height: 100vh;
+    //overflow: hidden;
+    /*@media only screen and (max-width: $tablet) { 
         height: auto;
     }
     .bg-image-holder {
         height: 100%;
-    }
+    }*/
     .text-holder {
         position: absolute;
+        padding-top: 40px;
         width: 100%;
         bottom: 0;
         left: 0;
-        background: linear-gradient(to top, rgba(255, 255, 255, .9) 8%, rgba(255, 255, 255, 0) 100%);
-        @media only screen and (max-width: $tablet) { 
+        background: linear-gradient(to top, $bg-color 8%, rgba(251, 239, 229, 0) 100%);
+        /*@media only screen and (max-width: $tablet) { 
             background: linear-gradient(to top, rgba(255, 255, 255, .9) 8%, rgba(255, 255, 255, .3) 80%, rgba(255, 255, 255, 0) 100%);
+        }*/
+        .container {
+            padding-top: 15px;
         }
-        h1 {
-            text-align: right;
-            margin-bottom: 38px;
-            padding-right: 60px;
-            @media only screen and (max-width: $m-deck) {
+        .h3 {
+            margin-bottom: 5px;
+            /*@media only screen and (max-width: $m-deck) {
                 margin-bottom: 25px;
             }
             @media only screen and (max-width: $tablet) {
                 padding: 0;
                 margin-bottom: 5px;
                 text-align: center;
-            }
+            }*/
         }
     }
 }
-.rightLogo{
+.colorsBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px 13px;
+    padding: 20px 0;
+    @include font(10, 16);
+    /*@media only screen and (max-width: $xl-deck) {
+      @include font(30, 45);
+      padding: 20px 0 0;
+      gap: 20px 30px;
+    }
+    @media only screen and (max-width: $l-deck) {
+      @include font(26, 36);
+    }
+    @media only screen and (max-width: $s-deck) {
+      @include font(24, 32);
+      gap: 10px;
+    }
+    @media only screen and (max-width: $land-tablet) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto) minmax(100px, 100%);
+    }
+    @media only screen and (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto) minmax(100px, 100%);
+        @include font(18, 26);
+    }
+    @media only screen and (max-width: $mobile) {
+        @include font(16, 24);
+        grid-template-rows: repeat(3, auto) minmax(70px, 100%);
+    }*/
+    > div {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 5px;
+        .iconHolder {
+            display: flex;
+            align-items: center;
+        }
+        /*@media only screen and (max-width: $xl-deck) {
+            min-height: 220px;
+        }
+        @media only screen and (max-width: $l-deck) {
+            min-height: 160px;
+        }
+        @media only screen and (max-width: $land-tablet) {
+            min-height: auto;
+        }
+        @media only screen and (max-width: $mobile) {
+            padding: 5px;
+            border-radius: 15px;
+        }*/
+    }
+    .bigBox {
+        grid-column: span 2;
+        justify-content: space-evenly;
+    }
+}
+/*l.rightLogo{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -414,93 +478,7 @@
         }
     }
 }
-.colorsBox {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto); //250px
-    gap: 32px 60px;
-    padding: 66px 20px 0;
-    @include font(40, 50);
-    @media only screen and (max-width: $xl-deck) {
-      @include font(30, 45);
-      padding: 20px 0 0;
-      gap: 20px 30px;
-    }
-    @media only screen and (max-width: $l-deck) {
-      @include font(26, 36);
-    }
-    @media only screen and (max-width: $s-deck) {
-      @include font(24, 32);
-      gap: 10px;
-    }
-    @media only screen and (max-width: $land-tablet) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto) minmax(100px, 100%);
-    }
-    @media only screen and (max-width: $tablet) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto) minmax(100px, 100%);
-        @include font(18, 26);
-    }
-    @media only screen and (max-width: $mobile) {
-        @include font(16, 24);
-        grid-template-rows: repeat(3, auto) minmax(70px, 100%);
-    }
-    > div {
-        min-height: 250px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        border-radius: 25px;
-        padding: 20px;
-        @media only screen and (max-width: $xl-deck) {
-            min-height: 220px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            min-height: 160px;
-        }
-        @media only screen and (max-width: $land-tablet) {
-            min-height: auto;
-        }
-        @media only screen and (max-width: $mobile) {
-            padding: 5px;
-            border-radius: 15px;
-        }
-    }
-    .bigBox {
-        grid-column: span 3;
-        @media only screen and (max-width: $land-tablet) {
-            grid-column: span 2;
-        }
-    }
-    .btn {
-        height: 100%;
-        max-width: 100%;
-        font-family: 'MontserratAlternates-SemiBold';
-        @include font(40, 50);
-        @media only screen and (max-width: $xl-deck) {
-            @include font(30, 40);
-        }
-        @media only screen and (max-width: $l-deck) {
-            @include font(28, 36);
-        }
-        @media only screen and (max-width: $s-deck) {
-            @include font(24, 32);
-        }
-        @media only screen and (max-width: $land-tablet) {
-            grid-column: span 3;
-        }
-        @media only screen and (max-width: $tablet) {
-            grid-column: span 2;
-            padding: 0 15px;
-        }
-        @media only screen and (max-width: $mobile) {
-            padding: 5px;
-            @include font(18, 26);
-            border-radius: 15px;
-        }
-    }
-}
+
 .review {
     .container {
         padding-top: 39px;
