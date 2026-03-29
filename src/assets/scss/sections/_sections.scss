@@ -16,7 +16,7 @@
         width: 100%;
         bottom: 0;
         left: 0;
-        background: linear-gradient(to top, $bg-color 8%, rgba(251, 239, 229, 0) 100%);
+        background: linear-gradient(to top, $bg-color 10%, rgba(251, 239, 229, 0.5) 85%, rgba(251, 239, 229, 0) 100%);
         /*@media only screen and (max-width: $tablet) { 
             background: linear-gradient(to top, rgba(255, 255, 255, .9) 8%, rgba(255, 255, 255, .3) 80%, rgba(255, 255, 255, 0) 100%);
         }*/
@@ -38,11 +38,11 @@
 }
 .colorsBox {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 48%);
     grid-template-rows: repeat(2, auto);
-    gap: 15px 13px;
+    gap: 10px 3%;
     padding: 20px 0;
-    @include font(10, 16);
+    @include font(14, 20);
     /*@media only screen and (max-width: $xl-deck) {
       @include font(30, 45);
       padding: 20px 0 0;
@@ -73,10 +73,17 @@
         display: flex;
         justify-content: space-between;
         border-radius: 15px;
-        padding: 5px;
+        padding: 10px 7px;
+        flex-direction: column;
+        @media (min-width: 435px) {
+            flex-direction: row;
+        }
         .iconHolder {
             display: flex;
             align-items: center;
+        }
+        svg {
+            margin-inline: auto;
         }
         /*@media only screen and (max-width: $xl-deck) {
             min-height: 220px;
@@ -95,6 +102,12 @@
     .bigBox {
         grid-column: span 2;
         justify-content: space-evenly;
+        font-family: 'MontserratAlternates-SemiBold';
+        flex-direction: row;
+        .title {
+            @include font(18, 22);
+        }
+
     }
 }
 /*l.rightLogo{

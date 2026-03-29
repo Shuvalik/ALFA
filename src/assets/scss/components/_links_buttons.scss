@@ -80,7 +80,7 @@
   z-index: 0;
   border-radius: 15px;
   width: 100%;
-  min-width: 113px;
+  min-width: 123px;
   height: 43px;
   color: $white-color;
   display: flex;
@@ -91,7 +91,7 @@
   cursor: pointer;
   transition: all 0.8s ease;
   font-family: 'MontserratAlternates-Bold';
-  @include font(14, 22);
+  @include font(16, 22);
   /*@media only screen and (max-width: $xl-deck) {
     @include font(40, 50);
     max-width: 340px;

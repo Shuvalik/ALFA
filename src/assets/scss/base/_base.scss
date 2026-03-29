@@ -9,7 +9,7 @@ body {
     font-family: $base-font;
     font-weight: 400;
     color: $font-color;
-    @include font(12, 18);
+    @include font(14, 20);
     font-family: 'MontserratAlternates-Regular';
     scroll-behavior: smooth;
     position: relative;
@@ -104,8 +104,13 @@ main {
     width: 1px;
 }
 
+.h2 {
+  @include font(18, 24);
+  font-family: 'MontserratAlternates-SemiBold';
+  margin-bottom: 5px;
+}
 .h3 {
-  @include font(16, 20);
+  @include font(20, 24);
   font-family: 'MontserratAlternates-Bold';
 }
 .boxRightText {
@@ -116,6 +121,9 @@ main {
 .markOrangeColor {
   color: $orange-color;
 }
+.markCyanColor {
+  color: $cyan-light-color;
+}
 
 .bg-cyan {
   background-color: $cyan-light-color;
@@ -124,7 +132,7 @@ main {
   background-color: #FFBB8D;
 }
 .title {
-  @include font(12, 18);
+  @include font(16, 22);
   font-family: 'Montserrat-ExtraBold';
 }
 /*
@@ -206,29 +214,6 @@ strong {
     @include font(22, 30);
   }
 }
-.h2 {
-  @include font(90, 110);
-  font-family: 'MontserratAlternates-SemiBold';
-  color: $navy-color;
-  @media only screen and (max-width: $xl-deck) { 
-    @include font(70, 80);
-  }
-  @media only screen and (max-width: $l-deck) { 
-    @include font(60, 70);
-  }
-  @media only screen and (max-width: $s-deck) { 
-    @include font(50, 60);
-  }
-  @media only screen and (max-width: $land-tablet) {
-    @include font(38, 50);
-  }
-  @media only screen and (max-width: $tablet) { 
-    @include font(30, 40);
-  }
-  @media only screen and (max-width: $mobile) { 
-    @include font(22, 30);
-  }
-}
 
 .h4 {
   @include font(50, 60);
@@ -268,9 +253,7 @@ strong {
     @include font(20, 26);
   }
 }
-.markBlueColor {
-  color: $blue-color;
-}
+
 .markYellowColor {
   color: $yellow-color;
 }
