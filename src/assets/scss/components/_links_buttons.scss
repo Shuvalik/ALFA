@@ -128,7 +128,7 @@
     width: 200%;
     z-index: 1;
     transition: all .8s ease;
-    background: linear-gradient(to right,#158509, #9acd3e);
+    background: linear-gradient(to right, $orange-color, $orange-lighter-color);
   }
   &:hover{
     &::before {

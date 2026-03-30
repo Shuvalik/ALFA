@@ -124,12 +124,17 @@ main {
 .markCyanColor {
   color: $cyan-light-color;
 }
-
 .bg-cyan {
+  background-color: $cyan-color;
+}
+.bg-cyan-light {
   background-color: $cyan-light-color;
 }
 .bg-orange {
-  background-color: #FFBB8D;
+  background-color: $orange-light-color2;
+}
+.bg-orange-darker {
+  background-color: $orange-color;
 }
 .title {
   @include font(16, 22);
