@@ -113,6 +113,15 @@ main {
   @include font(20, 24);
   font-family: 'MontserratAlternates-Bold';
 }
+b {
+  font-family: 'MontserratAlternates-SemiBold';
+}
+strong {
+  font-family: 'MontserratAlternates-Bold';
+}
+.summerText {
+  font-family: 'MontserratAlternates-SemiBold';
+}
 .boxRightText {
   display: block;
   text-align: right;
@@ -130,29 +139,32 @@ main {
 .bg-cyan-light {
   background-color: $cyan-light-color;
 }
+.bg-cyan-lighter {
+  background-color: $cyan-lighter-color2;
+}
 .bg-orange {
   background-color: $orange-light-color2;
 }
 .bg-orange-darker {
   background-color: $orange-color;
 }
+.priceText {
+  color: $orange-color2;
+  @include font(20, 24);
+  font-family: 'MontserratAlternates-SemiBold';
+}
 .title {
   @include font(16, 22);
   font-family: 'Montserrat-ExtraBold';
 }
-/*
 .twoColumns {
     display: flex;
-    @media only screen and (max-width: $land-tablet) {
-      flex-direction: column;
-    }
+    justify-content: space-between;
     > * {
         width: 50%;
-        @media only screen and (max-width: $land-tablet) {
-          width: 100%;
-        }
     }
 }
+/*
 // .twoColumns {
 //     display: flex;
 //     justify-content: space-between;

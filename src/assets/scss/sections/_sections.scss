@@ -102,8 +102,8 @@
     .bigBox {
         grid-column: span 2;
         justify-content: space-evenly;
-        font-family: 'MontserratAlternates-SemiBold';
         flex-direction: row;
+        padding: 10px;
         .title {
             @include font(18, 22);
         }
@@ -143,115 +143,19 @@
                 height: 55px;
             }*/
         }       
-}
-        
-/*l.rightLogo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+}       
+.rightImg {
+    gap: 30px;
+    > * {
+        width: auto;
+    }
     .smallLogo {
-            max-width: 540px;
-            width: 100%;
-            margin: 30px 15px -30px 0;
-            @media only screen and (max-width: $xl-deck) {
-                max-width: 440px;
-            }
-            @media only screen and (max-width: $l-deck) {
-                max-width: 390px;
-                margin: 20px 0 -20px 0;
-            }
-            @media only screen and (max-width: $l-deck) {
-                max-width: 340px;
-                margin: 5px 0 -5px 0;
-            }
-            @media only screen and (max-width: $tablet) {
-                max-width: max-content;
-                margin: 0;
-            }
-    }
-    .h2 {
-        @media only screen and (max-width: $tablet) { 
-            margin: 10px 0;
-        }
+        height: 63px;
+        flex: 0 0 60px;
     }
 }
-.summerText {
-    @include font(40, 50);
-    font-family: 'MontserratAlternates-SemiBold';
-    max-width: 75%;
-    margin-bottom: 55px;
-    @media only screen and (max-width: $xl-deck) {
-        @include font(30, 50);
-        margin-bottom: 30px;
-    }
-    @media only screen and (max-width: $l-deck) {
-        @include font(26, 36);
-        margin-bottom: 30px;
-    }
-    @media only screen and (max-width: $s-deck) {
-        max-width: 100%;
-    }
-    @media only screen and (max-width: $tablet) { 
-        @include font(18, 26);
-        margin-bottom: 10px;
-        br {
-            display: none;
-        }
-    }
-    @media only screen and (max-width: $mobile) { 
-        @include font(17, 24);
-    }
-    .mobSmallLogo {
-        float: right;
-    }
-}
-.why-choose {
-    .container {
-        padding-top: 106px;
-        display: grid;
-        grid-template-columns: 1fr 44%;
-        grid-template-rows: auto;
-        overflow: hidden;
-        gap: 130px 0;
-        @media only screen and (max-width: $xl-deck) {
-            padding-top: 50px;
-            grid-template-columns: 1fr 45%;
-        }
-        @media only screen and (max-width: $m-deck) {
-            gap: 75px 0;
-        }
-        @media only screen and (max-width: $land-tablet) {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        @media only screen and (max-width: $tablet) {
-            padding-top: 15px;
-        }
-        @media only screen and (max-width: $mobile) {
-            //gap: 40px;
-        }
-        .h2 {
-            @media only screen and (max-width: $mobile) {
-                margin-bottom: 10px;
-            }
-        }
-        .swiper {
-            grid-row: span 2;
-            @media only screen and (max-width: $land-tablet) {
-                grid-row: auto;
-            }
-            svg {
-                @media only screen and (max-width: $tablet) {
-                    display: block;
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-        }
-        
-    }
-}
+/*l
+
 
 .departments .container {
     text-align: center;
