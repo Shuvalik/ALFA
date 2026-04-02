@@ -1,4 +1,4 @@
-/*#footer {
+#footer {
     .bigLogo {
         display: block;
     }
@@ -154,7 +154,7 @@
             }
         }
     }
-    .twoColumns > * {
+    /*.twoColumns > * {
         width: 38%;
         @media only screen and (max-width: $l-deck) {
             width: 40%;
@@ -179,18 +179,20 @@
             > * {
                 width: 100%;
             }
-        }
-        &.logoHolder {
-            width: 62%;
-            @media only screen and (max-width: $l-deck) {
+        }*/
+        .logoHolder {
+            width: 314px;
+            height: 79px;
+            margin-inline: auto;
+            /*@media only screen and (max-width: $l-deck) {
                 width: 60%;
             }
             @media only screen and (max-width: $land-tablet) {
                 width: 100%;
-                /*.bigLogo {
+                .bigLogo {
                     height: 120px;///!!!
                 }
-            }
+            }*/
         } 
-    }
-}*/
+    //}
+}

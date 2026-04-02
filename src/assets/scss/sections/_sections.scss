@@ -154,6 +154,256 @@
         flex: 0 0 60px;
     }
 }
+.priceList {
+    margin-left: 20px;
+    list-style-type: disc;
+    li > p {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: flex-end;
+        margin-bottom: 5px;
+        span {
+            flex-grow: 1;
+            &.priceText {
+                flex-grow: 0;
+            }
+        }
+    }
+    
+}
+#price {
+    margin-bottom: 25px;
+}
+.form .container {
+    padding: 15px $space-container;
+    background: linear-gradient(to right, #FFCBA7, #48FFE6);
+    //border-radius: 15px;
+    position: relative;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+    text-align: center;
+    /*@media only screen and (max-width: $xl-deck) {
+        margin-top: 35px;
+    }
+    @media only screen and (max-width: $l-deck) {
+        margin-top: 20px;
+    }
+    @media only screen and (max-width: $s-deck) {
+        padding: 10px 15px;
+    }
+    @media only screen and (max-width: $tablet) {
+        padding: 10px 0;
+    }
+    @media only screen and (max-width: $mobile) {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }*/
+    &::after {
+        content: ' ';
+        position: absolute;
+        //right: -$space-container;
+        right: 0;
+        //bottom: -63px;
+        bottom: 50%;
+        background: url("./../../assets/images/loop.svg") 0 0 no-repeat;
+        transform: translateY(50px);
+        background-size: contain;
+        width: 251px;
+        height: 203px;
+        //width: 501px;
+        //height: 403px;
+        z-index: 2;
+        /*@media only screen and (max-width: $l-deck) {
+            width: 351px;
+            height: 303px;
+        }
+        @media only screen and (max-width: $s-deck) {
+            right: -25px;
+        }
+        @media only screen and (max-width: $land-tablet) {
+            bottom: 50%;
+        }
+        @media only screen and (max-width: $tablet) {
+            width: 251px;
+            height: 203px;
+        }
+        @media only screen and (max-width: $mobile) {
+            right: 0;
+        }*/
+    }
+    .h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        @include font(20, 26);
+        /*@media only screen and (max-width: $xl-deck) {
+           margin-bottom: 35px;
+        }
+        @media only screen and (max-width: $m-deck) {
+           margin-bottom: 20px;
+        }
+        @media only screen and (max-width: $mobile) {
+           padding: 0 48px;
+           margin-bottom: 15px;
+        }*/
+    }
+    .btn {
+        max-width: 100%;
+        font-family: 'MontserratAlternates-SemiBold';
+        margin: -15px 0 15px;
+        /*@media only screen and (max-width: $xl-deck) {
+            margin-top: 0;
+            height: 120px;
+        }
+        @media only screen and (max-width: $l-deck) {
+            height: 90px;
+            margin-bottom: 20px;
+        }
+        @media only screen and (max-width: $tablet) {
+            height: 45px;
+            margin-bottom: 10px;
+        }
+        @media only screen and (max-width: $mobile) {
+            border-radius: 8px;
+        }*/
+    }
+    .error {
+        display: none;
+        padding: 5px 0 0 5px;
+        text-align: left;
+        color: $brick-color;
+        @include font(12, 18);
+    }
+    .note {
+        @include font(12, 18);
+    }
+    .twoColumns {
+        flex-direction: column-reverse;
+        gap: 35px;
+        justify-content: space-between;
+        /*@media only screen and (max-width: $land-tablet) {
+            flex-direction: column-reverse;
+            gap: 35px;
+        }*/
+        > form {
+            width: 100%;
+            /*padding-left: 42px;
+            width: calc(50% - 50px);
+            padding-bottom: 25px;
+            @media only screen and (max-width: $xl-deck) {
+                padding-left: 20px;
+                width: 50%;
+            }
+            @media only screen and (max-width: $s-deck) {
+                padding-left: 10px;
+            }
+            @media only screen and (max-width: $land-tablet) {
+                
+                padding: 0 20px;
+            }
+            @media only screen and (max-width: $mobile) {
+                padding: 0 10px;
+            }*/
+            /*p {
+                @include font(35, 40);
+                font-family: 'MontserratAlternates-SemiBold';
+                @media only screen and (max-width: $xl-deck) {
+                    @include font(28, 36);
+                }
+                @media only screen and (max-width: $l-deck) {
+                    @include font(26, 34);
+                }
+                @media only screen and (max-width: $tablet) {
+                    @include font(16, 20);
+                    text-align: center;
+                }
+            }*/
+            .holder {
+              position: relative;
+            }
+        }
+        .imgHolder {
+            width: 217px;
+            height: 250px;
+            position: relative;
+            align-self: center;
+            /*width: 664px;
+            height: 685px;
+            max-width: 50%;
+            @media only screen and (max-width: $xl-deck) {
+                width: 564px;
+                height: 585px;
+            }
+            @media only screen and (max-width: $l-deck) {
+                width: 514px;
+                height: 535px;
+            }
+            @media only screen and (max-width: $s-deck) {
+                width: 414px;
+                height: 435px;
+            }
+            @media only screen and (max-width: $land-tablet) {
+                align-self: center;
+                width: 257px;
+                height: 300px;
+            }*/
+            &::before {
+                content: ' ';
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: $orange-color2;
+                transform: rotate(5deg);
+                border-radius: 25px;
+                width: 100%;
+                height: 100%;
+            }
+            picture {
+                z-index: 2;
+                border-radius: 25px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .resultMessage {
+        color: $white-color;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > * {
+            border-radius: 15px;
+            padding: 25px 35px;
+        }
+    }
+    .successMessage {
+        background-color: $cyan-light-color;
+        display: none;
+    } 
+    .errorMessage {
+        background-color: $brick-color;
+        display: none;
+    }
+    .greyBtn {
+        background-color: #D9D9D9;
+        color: $grey-color;
+        margin: 0;
+        &:hover {
+            background-color: $grey-color;
+            color: #D9D9D9;
+        }
+    }
+}
 /*l
 
 
@@ -416,562 +666,5 @@
         }
     }
 }
-.form .container {
-    &::after {
-        content: ' ';
-        position: absolute;
-        right: -$space-container;
-        bottom: -63px;
-        background: url("./../../assets/images/loop.svg") 0 0 no-repeat ;
-        background-size: contain;
-        width: 501px;
-        height: 403px;
-        z-index: 2;
-        @media only screen and (max-width: $l-deck) {
-            width: 351px;
-            height: 303px;
-        }
-        @media only screen and (max-width: $s-deck) {
-            right: -25px;
-        }
-        @media only screen and (max-width: $land-tablet) {
-            bottom: 50%;
-        }
-        @media only screen and (max-width: $tablet) {
-            width: 251px;
-            height: 203px;
-        }
-        @media only screen and (max-width: $mobile) {
-            right: 0;
-        }
-    }
-    .h2 {
-        text-align: center;
-        margin-bottom: 72px;
-        @media only screen and (max-width: $xl-deck) {
-           margin-bottom: 35px;
-        }
-        @media only screen and (max-width: $m-deck) {
-           margin-bottom: 20px;
-        }
-        @media only screen and (max-width: $mobile) {
-           padding: 0 48px;
-           margin-bottom: 15px;
-        }
-    }
-    padding: 10px 56px 0 15px;
-    background: linear-gradient(to right, rgba(249, 236, 136, .53), rgba(124, 200, 246, .49));
-    border-radius: 25px;
-    position: relative;
-    margin-top: 40px;
-    @media only screen and (max-width: $xl-deck) {
-        margin-top: 35px;
-    }
-    @media only screen and (max-width: $l-deck) {
-        margin-top: 20px;
-    }
-    @media only screen and (max-width: $s-deck) {
-        padding: 10px 15px;
-    }
-    @media only screen and (max-width: $tablet) {
-        padding: 10px 0;
-    }
-    @media only screen and (max-width: $mobile) {
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 100%;
-    }
-    .btn {
-        max-width: 100%;
-        margin-top: -28px;
-        height: 150px;
-        border-radius: 20px;
-        font-family: 'MontserratAlternates-SemiBold';
-        margin-bottom: 40px;
-        @media only screen and (max-width: $xl-deck) {
-            margin-top: 0;
-            height: 120px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            height: 90px;
-            margin-bottom: 20px;
-        }
-        @media only screen and (max-width: $tablet) {
-            height: 45px;
-            margin-bottom: 10px;
-        }
-        @media only screen and (max-width: $mobile) {
-            border-radius: 8px;
-        }
-    }
-    .error {
-        display: none;
-        padding-left: 14px;
-        @media only screen and (max-width: $m-deck) {
-            padding-left: 10px;
-        }
-    }
-    .twoColumns {
-        justify-content: space-between;
-        @media only screen and (max-width: $land-tablet) {
-            flex-direction: column-reverse;
-            gap: 35px;
-        }
-        > form {
-            padding-left: 42px;
-            width: calc(50% - 50px);
-            padding-bottom: 25px;
-            @media only screen and (max-width: $xl-deck) {
-                padding-left: 20px;
-                width: 50%;
-            }
-            @media only screen and (max-width: $s-deck) {
-                padding-left: 10px;
-            }
-            @media only screen and (max-width: $land-tablet) {
-                width: 100%;
-                padding: 0 20px;
-            }
-            @media only screen and (max-width: $mobile) {
-                padding: 0 10px;
-            }
-            p {
-                @include font(35, 40);
-                font-family: 'MontserratAlternates-SemiBold';
-                @media only screen and (max-width: $xl-deck) {
-                    @include font(28, 36);
-                }
-                @media only screen and (max-width: $l-deck) {
-                    @include font(26, 34);
-                }
-                @media only screen and (max-width: $tablet) {
-                    @include font(16, 20);
-                    text-align: center;
-                }
-            }
-            .holder {
-              position: relative;
-            }
-        }
-        .imgHolder {
-            width: 664px;
-            height: 685px;
-            max-width: 50%;
-            position: relative;
-            @media only screen and (max-width: $xl-deck) {
-                width: 564px;
-                height: 585px;
-            }
-            @media only screen and (max-width: $l-deck) {
-                width: 514px;
-                height: 535px;
-            }
-            @media only screen and (max-width: $s-deck) {
-                width: 414px;
-                height: 435px;
-            }
-            @media only screen and (max-width: $land-tablet) {
-                align-self: center;
-                width: 257px;
-                height: 300px;
-            }
-            @media only screen and (max-width: $tablet) {
-                width: 217px;
-                height: 250px;
-            }
-            &::before {
-                content: ' ';
-                position: absolute;
-                left: 0;
-                top: 0;
-                background-color: $blue-color;
-                transform: rotate(5deg);
-                border-radius: 25px;
-                width: 100%;
-                height: 100%;
-            }
-            picture {
-                z-index: 2;
-                border-radius: 25px;
-                overflow: hidden;
-                display: block;
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    .resultMessage {
-        color: $white-color;
-        visibility: hidden;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        @include font(50, 55);
-        > * {
-            border-radius: 15px;
-            padding: 25px 35px;
-        }
-    }
-    .successMessage {
-        background-color: $main-color;
-        display: none;
-    } 
-    .errorMessage {
-        background-color: red;
-        display: none;
-    }
-    .greyBtn {
-        background-color: #D9D9D9;
-        color: $grey-color;
-        margin: 0;
-        &:hover {
-            background-color: $grey-color;
-            color: #D9D9D9;
-        }
-    }
-}
-// sub pages
-.subPages {
-    header#header {
-        .headerMain .container {
-            position: relative;
-            height: 0;
-            @media only screen and (max-width: $land-tablet) {
-                height: 120px;
-                padding-bottom: 0;
-            }
-            @media only screen and (max-width: $tablet) {
-                height: 65px;
-            }
-            .logo {
-                position: absolute;
-                right: 0;
-                top: 80px;
-                @media only screen and (max-width: $l-deck) {
-                    top: 50px;
-                }
-                @media only screen and (max-width: $s-deck) {
-                    top: 40px;
-                    right: -7px;
-                }
-                @media only screen and (max-width: $land-tablet) {
-                    position: relative;
-                    top: 0;
-                    right: 0;
-                }
-                img {
-                    max-width: 440px;
-                    @media only screen and (max-width: $l-deck) {
-                        max-width: 340px;
-                    }
-                    @media only screen and (max-width: $s-deck) {
-                        max-width: 240px;
-                    }
-                    @media only screen and (max-width: $tablet) {
-                        max-width: 190px;
-                    }
-                }
 
-            }
-            .phone, .holderButton {
-                display: none;
-            }
-        }
-        #mainMenu {
-            margin: -8px 0 2px;
-            @media only screen and (max-width: $xl-deck) {
-                margin: 2px 0;
-            }
-        }
-    }
-    section:first-child {
-        padding-top: 0;
-        @media only screen and (max-width: $land-tablet) {
-            padding-top: 120px;
-        }
-        @media only screen and (max-width: $tablet) {
-            padding-top: 65px;
-        }
-        &::before {
-            content: '';
-            display: block;
-            position: relative;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 48px;
-            @media only screen and (max-width: $l-deck) {
-                height: 39px;
-            }
-            @media only screen and (max-width: $s-deck) {
-                height: 35px;
-            }
-            @media only screen and (max-width: $land-tablet) {
-                height: 1px;
-            }
-        }
-    }
-    .h1 {
-        @include font(80, 90);
-        margin-bottom: 18px;
-        @media only screen and (max-width: $xl-deck) { 
-            @include font(70, 80);
-            margin: 0;
-        }
-        @media only screen and (max-width: $s-deck) {
-            margin-right: 240px;
-            @include font(60, 70);
-        }
-        @media only screen and (max-width: $land-tablet) {
-            @include font(50, 60);
-            margin: 0;
-        }
-        @media only screen and (max-width: $tablet) {
-            @include font(30, 40);
-        }
-        @media only screen and (max-width: $mobile) { 
-            @include font(22, 30);
-        }
-    }
-    .summerText {
-        margin-bottom: 30px;
-        width: calc(100% - 440px);
-        @media only screen and (max-width: $xl-deck) { 
-            margin-bottom: 5px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            width: calc(100% - 330px);
-        }
-        @media only screen and (max-width: $s-deck) {
-            width: 100%;
-        }
-        p {
-            margin-bottom: 0;
-        }
-    }
-    .h2 {
-        text-align: center;
-    }
-    .h3 {
-        @include font(68, 76);
-        margin-bottom: 73px;
-        @media only screen and (max-width: $xl-deck) {
-            @include font(54, 60);
-            margin-bottom: 63px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            @include font(48, 56);
-            margin-bottom: 40px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            @include font(42, 50);
-            margin-bottom: 30px;
-        }
-        @media only screen and (max-width: $tablet) {
-            @include font(24, 30);
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        @media only screen and (max-width: $mobile) {
-            @include font(20, 26);
-            text-align: center;
-            margin-bottom: 10px;
-        }
-    }
-    .schedy {
-        .h2 {
-            padding-top: 65px;
-            margin-bottom: 40px;
-            @media only screen and (max-width: $xl-deck) {
-                padding-top: 20px;
-                margin-bottom: 20px;
-            }
-            @media only screen and (max-width: $m-deck) {
-                padding-top: 0;
-                margin-bottom: 10px;
-            }
-            @media only screen and (max-width: $tablet) {
-                @include font(24, 30);
-            }
-            @media only screen and (max-width: $mobile) {
-                @include font(18, 24);
-                padding-top: 10px;
-            }
-        }
-    }
-    .form .container {
-        padding: 45px 54px 0 42px;
-        margin-bottom: 60px;
-        @media only screen and (max-width: $l-deck) {
-            padding: 24px 45px 0 30px;
-        }
-        @media only screen and (max-width: $land-tablet) {
-            padding: 20px 25px;
-            margin-top: 10px;
-            margin-bottom: 0;
-        }
-        @media only screen and (max-width: $mobile) {
-            padding: 15px;
-        }
-        .twoColumns {
-            @media only screen and (max-width: $mobile) {
-                gap: 28px;
-            }
-            > form {
-                padding-left: 0;
-                width: 54%;
-                @media only screen and (max-width: $m-deck) {
-                    width: 50%;
-                }
-                @media only screen and (max-width: $land-tablet) {
-                    width: 100%;
-                    padding: 0;
-                }
-            }
-        }
-    }
-    .twoColumns {
-        gap: 40px;
-        @media only screen and (max-width: $land-tablet) {
-            flex-direction: column-reverse;
-        }
-        @media only screen and (max-width: $tablet) {
-            gap: 15px;
-        }
-        > * {
-            width: calc(100% - 640px);
-            @media only screen and (max-width: $xl-deck) {
-                width: calc(100% - 540px);
-            }
-            @media only screen and (max-width: $l-deck) {
-                width: calc(100% - 490px)
-            }
-            @media only screen and (max-width: $m-deck) {
-                width: calc(100% - 440px)
-            }
-            @media only screen and (max-width: $land-tablet) {
-                width: 100%;
-            }
-        }
-        .pointList {
-            margin-bottom: 20px;
-        }
-        .imgHolder {
-            width: 600px;
-            position: relative;
-            margin-bottom: 20px;
-            img {
-                border-radius: 25px;
-                overflow: hidden;
-                display: block;
-            }
-            @media only screen and (max-width: $xl-deck) {
-                width: 500px;
-            }
-            @media only screen and (max-width: $l-deck) {
-                width: 450px;
-            }
-            @media only screen and (max-width: $m-deck) {
-                width: 400px;
-            }
-            @media only screen and (max-width: $land-tablet) {
-                width: 100%;
-            }
-            &::before {
-                content: ' ';
-                position: absolute;
-                left: 0;
-                top: 0;
-                transform: rotate(-3deg);
-                border-radius: 25px;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-            }
-        }
-    }
-}
-.subFooter {
-    display: grid;
-    grid-template-columns: 1fr 700px;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 57px 120px;
-    @media only screen and (max-width: $xl-deck) {
-        grid-template-columns: 1fr 530px;
-        gap: 0 80px;
-    }
-    @media only screen and (max-width: $l-deck) {
-        grid-template-columns: 1fr 480px;
-        gap: 0 40px;
-    }
-    @media only screen and (max-width: $m-deck) {
-        grid-template-columns: 1fr 460px;
-        gap: 0 30px;
-    }
-    @media only screen and (max-width: $s-deck) {
-        grid-template-columns: 1fr 390px;
-    }
-    @media only screen and (max-width: $land-tablet) {
-        grid-template-columns: 100%;
-        grid-template-rows: 110px repeat(2, auto);
-        gap: 25px;
-        padding-top: 25px;
-    }
-    @media only screen and (max-width: $tablet) {
-        gap: 15px;
-        padding-top: 15px;
-    }
-    > * {
-        align-self: end;
-        @media only screen and (max-width: $land-tablet) {
-            align-self: start;
-        }
-    }
-    .logoHolder {
-        text-align: center;
-    }
-    .leftSide {
-        grid-row: span 2;
-        @media only screen and (max-width: $land-tablet) {
-            grid-row: auto;
-        }
-    }
-    .logo {
-        display: inline-block;
-        max-width: 595px;
-        transform: translateX(8%); // correct logo on image not center
-        @media only screen and (max-width: $xl-deck) {
-            max-width: 500px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            max-width: 450px;
-        }
-        @media only screen and (max-width: $land-tablet) {
-            transform: translateX(0);
-            max-width: 100%;
-        }
-    }
-}
-#footer .subFooter {
-    address {
-        @media only screen and (max-width: $land-tablet) {
-            margin-bottom: 25px;
-            > div svg { 
-                height: 60px;
-            }
-        }
-        @media only screen and (max-width: $tablet) {
-            margin-bottom: 10px;
-        }
-    }
-    .blueBox {
-        margin: 0;
-    }
-    margin-bottom: 20px;
-}*/
+*/
