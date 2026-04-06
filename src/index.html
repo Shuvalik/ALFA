@@ -497,7 +497,7 @@
               <p class="note">Відправляючи форму Ви даєте інформовану
                 згоду на обробку персональних даних</p>
             </form>
-      
+
             <div class="imgHolder">
               <picture>
                 <!-- <source media="(max-width: 767px)" data-srcset="@@webRoot/assets/images/contact-us.jpg" /> -->
@@ -510,7 +510,7 @@
       </section>
 
 
-      
+
     </main>
 
     @@include('parts/footer.html')
@@ -574,11 +574,32 @@
         };
         return err;
       }
+
+      /* map init */
+      function initMap() {
+        const map = L.map('map').setView([49.428577, 26.9785098], 16);
+        L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+          attribution: ''
+        }).addTo(map);
+        const greenIcon = L.icon({
+          iconUrl: '../assets/images/point.svg',
+          iconSize: [106, 106],
+          iconAnchor: [100, 100],
+        });
+        L.marker([49.428577, 26.9785098], { icon: greenIcon, title: 'сама смачна кава на районі)' }).addTo(map)
+      }
+
       /*call functions */
 
       new WOW().init();
       let lazyLoadInstance = new LazyLoad();
       /* events defenition */
+
+      $('#map_link').on('click', function () {
+        $('#map').html('');
+        initMap();
+      })
+
       $('a[data-scroll]').on('click', function (e) {
         e.preventDefault();
 

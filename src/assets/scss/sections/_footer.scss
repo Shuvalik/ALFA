@@ -1,30 +1,21 @@
 #footer {
-    .bigLogo {
-        display: block;
-    }
-    .titleBox {
-        font-family: 'MontserratAlternates-SemiBold';
-        @include font(65, 70);
-        margin-bottom: 30px;
-        @media only screen and (max-width: $xl-deck) {
-            @include font(40, 45);
-            margin: 0;
-        }
-        @media only screen and (max-width: $s-deck) {
-            @include font(30, 35);
-        }
-        @media only screen and (max-width: $land-tablet) {
+    .boxesHolder {
+        margin-left: -($space-container);
+        margin-right: -($space-container);
+        .title {
             text-align: center;
-            @include font(26, 32);
+            @include font(20, 24);
+            font-family: 'MontserratAlternates-SemiBold';
+            margin-bottom: 10px;
         }
     }
     address {
-        background: $yellow-light-color;
-        border-radius: 25px;
-        padding: 52px 0 1px 43px;
+        background: $orange-light-color2;
+        //border-radius: 15px;
+        padding: 20px 15px 10px;
         font-style: normal;
-        margin: 10px 0 25px;
-        @media only screen and (max-width: $xl-deck) {
+        margin: 10px 0 0;
+        /*@media only screen and (max-width: $xl-deck) {
             padding: 30px 0 1px 35px;
         }
         @media only screen and (max-width: $l-deck) {
@@ -35,14 +26,16 @@
         }
         @media only screen and (max-width: $land-tablet) {
             margin: 0;
-        }
+        }*/
         a {
             font-family: 'MontserratAlternates-SemiBold';
-            @include font(35, 40);
+            @include font(18, 26);
             display: block;
             width: 100%;
-            position: relative;
-            @media only screen and (max-width: $xl-deck) {
+            &:hover {
+                color: $orange-color;
+            }
+            /*@media only screen and (max-width: $xl-deck) {
                 @include font(28, 36);
             }
             @media only screen and (max-width: $m-deck) {
@@ -56,33 +49,31 @@
             }
             @media only screen and (max-width: $mobile) {
                 @include font(18, 26);
-            }
-            &::after {
-                content: '';
-                width: 0;
-                height: 1px;
-                background-color: $navy-color;
-                position: absolute;
-                bottom: -2px;
-                left: 50%;
-                transform: translateX(-50%);
-                transition: all .3s ease;
-                }
-                &:hover {
-                    &::after {
-                            width: 100%;
-                        }
-                }
+            }*/
         }
         > div {
             display: flex;
             overflow: hidden;
             align-items: center;
             margin-bottom: 7px;
+            position: relative;
+            padding-bottom: 20px;
+            &:not(:last-child):after {
+                content: '';
+                width: 50%;
+                height: 1px;
+                background-color: $grey-color;
+                position: absolute;
+                bottom: 1px;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0.5;
+            }
             svg {
-                flex: 0 0 100px;
-                margin-right: 40px;
-                @media only screen and (max-width: $xl-deck) {
+                flex: 0 0 40px;
+                margin-right: 10px;
+                order: -1;
+                /*@media only screen and (max-width: $xl-deck) {
                    margin-right: 20px;
                    flex: 0 0 85px;
                 }
@@ -97,15 +88,25 @@
                 }
                 @media only screen and (max-width: $mobile) {
                     height: 80px;
+                }*/
+            }
+            span:has( a:hover) + svg {
+                animation: spin 0.6s linear infinite;
+                transform: rotate(0);
+                display: block;
+                 path {
+                    fill: $orange-color;
                 }
             }
+            
         }
     }
-    .blueBox {
-        background: $blue-light-color;
-        border-radius: 25px;
-        padding: 45px 22px 1px;
-        @media only screen and (max-width: $xl-deck) {
+    .bg-cyan-light {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        /*@media only screen and (max-width: $xl-deck) {
             padding: 30px 35px 1px;
         }
         @media only screen and (max-width: $m-deck) {
@@ -119,27 +120,18 @@
         }
         @media only screen and (max-width: $mobile) {
             margin-bottom: 20px;
-        }
-        .titleBox {
-            margin-bottom: 45px;
-            @media only screen and (max-width: $xl-deck) {
-                margin-bottom: 25px;
-            }
-        }
+        }*/
         .sotial-links {
             justify-content: space-between;
             gap: 20px;
-            padding: 0 20px;
-            @media only screen and (max-width: $xl-deck) {
-                padding: 0;
-            }
             a {
-                svg path, 
-                svg rect {
+                border-color: $navy-lighter-color;
+                svg path{
                     fill-opacity: 1;
+                    fill: $navy-lighter-color;
                 }
                 svg {
-                    @media only screen and (max-width: $m-deck) {
+                    /*@media only screen and (max-width: $m-deck) {
                         width: 110px;
                         height: auto;
                         display: inline-block;
@@ -149,10 +141,13 @@
                     }
                     @media only screen and (max-width: $mobile) {
                         width: 75px;
-                    }
+                    }*/
                 }
             }
         }
+    }
+    div.bg-orange {
+        padding: 20px;
     }
     /*.twoColumns > * {
         width: 38%;
@@ -195,4 +190,49 @@
             }*/
         } 
     //}
+}
+#map {
+    border-radius: 15px;
+    aspect-ratio: 335/154;
+    margin-bottom: 20px;
+    overflow: hidden;
+    #map_link {
+        display: block;
+        position: relative;
+        &::after{
+            content: "Будь ласка, натисніть, щоб перейти до інтерактивної карти";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.3);
+            color: #fff;
+            opacity: 0;
+            z-index: 1;
+            transition: all .2s ease;
+        }
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(35deg);
+    }
+    50% {
+        transform: rotate(-35deg);
+    }
+    to {
+        transform: rotate(0);
+    }
 }

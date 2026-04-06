@@ -119,6 +119,13 @@ b {
 strong {
   font-family: 'MontserratAlternates-Bold';
 }
+a {
+  color: $font-color;
+  font-family: 'MontserratAlternates-SemiBold';
+  &:hover {
+    text-decoration: none;
+  }
+}
 .summerText {
   font-family: 'MontserratAlternates-SemiBold';
 }
@@ -168,131 +175,8 @@ strong {
     }
 }
 /*
-// .twoColumns {
-//     display: flex;
-//     justify-content: space-between;
-//     @media only screen and (max-width: 960px) {
-//       flex-direction: column;
-//     }
-//     > div {
-//       max-width: 50%;
-//       flex: 1 0 fit-content;
-//       @media only screen and (max-width: 960px) {
-//         max-width: 100%;
-//       }
-//     }
-// }
-// .threeColumns {
-//   display: flex;
-//   justify-content: space-between;
-//   > div {
-//     max-width: 33%;
-//     flex: 1 0 fit-content;
-//   }
-// }
-a {
-  color: $navy-color;
-  font-family: 'MontserratAlternates-Bold';
-  &:hover {
-    text-decoration: none;
-  }
-}
-p {
-  margin-bottom: 15px;
-  @media only screen and (max-width: $s-deck) {
-    margin-bottom: 5px;
-  }
-}
-strong {
-  font-family: 'MontserratAlternates-SemiBold';
-}
-.h1 {
-  color: $navy-color;
-  font-family: 'MontserratAlternates-Bold';
-  @include font(100, 120);
-  -webkit-text-stroke: 1px #7CC8F6;
-  text-stroke: 1px #7CC8F6;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  @media only screen and (max-width: $xl-deck) {
-    @include font(80, 90);
-  }
-  @media only screen and (max-width: $m-deck) {
-    @include font(60, 70);
-	}
-  @media only screen and (max-width: $tablet) { 
-    @include font(30, 40);
-    -webkit-text-stroke: unset;
-    text-stroke: unset;
-    -webkit-background-clip: unset;
-    -moz-background-clip: unset;
-    background-clip: unset;
-  }
-  @media only screen and (max-width: $mobile) { 
-    @include font(22, 30);
-  }
-}
 
-.h4 {
-  @include font(50, 60);
-  font-family: 'MontserratAlternates-SemiBold';
-  margin-bottom: 20px;
-  @media only screen and (max-width: $xl-deck) {
-    @include font(40, 50);
-    margin-bottom: 10px;
-  }
-  @media only screen and (max-width: $l-deck) {
-    @include font(30, 38);
-    margin-bottom: 10px;
-  }
-  @media only screen and (max-width: $s-deck) {
-    @include font(22, 28);
-    margin-bottom: 0;
-  }
-  @media only screen and (max-width: $tablet) {
-    @include font(18, 24);
-  }
-}
-.h5 {
-  @include font(38, 46);
-  font-family: 'MontserratAlternates-SemiBold';
-  margin-bottom: 16px;
-  @media only screen and (max-width: $xl-deck) {
-    @include font(30, 36);
-    margin-bottom: 5px;
-  }
-  @media only screen and (max-width: $l-deck) {
-    @include font(26, 32);
-  }
-  @media only screen and (max-width: $m-deck) {
-    @include font(24, 30);
-  }
-  @media only screen and (max-width: $mobile) {
-    @include font(20, 26);
-  }
-}
 
-.markYellowColor {
-  color: $yellow-color;
-}
-.number {
-  @include font(100, 110);
-  font-family: 'MontserratAlternates-Bold';
-  padding-left: 43px;
-  @media only screen and (max-width: $xl-deck) { 
-    @include font(70, 80);
-    padding-left: 43px;
-  }
-  @media only screen and (max-width: $s-deck) { 
-    @include font(60, 70);
-    padding-left: 23px;
-  }
-  @media only screen and (max-width: $tablet) { 
-    @include font(50, 60);
-  }
-}
 .pointArrow {
   @include font(70, 70);
   font-family: 'Caveat-Regular';
@@ -334,54 +218,5 @@ strong {
       display: none;
     }
   }
-}
-.rightText {
-  text-align: right;
-}
-.error {
-  @include font(14, 20);
-  color: red;
-  text-align: left;
-  @media only screen and (max-width: $mobile) {
-    @include font(12, 28);
-  }
-}
-//subpages
-.blueTheme {
-  section:first-child::before,
-  .pointList {
-    background-color: $blue-light-color;
-  }
-  .form .container::after {
-    background-image: url("./../../assets/images/loop-blue.svg");
-  }
-}
-.greenTheme {
-  section:first-child::before, 
-  .itemsList li .iconHolder, 
-  .itemsList li.changeOrder>div .iconHolder, 
-  .imgHolder::before,
-  .pointList,
-  .form .container .twoColumns .imgHolder::before {
-    background-color: $green-lightest-color;
-  }
-  .form .container::after {
-    background-image: url("./../../assets/images/loop-green.svg");
-  }
-}
-.yellowTheme {
-  section:first-child::before, 
-  .itemsList li .iconHolder, 
-  .itemsList li.changeOrder>div .iconHolder, 
-  .imgHolder::before,
-  .pointList,
-  .form .container .twoColumns .imgHolder::before {
-    background-color: $yellow-light-color;
-  }
-  .form .container::after {
-    background-image: url("./../../assets/images/loop-yellow.svg");
-  }
-}
-.longWord {
-  overflow-wrap: anywhere;
 }*/
+//subpages
