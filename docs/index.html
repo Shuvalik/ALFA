@@ -719,6 +719,9 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>© 2026 Центр сучасної освіти АЛЬФА. Всі права захищені.</p>
+      </div>
     <!-- </div> -->
   </div>
 </footer>
@@ -786,16 +789,16 @@
 
       /* map init */
       function initMap() {
-        const map = L.map('map').setView([49.428577, 26.9785098], 16);
+        const map = L.map('map').setView([49.428577, 26.9785098], 17);
         L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
           attribution: ''
         }).addTo(map);
-        const greenIcon = L.icon({
-          iconUrl: '../assets/images/point.svg',
-          iconSize: [106, 106],
-          iconAnchor: [100, 100],
+        const orangeIcon = L.icon({
+          iconUrl: '../assets/images/pin.svg',
+          iconSize: [24, 24],
+          iconAnchor: [24, 24],
         });
-        L.marker([49.428577, 26.9785098], { icon: greenIcon, title: 'сама смачна кава на районі)' }).addTo(map)
+        L.marker([49.428577, 26.9785098], { icon: orangeIcon, title: 'центр сучасної освіти АЛФА' }).addTo(map)
       }
 
       /*call functions */

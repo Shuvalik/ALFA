@@ -40,8 +40,8 @@
     display: grid;
     grid-template-columns: repeat(2, 48%);
     grid-template-rows: repeat(2, auto);
-    gap: 10px 3%;
-    padding: 20px 0;
+    gap: 8px 3%;
+    padding: 6px 0;
     @include font(14, 20);
     /*@media only screen and (max-width: $xl-deck) {
       @include font(30, 45);
@@ -110,12 +110,14 @@
 
     }
 }
+#our-team .h2 {
+    text-align: center;
+}
 .button-markHolder {
     display: flex;
     justify-content: space-between;
     position: relative;
     align-items: flex-end;
-    margin-bottom: 20px;
     .btn {
         max-width: 180px;
         height: 60px;
