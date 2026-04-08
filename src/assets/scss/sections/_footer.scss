@@ -6,7 +6,7 @@
             text-align: center;
             @include font(20, 24);
             font-family: 'MontserratAlternates-SemiBold';
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
     }
     address {
@@ -14,7 +14,7 @@
         //border-radius: 15px;
         padding: 13px 15px 1px;
         font-style: normal;
-        margin: 6px 0 0;
+        margin: 20px 0 0;
         /*@media only screen and (max-width: $xl-deck) {
             padding: 30px 0 1px 35px;
         }
@@ -105,7 +105,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 7px 0;
+        padding: 15px 0;
         /*@media only screen and (max-width: $xl-deck) {
             padding: 30px 35px 1px;
         }

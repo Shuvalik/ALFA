@@ -107,7 +107,7 @@ main {
 .h2 {
   @include font(18, 24);
   font-family: 'MontserratAlternates-SemiBold';
-  margin-bottom: 5px;
+  margin: 0 0 5px 8px;
 }
 .h3 {
   @include font(20, 24);

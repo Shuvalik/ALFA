@@ -148,13 +148,13 @@
         }       
 }       
 .rightImg {
-    gap: 30px;
+    gap: 10px;
     > * {
         width: auto;
     }
     .smallLogo {
-        height: 63px;
-        flex: 0 0 60px;
+        height: 78px;
+        flex: 0 0 75px;
     }
 }
 .priceList {
@@ -211,10 +211,8 @@
         position: absolute;
         //right: -$space-container;
         right: 0;
-        //bottom: -63px;
-        bottom: 50%;
+        top: 195px;
         background: url("./../../assets/images/loop.svg") 0 0 no-repeat;
-        transform: translateY(50px);
         background-size: contain;
         width: 251px;
         height: 203px;
@@ -257,7 +255,7 @@
     .btn {
         max-width: 100%;
         font-family: 'MontserratAlternates-SemiBold';
-        margin: -15px 0 15px;
+        margin: 0 0 15px;
         /*@media only screen and (max-width: $xl-deck) {
             margin-top: 0;
             height: 120px;
