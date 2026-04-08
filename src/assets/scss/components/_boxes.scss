@@ -30,11 +30,12 @@
 }
 .spotWithImg {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: 23px 13px;
+    padding: 23px 13px 16px;
     margin-bottom: 25px;
     //@error: 'MontserratAlternates-SemiBold';
     .imgHolder {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        aspect-ratio: 282/148;
     }
     .h3 {
         font-family: 'MontserratAlternates-SemiBold';

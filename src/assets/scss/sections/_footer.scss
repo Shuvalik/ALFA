@@ -6,15 +6,15 @@
             text-align: center;
             @include font(20, 24);
             font-family: 'MontserratAlternates-SemiBold';
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     }
     address {
         background: $orange-light-color2;
         //border-radius: 15px;
-        padding: 20px 15px 10px;
+        padding: 13px 15px 1px;
         font-style: normal;
-        margin: 10px 0 0;
+        margin: 6px 0 0;
         /*@media only screen and (max-width: $xl-deck) {
             padding: 30px 0 1px 35px;
         }
@@ -105,7 +105,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px 0;
+        padding: 7px 0;
         /*@media only screen and (max-width: $xl-deck) {
             padding: 30px 35px 1px;
         }
@@ -123,14 +123,21 @@
         }*/
         .sotial-links {
             justify-content: space-between;
-            gap: 20px;
+            width: 100%;
+            padding: 0 $space-container;
+            margin-bottom: 10px;
             a {
                 border-color: $navy-lighter-color;
+                width: 90px;
+                height: 90px;
+                border-width: 2px;
                 svg path{
                     fill-opacity: 1;
                     fill: $navy-lighter-color;
                 }
                 svg {
+                    width: 53px;
+                    height: auto;
                     /*@media only screen and (max-width: $m-deck) {
                         width: 110px;
                         height: auto;
@@ -147,7 +154,7 @@
         }
     }
     div.bg-orange {
-        padding: 20px;
+        padding: 13px $space-container;
     }
     /*.twoColumns > * {
         width: 38%;
@@ -228,12 +235,12 @@
 }
 .footer-bottom {
     text-align: center;
-    padding: 15px 0;
     background-color: $orange-light-color2;
-    margin-left: -($space-container);
-    margin-right: -($space-container);
-    border-top: 1px solid $grey-color;
     @include font(10, 16);
+    > .container {
+        border-top: 1px solid $grey-color;
+        padding: 15px 0;
+    }
 }
 @keyframes spin {
     from {
