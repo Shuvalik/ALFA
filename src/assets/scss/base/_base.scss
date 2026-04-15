@@ -14,42 +14,20 @@ body {
     scroll-behavior: smooth;
     position: relative;
     background-color: $bg-color;
-    /*@media only screen and (max-width: $xl-deck) {
-      @include font(30, 45);
+    @media only screen and (min-width: $land-tablet) {
+			@include font(34, 48);
     }
-    @media only screen and (max-width: $l-deck) {
-      @include font(26, 36);
-    }
-    @media only screen and (max-width: $s-deck) {
-      @include font(24, 32);
-    }
-    @media only screen and (max-width: $tablet) {
-      @include font(20, 28);
-    }
-    @media only screen and (max-width: $mobile) {
-      @include font(18, 26);
-    }*/
 } 
 .container {
     width: 100%;
-    //max-width: $base-width;
     margin-inline: auto;
     margin: 0 $space-container;
-    max-width: calc(100% - 40px);
-    /*@media only screen and (max-width: $xl-deck) {
-      margin: 0 $space-container;
-      max-width: calc(100% - 100px);
+    max-width: calc(100% - 2 * $space-container);
+    @media only screen and (min-width: $land-tablet) {
+      margin: 0 $space-container-big;
+      max-width: calc(100% - 2 * $space-container-big);
     }
-    @media only screen and (max-width: $s-deck) {
-      margin: 0 25px;
-      max-width: calc(100% - 50px);
-    }
-    @media only screen and (max-width: $tablet) {
-      margin: 0 15px;
-      max-width: calc(100% - 30px);
-    }*/
 }
-
 .page-wrap {
   display: flex;
   flex-direction: column;
@@ -103,15 +81,20 @@ main {
     white-space: nowrap;
     width: 1px;
 }
-
 .h2 {
   @include font(18, 24);
   font-family: 'MontserratAlternates-SemiBold';
   margin: 0 0 5px 8px;
+  @media only screen and (min-width: $land-tablet) {
+    @include font(50, 74);
+  }
 }
 .h3 {
   @include font(20, 24);
   font-family: 'MontserratAlternates-Bold';
+  @media only screen and (min-width: $land-tablet) {
+    @include font(50, 74);
+  }
 }
 b {
   font-family: 'MontserratAlternates-SemiBold';
@@ -166,13 +149,21 @@ a {
 .title {
   @include font(16, 22);
   font-family: 'Montserrat-ExtraBold';
+  @media only screen and (min-width: $land-tablet) {
+    @include font(26, 32);
+  }
 }
 .twoColumns {
-    display: flex;
+  display: flex;
+        > * {
+            width: 100%;
+        }
+  @media only screen and (min-width: $land-tablet) {
     justify-content: space-between;
     > * {
         width: 50%;
     }
+  }
 }
 /*
 

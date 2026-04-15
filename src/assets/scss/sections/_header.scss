@@ -13,20 +13,17 @@ header  .container {
 		display: inline-block;
 		img {
 			max-width: 300px;
-			/*@media only screen and (max-width: $xl-deck) {
-				max-width: 440px;
+			@media only screen and (min-width: $land-tablet) {
+				max-width: 911px;
 			}
-			@media only screen and (max-width: $s-deck) {
-				max-width: 340px;
-			}
-			@media only screen and (max-width: $tablet) {
-				max-width: 225px;
-			}*/
 		}
 	}
 	.phone {
 		@include font (16, 20);
 		font-family: 'MontserratAlternates-SemiBold';
+		@media only screen and (min-width: $land-tablet) {
+			@include font (50, 74);
+		}
 	}
 }
 /*header#header {

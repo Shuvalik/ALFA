@@ -27,15 +27,18 @@ $navy-lighter-color: #073B4D;
 $bg-color: #FBEFE5;
 
 $space-container: 20px;
+$space-container-big: 40px;
 
 /*size points*/
+$land-tablet: 769px; /*from w769 to 1024 (769x1024)*/
+$tablet: 481px; /* from w481 to 768 (481x768)
+
 /*from w1920 to 1536 (1920x1080)*/
 $xl-deck: 1919px;/*from1919 to 1536(1536x864)*/
 $l-deck: 1535px;/*from 1535 to 1365 (1366x768)*/
 $m-deck: 1365px;/*from 1365 to 1280 (1280x720)*/
 $s-deck: 1279px; /*from 1279 to 1024 (1024x768)*/
-$land-tablet: 1023px; /*from w1023 to 768 (768x1024)*/
-$tablet: 767px; /*from w767 to 480 (480x800)???!!*/
+//$tablet: 767px; /*from w767 to 480 (480x800)???!!*/
 $mobile: 479px; /*from w479 to 360 (360x640) */
 
 
