@@ -320,7 +320,13 @@
               <button onclick="showContactForm()" class="btn my-gradient"><span>Записатись <br />на пробний
                   день</span></button>
               <div class="pointArrow">
-                <img src="@@webRoot/assets/images/loop-arrow.svg" alt="спробуйте безкоштовно" />
+                <picture>
+                  <!-- <source media="(min-width: 768px)"
+                                            data-srcset="@@webRoot/assets/images/foto.jpg 1x, @@webRoot/assets/images/foto@2x.jpg 2x, @@webRoot/assets/images/foto@3x.jpg 3x" />-->
+                  <source media="(min-width: 769px)" data-srcset="@@webRoot/assets/images/loop-arrow-tablet.svg" />
+                  <img class="lazy" data-src="@@webRoot/assets/images/loop-arrow.svg" alt="спробуйте безкоштовно"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                </picture>
               </div>
             </div>
           </div>
@@ -338,136 +344,139 @@
               <picture>
                 <!-- <source media="(max-width: 767px)" data-srcset="@@webRoot/assets/images/minLogo-mob.png"
                                                       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" /> -->
+                <source media="(min-width: 769px)" data-srcset="@@webRoot/assets/images/minLogo-tablet.png" />
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                   class="lazy" data-src="@@webRoot/assets/images/minLogo.png" />
               </picture>
             </div>
           </div>
-          <div class="colorsBox">
-            <div class="bg-cyan-light">
-              <p><strong>Відвідає уроки за розкладом</strong></p>
-            </div>
-            <div class="bg-orange">
-              <p><strong>Познайомиться з педагогами</strong></p>
-            </div>
-            <div class="bg-orange">
-              <p><strong>Познайомиться з учнями центру</strong></p>
-            </div>
-            <div class="bg-cyan-light">
-              <p><strong>Спробує наше харчування</strong></p>
-            </div>
-            <div class="bg-orange bigBox">
+          <ul class="colorsBox">
+            <li class="bg-cyan-light">
+              <strong>Відвідає уроки за розкладом</strong>
+            </li>
+            <li class="bg-orange">
+              <strong>Познайомиться з педагогами</strong>
+            </li>
+            <li class="bg-orange">
+              <strong>Познайомиться з учнями центру</strong>
+            </li>
+            <li class="bg-cyan-light">
+              <strong>Спробує наше харчування</strong>
+            </li>
+            <li class="bg-orange bigBox">
               <p>Після проведеного дня в центрі Ваша дитина зможе самостійно прийняти рішення щодо подальшого навчання,
                 враховуючи
                 власний досвід та відчуття,
                 які в неї виникали протягом дня</p>
-            </div>
-          </div>
+              </li>
+          </ul>
         </div>
       </section>
 
       <section id="price">
         <div class="container">
           <h2 class="h2"><span class="markCyanColor">Вартість </span>наших послуг:</h2>
-          <div class="spotWithImg bg-cyan-lighter">
-            <div class="imgHolder">
-              <picture>
-                <img class="lazy" data-src="@@webRoot/assets/images/junior-school.jpg"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-              </picture>
+          <div class="holderSpotWithImg">
+            <div class="spotWithImg bg-cyan-lighter">
+              <div class="imgHolder">
+                <picture>
+                  <img class="lazy" data-src="@@webRoot/assets/images/junior-school.jpg"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                </picture>
+              </div>
+              <h3 class="h3">Школа повного дня -
+                <span class="boxRightText"> з 8 до 18 години </span>
+              </h3>
+              <p class="boxRightText priceText">12 000 грн/міс</p>
+              <p>Харчування оплачується додатково</p>
             </div>
-            <h3 class="h3">Школа повного дня -
-              <span class="boxRightText"> з 8 до 18 години </span>
-            </h3>
-            <p class="boxRightText priceText">12 000 грн/міс</p>
-            <p>Харчування оплачується додатково</p>
-          </div>
-          <div class="spotWithImg bg-orange-lighter">
-            <div class="imgHolder">
-              <picture>
-                <img class="lazy" data-src="@@webRoot/assets/images/senior-school.jpg"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-              </picture>
+            <div class="spotWithImg bg-orange-lighter">
+              <div class="imgHolder">
+                <picture>
+                  <img class="lazy" data-src="@@webRoot/assets/images/senior-school.jpg"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                </picture>
+              </div>
+              <h3 class="h3">Підготовка до НМТ/ЗНО</h3>
+              <ul class="priceList">
+                <li>
+                  <p>
+                    <span>індивідуальне заняття</span><span class="priceText">800 грн</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>групове заняття</span><span class="priceText">500 грн</span>
+                  </p>
+                </li>
+              </ul>
+              <p>Тривалість заняття - </p>
+              <p class="boxRightText">2 академічні години</p>
             </div>
-            <h3 class="h3">Підготовка до НМТ/ЗНО</h3>
-            <ul class="priceList">
-              <li>
-                <p>
-                  <span>індивідуальне заняття</span><span class="priceText">800 грн</span>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span>групове заняття</span><span class="priceText">500 грн</span>
-                </p>
-              </li>
-            </ul>
-            <p>Тривалість заняття - </p>
-            <p class="boxRightText">2 академічні години</p>
-          </div>
-          <div class="spotWithImg bg-cyan-lighter">
-            <div class="imgHolder">
-              <picture>
-                <img class="lazy" data-src="@@webRoot/assets/images/middle-school.jpg"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-              </picture>
+            <div class="spotWithImg bg-cyan-lighter">
+              <div class="imgHolder">
+                <picture>
+                  <img class="lazy" data-src="@@webRoot/assets/images/middle-school.jpg"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                </picture>
+              </div>
+              <h3 class="h3">Репетитори з усіх предметів</h3>
+              <ul class="priceList">
+                <li>
+                  <p>
+                    <span>індивідуальне заняття</span><span class="priceText">500 грн</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>групове заняття</span><span class="priceText">300 грн</span>
+                  </p>
+                </li>
+              </ul>
+              <p>Тривалість заняття - </p>
+              <p class="boxRightText">2 академічні години</p>
             </div>
-            <h3 class="h3">Репетитори з усіх предметів</h3>
-            <ul class="priceList">
-              <li>
-                <p>
-                  <span>індивідуальне заняття</span><span class="priceText">500 грн</span>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span>групове заняття</span><span class="priceText">300 грн</span>
-                </p>
-              </li>
-            </ul>
-            <p>Тривалість заняття - </p>
-            <p class="boxRightText">2 академічні години</p>
-          </div>
-          <div class="spotWithImg bg-orange-lighter">
-            <div class="imgHolder">
-              <picture>
-                <img class="lazy" data-src="@@webRoot/assets/images/pre-school.jpg"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-              </picture>
+            <div class="spotWithImg bg-orange-lighter">
+              <div class="imgHolder">
+                <picture>
+                  <img class="lazy" data-src="@@webRoot/assets/images/pre-school.jpg"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                </picture>
+              </div>
+              <h3 class="h3">Підготовка до школи</h3>
+              <ul class="priceList">
+                <li>
+                  <p>
+                    <span>індивідуальне заняття</span><span class="priceText">400 грн</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>групове заняття</span><span class="priceText">250 грн</span>
+                  </p>
+                </li>
+              </ul>
+              <p>Тривалість заняття - 60 хвилин</p>
             </div>
-            <h3 class="h3">Підготовка до школи</h3>
-            <ul class="priceList">
-              <li>
-                <p>
-                  <span>індивідуальне заняття</span><span class="priceText">400 грн</span>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span>групове заняття</span><span class="priceText">250 грн</span>
-                </p>
-              </li>
-            </ul>
-            <p>Тривалість заняття - 60 хвилин</p>
-          </div>
-          <div class="spotWithImg bg-cyan-lighter">
-            <div class="imgHolder">
-              <picture>
-                <img class="lazy" data-src="@@webRoot/assets/images/summer-school.jpg"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
-              </picture>
+            <div class="spotWithImg bg-cyan-lighter">
+              <div class="imgHolder">
+                <picture>
+                  <img class="lazy" data-src="@@webRoot/assets/images/summer-school.jpg"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" />
+                </picture>
+              </div>
+              <h3 class="h3">Літній дитячий табір</h3>
+              <p class="boxRightText priceText">5 000 грн/тиждень</p>
+              <p>У вартість входять:</p>
+              <ul class="priceList">
+                <li>
+                  <p>розваги, майстерки, подорожі</p>
+                </li>
+                <li>
+                  <p>2-разове харчування (обід, вечеря)</p>
+                </li>
+              </ul>
             </div>
-            <h3 class="h3">Літній дитячий табір</h3>
-            <p class="boxRightText priceText">5 000 грн/тиждень</p>
-            <p>У вартість входять:</p>
-            <ul class="priceList">
-              <li>
-                <p>розваги, майстерки, подорожі</p>
-              </li>
-              <li>
-                <p>2-разове харчування (обід, вечеря)</p>
-              </li>
-            </ul>
           </div>
           <button onclick="showContactForm()" class="btn my-gradient"><span>Спробувати безкоштовний день</span></button>
         </div>
