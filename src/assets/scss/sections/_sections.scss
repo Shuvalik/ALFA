@@ -84,8 +84,14 @@
     .twoColumns {
         display: block;
         @media only screen and (min-width: $land-tablet) {
-            display: flex;
-            flex-direction: row-reverse;
+            display: grid;
+            grid-template-columns: 1fr 60%;
+            .sliderHolder, .swiper {
+                order: 1;
+            }
+            .button-markHolder {
+                width: 100%;
+            }
         }
     }
     .h2 {
