@@ -58,8 +58,7 @@
     @media only screen and (min-width: $land-tablet) {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
-        @include font(26, 32);
+        @include font(24, 30);
     }
     .imgHolder {
         margin-bottom: 10px;
@@ -81,13 +80,14 @@
     .textHolder {
         padding: 0 10px 16px;
         @media only screen and (min-width: $land-tablet) {
-            padding: 0;
+            padding: 10px 15px 0 20px;
         }
     }
     .h3 {
         font-family: 'MontserratAlternates-SemiBold';
         @media only screen and (min-width: $land-tablet) {
-            @include font(42, 50);
+            @include font(36, 40);
+            margin-bottom: 15px;
         }
     }
 }

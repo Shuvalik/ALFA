@@ -143,8 +143,11 @@ a {
 }
 .priceText {
   color: $orange-color2;
-  @include font(20, 24);
+  @include font(20, 20);
   font-family: 'MontserratAlternates-SemiBold';
+  @media only screen and (min-width: $land-tablet) {
+    @include font(32, 30);
+  }
 }
 .title {
   @include font(16, 22);

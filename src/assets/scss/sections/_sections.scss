@@ -81,13 +81,19 @@
     }
 }
 #our-team {
+    .container {
+        margin-bottom: 30px;
+    } 
     .twoColumns {
         display: block;
         @media only screen and (min-width: $land-tablet) {
             display: grid;
-            grid-template-columns: 1fr 60%;
-            .sliderHolder, .swiper {
+            grid-template-columns: 1fr 600px;
+            .sliderHolder {
                 order: 1;
+                overflow: hidden;
+                width: 100%;
+                padding-left: 50px; 
             }
             .button-markHolder {
                 width: 100%;
@@ -116,6 +122,7 @@
         margin-bottom: 40px;
         @media only screen and (min-width: $land-tablet) {
             max-width: 324px;
+            min-width: 0;
             height: 115px;
             align-self: flex-start;
             margin: 0;
@@ -123,13 +130,10 @@
     } 
     .pointArrow {
         @media only screen and (min-width: $land-tablet) {
-            margin-right: -25px;
+            margin-right: -125px;
         }
     }      
-} 
-#our-team .container {
-    margin-bottom: 30px;
-}       
+}      
 .rightImg {
     gap: 10px;
     > * {
@@ -175,9 +179,14 @@
             content: ' ';
             position: absolute;
             left: -8px;
-            top: 12px;
+            top: 7px;
             @include circle(4);
             background-color: $font-color;
+            @media only screen and (min-width: $land-tablet) {
+                left: -10px;
+                top: 13px;
+                @include circle(5);
+            }
         }
     }
     
@@ -187,32 +196,22 @@
     .h2 {
         margin-bottom: 10px;
     }
+    .spotWithImg:nth-child(2n + 1) {
+        flex-direction: row-reverse;
+    }
 }
 .form .container {
     padding: 25px $space-container 15px;
     background: linear-gradient(to right, #FFCBA7, #48FFE6);
-    //border-radius: 15px;
     position: relative;
     margin: 0 0 25px 0;
     max-width: 100%;
     text-align: center;
-    /*@media only screen and (max-width: $xl-deck) {
-        margin-top: 35px;
+    @media only screen and (min-width: $land-tablet) {
+        border-radius: 15px;
+        margin: 0 $space-container-big;
+        max-width: calc(100% - 2 * $space-container-big);
     }
-    @media only screen and (max-width: $l-deck) {
-        margin-top: 20px;
-    }
-    @media only screen and (max-width: $s-deck) {
-        padding: 10px 15px;
-    }
-    @media only screen and (max-width: $tablet) {
-        padding: 10px 0;
-    }
-    @media only screen and (max-width: $mobile) {
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 100%;
-    }*/
     &::after {
         content: ' ';
         position: absolute;
@@ -248,36 +247,14 @@
         text-align: center;
         margin-bottom: 20px;
         @include font(20, 26);
-        /*@media only screen and (max-width: $xl-deck) {
-           margin-bottom: 35px;
+        @media only screen and (min-width: $land-tablet) {
+            @include font(50, 64);
         }
-        @media only screen and (max-width: $m-deck) {
-           margin-bottom: 20px;
-        }
-        @media only screen and (max-width: $mobile) {
-           padding: 0 48px;
-           margin-bottom: 15px;
-        }*/
     }
     .btn {
         max-width: 100%;
         font-family: 'MontserratAlternates-SemiBold';
         margin: 0 0 15px;
-        /*@media only screen and (max-width: $xl-deck) {
-            margin-top: 0;
-            height: 120px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            height: 90px;
-            margin-bottom: 20px;
-        }
-        @media only screen and (max-width: $tablet) {
-            height: 45px;
-            margin-bottom: 10px;
-        }
-        @media only screen and (max-width: $mobile) {
-            border-radius: 8px;
-        }*/
     }
     .error {
         display: none;
@@ -285,6 +262,9 @@
         text-align: left;
         color: $brick-color;
         @include font(12, 18);
+        @media only screen and (min-width: $land-tablet) {
+            @include font(16, 20);
+        }
     }
     .note {
         @include font(12, 18);
@@ -293,13 +273,16 @@
         flex-direction: column-reverse;
         gap: 35px;
         justify-content: space-between;
-        /*@media only screen and (max-width: $land-tablet) {
-            flex-direction: column-reverse;
+        @media only screen and (min-width: $land-tablet) {
+            flex-direction: row;
             gap: 35px;
-        }*/
+        }
         > form {
-            width: 100%;
-            /*padding-left: 42px;
+            @media only screen and (min-width: $land-tablet) {
+                @include font(24, 30);
+            }
+            /*padding-le
+            ft: 42px;
             width: calc(50% - 50px);
             padding-bottom: 25px;
             @media only screen and (max-width: $xl-deck) {

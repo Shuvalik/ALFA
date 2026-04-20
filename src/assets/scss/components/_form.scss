@@ -11,21 +11,10 @@ input {
     @include font(18, 26);
     border: 0;
     padding: 10px;
-    /*@media only screen and (max-width: $xl-deck) {
-        @include font(30, 50);
-        padding: 14px 10px;
+    @media only screen and (min-width: $land-tablet) {
+        padding: 15px;
+        @include font(24, 30);
     }
-    @media only screen and (max-width: $m-deck) {
-        @include font(28, 46);
-        padding: 10px 10px;
-    }
-    @media only screen and (max-width: $tablet) {
-        @include font(22, 28);
-    }
-    @media only screen and (max-width: $mobile) {
-        @include font(18, 26);
-        border-radius: 8px;
-    }*/
     &::placeholder {
         color: $grey-color;
     }
@@ -40,13 +29,9 @@ input:focus {
 .fildSection {
     position: relative;
     margin-bottom: 25px;
-    /*margin-bottom: 70px;
-    @media only screen and (max-width: $xl-deck) {
-        margin-bottom: 40px;
+    @media only screen and (min-width: $land-tablet) {
+        margin-bottom: 35px;
     }
-    @media only screen and (max-width: $mobile) {
-        margin-bottom: 30px;
-    }*/
     label {
         position: absolute;
         left: 14px;
@@ -55,20 +40,9 @@ input:focus {
     }
     input:focus + label, input:not(:placeholder-shown) + label {
         top: -24px;
-        //@include font(16, 40);
-        /*@media only screen and (max-width: $m-deck) {
+        @media only screen and (min-width: $land-tablet) {
             top: -30px;
-            @include font(28, 36);
         }
-        @media only screen and (max-width: $s-deck) {
-            @include font(24, 32);
-        }
-        @media only screen and (max-width: $tablet) {
-            @include font(20, 26);
-        }
-        @media only screen and (max-width: $mobile) {
-            @include font(18, 26);
-        }*/
     }
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
