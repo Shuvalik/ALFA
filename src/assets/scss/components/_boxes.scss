@@ -1,4 +1,51 @@
 
+.colorsBox {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(2, auto);
+    gap: 8px 3%;
+    padding: 6px 0;
+    @include font(14, 20);
+    margin-bottom: 5px;
+    @media only screen and (min-width: $tablet) {
+        @include font(20, 30);
+    }
+    @media only screen and (min-width: $land-tablet) {
+        padding: 25px 0;
+    }
+    > * {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 10px 7px;
+        flex-direction: column;
+        @media (min-width: 435px) {
+            flex-direction: row;
+        }
+        .iconHolder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .bigBox {
+        grid-column: span 2;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 10px;
+        .title {
+            @include font(18, 22);
+            @media only screen and (min-width: $tablet) {
+                @include font(22, 28);
+            }
+            @media only screen and (min-width: $land-tablet) {
+                @include font(26, 32);
+            }
+        }
+
+    }
+}
 .colorsCheckList {
     margin-bottom: 15px;
     @media only screen and (min-width: $land-tablet) {
@@ -97,7 +144,15 @@
     width: 190px;
     height: 330px;
     margin-top: 15px;
+    @media only screen and (min-width: $tablet) {
+        width: 275px;
+        height: 450px;
+    }
     @media only screen and (min-width: $land-tablet) {
+        width: 300px;
+        height: 500px;
+    }
+    @media only screen and (min-width: $s-deck) {
         width: 350px;
         height: 500px;
     }
@@ -135,6 +190,9 @@
             list-style-type: disc;
             text-align: left;
             margin-left: 15px;
+            @media only screen and (min-width: $tablet) {
+                margin-left: 25px;
+            }
             @media only screen and (min-width: $land-tablet) {
                 margin-left: 35px;
             }
@@ -150,8 +208,12 @@
         transform: translate(-60px, 60px) rotate(-90deg);
         @include circle(40);
         background: #D9D9D9;
+        @media only screen and (min-width: $tablet) {
+            @include circle(66);
+            transform: translate(-86px, 86px) rotate(-90deg);
+        }
         @media only screen and (min-width: $land-tablet) {
-            left: -130px;
+            left: -113px;
             top: 50%;
             transform: translateY(-50px);
             @include circle(66);
@@ -165,6 +227,9 @@
     }
     .swiper-button-next {
         transform: translate(20px, 60px) rotate(-90deg);
+        @media only screen and (min-width: $tablet) {
+            transform: translate(20px, 86px) rotate(-90deg);
+        }
         @media only screen and (min-width: $land-tablet) {
             transform: translateY(50px);
 

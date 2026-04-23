@@ -2,31 +2,53 @@
     .boxesHolder {
         margin-left: -($space-container);
         margin-right: -($space-container);
+        @media only screen and (min-width: $land-tablet) {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px 20px;
+        }
+        @media only screen and (min-width: $s-deck) {
+            
+        }
         .title {
             text-align: center;
             @include font(20, 24);
             font-family: 'MontserratAlternates-SemiBold';
             margin-bottom: 15px;
+            @media only screen and (min-width: $land-tablet) {
+                @include font(36, 40);
+            }
         }
     }
+    .logoHolder {
+        width: 314px;
+        height: 79px;
+        margin-inline: auto;
+        @media only screen and (min-width: $land-tablet) {
+            width: 100%;
+            height: auto;
+        }
+        @media only screen and (min-width: $s-deck) {
+            width: calc(50% - 20px);
+            height: 100%;
+            align-self: flex-end;
+        }
+    } 
     address {
         background: $orange-light-color2;
-        //border-radius: 15px;
         padding: 13px 15px 1px;
         font-style: normal;
         margin: 20px 0 0;
-        /*@media only screen and (max-width: $xl-deck) {
-            padding: 30px 0 1px 35px;
-        }
-        @media only screen and (max-width: $l-deck) {
-            padding: 20px 0 1px 20px;
-        }
-        @media only screen and (max-width: $s-deck) {
-            padding: 10px 0 1px 10px;
-        }
-        @media only screen and (max-width: $land-tablet) {
+        @media only screen and (min-width: $land-tablet) {
+            border-radius: 15px;
+            width: calc(60% - 20px);
             margin: 0;
-        }*/
+        }
+        @media only screen and (min-width: $s-deck) {
+            width: 50%;
+        }
         a {
             font-family: 'MontserratAlternates-SemiBold';
             @include font(18, 26);
@@ -35,21 +57,9 @@
             &:hover {
                 color: $orange-color;
             }
-            /*@media only screen and (max-width: $xl-deck) {
-                @include font(28, 36);
+            @media only screen and (min-width: $land-tablet) {
+                @include font(24, 30);
             }
-            @media only screen and (max-width: $m-deck) {
-                @include font(26, 34);
-            }
-            @media only screen and (max-width: $s-deck) {
-                @include font(24, 32);
-            }
-            @media only screen and (max-width: $land-tablet) {
-                @include font(20, 28);
-            }
-            @media only screen and (max-width: $mobile) {
-                @include font(18, 26);
-            }*/
         }
         > div {
             display: flex;
@@ -58,6 +68,9 @@
             margin-bottom: 7px;
             position: relative;
             padding-bottom: 20px;
+            @media only screen and (min-width: $land-tablet) {
+                margin-inline: auto;
+            }
             &:not(:last-child):after {
                 content: '';
                 width: 50%;
@@ -73,22 +86,6 @@
                 flex: 0 0 40px;
                 margin: 0 10px;
                 order: -1;
-                /*@media only screen and (max-width: $xl-deck) {
-                   margin-right: 20px;
-                   flex: 0 0 85px;
-                }
-                @media only screen and (max-width: $l-deck) {
-                   margin-right: 10px;
-                   flex: 0 0 65px;
-                   height: 120px;
-                }
-                @media only screen and (max-width: $s-deck) {
-                   flex: 0 0 45px;
-                   height: 100px;
-                }
-                @media only screen and (max-width: $mobile) {
-                    height: 80px;
-                }*/
             }
             span:has( a:hover) + svg {
                 animation: spin 0.6s linear infinite;
@@ -106,31 +103,38 @@
         flex-direction: column;
         align-items: center;
         padding: 15px 0;
-        /*@media only screen and (max-width: $xl-deck) {
-            padding: 30px 35px 1px;
+        background-color: $cyan-light-color2;
+        @media only screen and (min-width: $land-tablet) {
+            border-radius: 15px;
+            width: 40%;
         }
-        @media only screen and (max-width: $m-deck) {
-            padding: 20px 30px 1px;
+        @media only screen and (min-width: $s-deck) {
+            order: 1;
+            width: 35%;
         }
-        @media only screen and (max-width: $land-tablet) {
-            padding: 20px 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        @media only screen and (max-width: $mobile) {
-            margin-bottom: 20px;
-        }*/
         .sotial-links {
             justify-content: space-between;
             width: 100%;
             padding: 0 $space-container;
             margin-bottom: 10px;
+            flex-grow: 1;
+            align-items: center;
+            @media only screen and (min-width: $tablet) {
+                justify-content: space-around;
+            }
+            @media only screen and (min-width: $land-tablet) {
+                justify-content: space-between;
+                flex-direction: column;
+            }
             a {
                 border-color: $navy-lighter-color;
                 width: 90px;
                 height: 90px;
                 border-width: 2px;
+                @media only screen and (min-width: $land-tablet) {
+                    width: 80px;
+                    height: 80px;
+                }
                 svg path{
                     fill-opacity: 1;
                     fill: $navy-lighter-color;
@@ -138,17 +142,6 @@
                 svg {
                     width: 53px;
                     height: auto;
-                    /*@media only screen and (max-width: $m-deck) {
-                        width: 110px;
-                        height: auto;
-                        display: inline-block;
-                    }
-                    @media only screen and (max-width: $s-deck) {
-                        width: 90px;
-                    }
-                    @media only screen and (max-width: $mobile) {
-                        width: 75px;
-                    }*/
                 }
             }
         }
@@ -156,47 +149,15 @@
     div.bg-orange {
         padding: 13px $space-container;
     }
-    /*.twoColumns > * {
-        width: 38%;
-        @media only screen and (max-width: $l-deck) {
-            width: 40%;
-        }
-        @media only screen and (max-width: $land-tablet) {
+    .mapHolder {
+        @media only screen and (min-width: $land-tablet) {
+            border-radius: 15px;
             width: 100%;
-            display: flex;
-            gap: 4%;
-            > * {
-                width: 48%;
-                &.bigLogo {
-                    width: 100%;
-                    max-width: 600px;
-                }
-            }
-
         }
-        @media only screen and (max-width: $tablet) {
-            flex-direction: column;
-            gap: 20px 0;
-            width: 100%;
-            > * {
-                width: 100%;
-            }
-        }*/
-        .logoHolder {
-            width: 314px;
-            height: 79px;
-            margin-inline: auto;
-            /*@media only screen and (max-width: $l-deck) {
-                width: 60%;
-            }
-            @media only screen and (max-width: $land-tablet) {
-                width: 100%;
-                .bigLogo {
-                    height: 120px;///!!!
-                }
-            }*/
-        } 
-    //}
+        @media only screen and (min-width: $s-deck) {
+            width: calc(65% - 20px);
+        }
+    }
 }
 .leaflet-container a {
     color: $orange-light-color2;
@@ -206,9 +167,15 @@
     aspect-ratio: 335/154;
     margin-bottom: 20px;
     overflow: hidden;
+    @media only screen and (min-width: $land-tablet) {
+        aspect-ratio: 335/100;
+    }
     #map_link {
         display: block;
         position: relative;
+        @media only screen and (min-width: $land-tablet) {
+            height: 100%;
+        }
         &::after{
             content: "Будь ласка, натисніть, щоб перейти до інтерактивної карти";
             display: flex;
@@ -225,6 +192,9 @@
             opacity: 0;
             z-index: 1;
             transition: all .2s ease;
+            @media only screen and (min-width: $land-tablet) {
+                @include font(24, 30);
+            }
         }
         &:hover {
             &::after {
@@ -237,6 +207,10 @@
     text-align: center;
     background-color: $orange-light-color2;
     @include font(10, 16);
+    @media only screen and (min-width: $land-tablet) {
+        background-color: transparent;
+        @include font(20, 36);
+    }
     > .container {
         border-top: 1px solid $grey-color;
         padding: 15px 0;

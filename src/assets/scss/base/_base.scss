@@ -14,7 +14,13 @@ body {
     scroll-behavior: smooth;
     position: relative;
     background-color: $bg-color;
+    @media only screen and (min-width: $tablet) {
+      @include font(22, 30);
+    }
     @media only screen and (min-width: $land-tablet) {
+			@include font(30, 48);
+    }
+    @media only screen and (min-width: $s-deck) {
 			@include font(34, 48);
     }
 } 
@@ -85,14 +91,26 @@ main {
   @include font(18, 24);
   font-family: 'MontserratAlternates-SemiBold';
   margin: 0 0 5px 8px;
+  @media only screen and (min-width: $tablet) {
+    @include font(36, 42);
+  }
   @media only screen and (min-width: $land-tablet) {
+    @include font(38, 44);
+  }
+  @media only screen and (min-width: $s-deck) {
     @include font(50, 74);
   }
 }
 .h3 {
   @include font(20, 24);
   font-family: 'MontserratAlternates-Bold';
+  @media only screen and (min-width: $tablet) {
+    @include font(30, 38);
+  }
   @media only screen and (min-width: $land-tablet) {
+    @include font(40, 52);
+  }
+  @media only screen and (min-width: $s-deck) {
     @include font(50, 74);
   }
 }
@@ -145,6 +163,10 @@ a {
   color: $orange-color2;
   @include font(20, 20);
   font-family: 'MontserratAlternates-SemiBold';
+  white-space: nowrap;
+  @media only screen and (min-width: $tablet) {
+    @include font(22, 30);
+  }
   @media only screen and (min-width: $land-tablet) {
     @include font(32, 30);
   }
@@ -152,6 +174,9 @@ a {
 .title {
   @include font(16, 22);
   font-family: 'Montserrat-ExtraBold';
+  @media only screen and (min-width: $tablet) {
+    @include font(22, 28);
+  }
   @media only screen and (min-width: $land-tablet) {
     @include font(26, 32);
   }

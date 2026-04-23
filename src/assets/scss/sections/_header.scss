@@ -21,7 +21,13 @@ header  .container {
 	.phone {
 		@include font (16, 20);
 		font-family: 'MontserratAlternates-SemiBold';
+		@media only screen and (min-width: $tablet) {
+			@include font (22, 28);
+		}
 		@media only screen and (min-width: $land-tablet) {
+			@include font (36, 42);
+		}
+		@media only screen and (min-width: $s-deck) {
 			@include font (50, 74);
 		}
 	}

@@ -19,6 +19,7 @@ $orange-lighter-color2: #FDE4CD;
 $brick-color: #9C2A0F;
 $cyan-color: #043E52;
 $cyan-light-color: #2DB6A3;
+$cyan-light-color2: #49EDD6;
 $cyan-lighter-color: #78B4AC;
 $cyan-lighter-color2: #D0FFF8;
 $grey-color: #6d7b82;
@@ -30,14 +31,16 @@ $space-container: 20px;
 $space-container-big: 40px;
 
 /*size points*/
+$s-deck: 1025px; /*from 1024 to up*/
 $land-tablet: 769px; /*from w769 to 1024 (769x1024)*/
-$tablet: 481px; /* from w481 to 768 (481x768)
+$tablet: 481px; /* from w481 to 768 (481x768)*/
+
 
 /*from w1920 to 1536 (1920x1080)*/
 $xl-deck: 1919px;/*from1919 to 1536(1536x864)*/
 $l-deck: 1535px;/*from 1535 to 1365 (1366x768)*/
 $m-deck: 1365px;/*from 1365 to 1280 (1280x720)*/
-$s-deck: 1279px; /*from 1279 to 1024 (1024x768)*/
+
 //$tablet: 767px; /*from w767 to 480 (480x800)???!!*/
 $mobile: 479px; /*from w479 to 360 (360x640) */
 

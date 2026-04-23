@@ -1,15 +1,18 @@
 <footer id="footer">
   <div class="container">
     <!-- <div class="twoColumns"> -->
-    <div class="logoHolder">
-      <picture>
-        <!-- <source media="(max-width: 767px)" data-srcset="@@webRoot/assets/images/logoFoter-mob.png"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" /> -->
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="lazy"
-          data-src="@@webRoot/assets/images/footerLogo.png" />
-      </picture>
-    </div>
+    
     <div class="boxesHolder">
+      <div class="logoHolder">
+        <picture>
+          <!-- <source media="(max-width: 767px)" data-srcset="@@webRoot/assets/images/logoFoter-mob.png"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" /> -->
+          <source media="(min-width: 1025px)" data-srcset="@@webRoot/assets/images/footerLogo-tablet.png" />
+          <source media="(min-width: 769px)" data-srcset="@@webRoot/assets/images/footerLogo-tablet2.png" />
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="lazy"
+            data-src="@@webRoot/assets/images/footerLogo.png" />
+        </picture>
+      </div>
       <address class="bg-orange">
         <p class="title">Наші <span class="markOrangeColor"> контакти</span></p>
         <div>
@@ -128,7 +131,7 @@
           </li>
         </ul>
       </div>
-      <div class="bg-orange">
+      <div class="bg-orange mapHolder">
         <p class="title">Ми <span class="markOrangeColor">на карті</span></p>
         <div id="map">
           <a href="javascript:void(0)" id="map_link">

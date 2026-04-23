@@ -11,7 +11,7 @@ input {
     @include font(18, 26);
     border: 0;
     padding: 10px;
-    @media only screen and (min-width: $land-tablet) {
+    @media only screen and (min-width: $s-deck) {
         padding: 15px;
         @include font(24, 30);
     }
@@ -37,6 +37,10 @@ input:focus {
         left: 14px;
         top: 14px;
         transition: all 0.4s ease;
+        @media only screen and (min-width: $land-tablet) {
+            left: 6px;
+            top: 10px;
+        }
     }
     input:focus + label, input:not(:placeholder-shown) + label {
         top: -24px;
