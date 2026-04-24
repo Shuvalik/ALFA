@@ -16,6 +16,9 @@ header  .container {
 			@media only screen and (min-width: $land-tablet) {
 				max-width: 911px;
 			}
+			@media only screen and (min-width: $s-deck) {
+				max-width: 100%;
+			}
 		}
 	}
 	.phone {
@@ -29,6 +32,9 @@ header  .container {
 		}
 		@media only screen and (min-width: $s-deck) {
 			@include font (50, 74);
+		}
+		@media only screen and (min-width: $l-deck) {
+			@include font (70, 115);
 		}
 	}
 }

@@ -23,6 +23,9 @@ body {
     @media only screen and (min-width: $s-deck) {
 			@include font(34, 48);
     }
+    @media only screen and (min-width: $m-deck) {
+			@include font(54, 76);
+    }
 } 
 .container {
     width: 100%;
@@ -100,6 +103,9 @@ main {
   @media only screen and (min-width: $s-deck) {
     @include font(50, 74);
   }
+  @media only screen and (min-width: $m-deck) {
+    @include font(70, 115);
+  }
 }
 .h3 {
   @include font(20, 24);
@@ -112,6 +118,9 @@ main {
   }
   @media only screen and (min-width: $s-deck) {
     @include font(50, 74);
+  }
+  @media only screen and (min-width: $m-deck) {
+    @include font(70, 70);
   }
 }
 b {

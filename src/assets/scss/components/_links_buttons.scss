@@ -21,6 +21,13 @@
         height: auto;
       }
     }
+    @media only screen and (min-width: $s-deck) {
+      @include circle(110);
+      svg {
+        width: 70px;
+        height: auto;
+      }
+    }
   }
 }
 /*.phone {
@@ -95,6 +102,16 @@
   @media only screen and (min-width: $land-tablet) {
     min-width: 262px;
     @include font(30, 38);
+    border-radius: 30px;
+  }
+  @media only screen and (min-width: $s-deck) {
+    min-width: 340px;
+    @include font (40, 60);
+  }
+  @media only screen and (min-width: $m-deck) {
+    min-width: 440px;
+    @include font (50, 74);
+    border-radius: 40px;
   }
     /*
   @media only screen and (max-width: $l-deck) {

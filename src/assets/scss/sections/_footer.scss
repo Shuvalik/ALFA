@@ -126,6 +126,9 @@
                 justify-content: space-between;
                 flex-direction: column;
             }
+            @media only screen and (min-width: 850px) {
+                flex-direction: row;
+            }
             a {
                 border-color: $navy-lighter-color;
                 width: 90px;
