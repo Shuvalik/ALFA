@@ -106,12 +106,13 @@
   }
   @media only screen and (min-width: $s-deck) {
     min-width: 340px;
-    @include font (40, 60);
+    @include font (40, 52);
   }
-  @media only screen and (min-width: $m-deck) {
+  @media only screen and (min-width: $l-deck) {
     min-width: 440px;
     @include font (50, 74);
     border-radius: 40px;
+    padding: 25px 0;
   }
     /*
   @media only screen and (max-width: $l-deck) {

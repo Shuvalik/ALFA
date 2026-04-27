@@ -13,6 +13,9 @@
     @media only screen and (min-width: $land-tablet) {
         padding: 25px 0;
     }
+    @media only screen and (min-width: $s-deck) {
+        @include font(30, 40);
+    }
     > * {
         text-align: center;
         display: flex;
@@ -42,6 +45,9 @@
             @media only screen and (min-width: $land-tablet) {
                 @include font(26, 32);
             }
+            @media only screen and (min-width: $s-deck) {
+                @include font(34, 48);
+            }
         }
 
     }
@@ -54,6 +60,12 @@
         justify-content: space-between;
         gap: 14px 8px;
         @include font(20, 30);
+    }
+    @media only screen and (min-width: $s-deck) {
+        @include font(26, 36);
+    }
+    @media only screen and (min-width: $m-deck) {
+        @include font(30, 38);
     }
     li {
         position: relative;
@@ -71,6 +83,9 @@
         .title {
             @media only screen and (min-width: $land-tablet) {
                 @include font(20, 30);
+            }
+            @media only screen and (min-width: $s-deck) {
+                @include font(30, 38);
             }
         }
         &::before {
@@ -107,6 +122,12 @@
         justify-content: space-between;
         @include font(24, 30);
     }
+    @media only screen and (min-width: $m-deck) {
+        @include font(30, 38);
+    }
+    @media only screen and (min-width: $l-deck) {
+        @include font(36, 44);
+    }
     .imgHolder {
         margin-bottom: 10px;
         aspect-ratio: 282/148;
@@ -127,7 +148,7 @@
     .textHolder {
         padding: 0 10px 16px;
         @media only screen and (min-width: $land-tablet) {
-            padding: 10px 15px 0 20px;
+            padding: 10px 15px 15px 20px;
         }
     }
     .h3 {
@@ -135,6 +156,13 @@
         @media only screen and (min-width: $land-tablet) {
             @include font(36, 40);
             margin-bottom: 15px;
+        }
+        @media only screen and (min-width: $m-deck) {
+            @include font(44, 50);
+            margin-bottom: 20px;
+        }
+        @media only screen and (min-width: $l-deck) {
+            @include font(50, 56);
         }
     }
 }
@@ -154,7 +182,7 @@
     }
     @media only screen and (min-width: $s-deck) {
         width: 350px;
-        height: 500px;
+        height: 550px;
     }
     .swiper-slide {
         font-family: 'MontserratAlternates-SemiBold';
@@ -168,6 +196,9 @@
         padding: 10px 15px;
         @media only screen and (min-width: $land-tablet) {
             @include font(20, 30);
+        }
+        @media only screen and (min-width: $land-tablet) {
+            @include font(26, 30);
         }
         .imgHolder {
             @include circle(116);

@@ -36,6 +36,10 @@ body {
       margin: 0 $space-container-big;
       max-width: calc(100% - 2 * $space-container-big);
     }
+    @media only screen and (min-width: $m-deck) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 }
 .page-wrap {
   display: flex;
@@ -101,10 +105,10 @@ main {
     @include font(38, 44);
   }
   @media only screen and (min-width: $s-deck) {
-    @include font(50, 74);
+    @include font(50, 66);
   }
   @media only screen and (min-width: $m-deck) {
-    @include font(70, 115);
+    @include font(70, 80);
   }
 }
 .h3 {
@@ -179,6 +183,12 @@ a {
   @media only screen and (min-width: $land-tablet) {
     @include font(32, 30);
   }
+  @media only screen and (min-width: $m-deck) {
+      @include font(44, 38);
+  }
+  @media only screen and (min-width: $l-deck) {
+      @include font(50, 46);
+  }
 }
 .title {
   @include font(16, 22);
@@ -188,6 +198,9 @@ a {
   }
   @media only screen and (min-width: $land-tablet) {
     @include font(26, 32);
+  }
+  @media only screen and (min-width: $s-deck) {
+    @include font(34, 48);
   }
 }
 .twoColumns {

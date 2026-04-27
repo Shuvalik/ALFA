@@ -34,12 +34,16 @@
         }
         &.bigBox {
             @media only screen and (min-width: $land-tablet) {
-            max-width: 50%;
-            margin-inline: auto;
-            padding: 25px;
-            margin-top: -35px;
-            box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
-                    -4px -4px 8px 4px rgba(0, 0, 0, 0.2);
+                max-width: 50%;
+                margin-inline: auto;
+                padding: 25px;
+                margin-top: -35px;
+                box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2),
+                        -4px -4px 8px 4px rgba(0, 0, 0, 0.2);
+            }
+            @media only screen and (min-width: $s-deck) {
+                padding: 25px 20px;
+                max-width: 70%;
             }
         }
     }
@@ -108,6 +112,9 @@
         @media only screen and (min-width: $land-tablet) {
             margin-right: -150px;
         }
+        @media only screen and (min-width: $s-deck) {
+            margin-right: -120px;
+        }
     }      
 }      
 .rightImg {
@@ -131,6 +138,13 @@
         > * {
             padding: 15px 20px;
         }
+    }
+    @media only screen and (min-width: $s-deck) {
+        @include font(44, 50);
+        gap: 20px 3%;
+    }
+    @media only screen and (min-width: $l-deck) {
+        @include font(54, 60);
     }
 }
 .priceList {
@@ -163,6 +177,15 @@
                 top: 13px;
                 @include circle(5);
             }
+            @media only screen and (min-width: $m-deck) {
+                left: -12px;
+                top: 16px;
+                @include circle(7);
+            }
+            @media only screen and (min-width: $l-deck) {
+                left: -14px;
+                top: 22px;
+            }
         }
     }
     
@@ -188,6 +211,10 @@
         margin: 0 $space-container-big;
         max-width: calc(100% - 2 * $space-container-big);
     }
+    @media only screen and (min-width: $m-deck) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     &::after {
         content: ' ';
         position: absolute;
@@ -205,10 +232,16 @@
             top: auto;
             bottom: 0;
         }
+        @media only screen and (min-width: $s-deck) {
+            bottom: 100px;
+        }
     }
     .h2 {
         text-align: center;
         margin-bottom: 20px;
+        @media only screen and (min-width: $s-deck) {
+            margin-bottom: 30px;
+        }
     }
     .btn {
         max-width: 100%;
@@ -230,6 +263,9 @@
         @media only screen and (min-width: $land-tablet) {
             @include font(18, 26);
         }
+        @media only screen and (min-width: $s-deck) {
+            @include font(24, 36);
+        }
     }
     .twoColumns {
         flex-direction: column-reverse;
@@ -245,6 +281,7 @@
             }
             @media only screen and (min-width: $s-deck) {
                 @include font(24, 30);
+                flex-grow: 1;
             }
             .holder {
               position: relative;
@@ -264,6 +301,9 @@
                 height: 370px;
                 margin-inline: auto;
                 align-self: flex-start;
+            }
+            @media only screen and (min-width: $s-deck) {   
+                margin: 0 25px;
             }
             &::before {
                 content: ' ';

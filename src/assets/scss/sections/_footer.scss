@@ -129,14 +129,18 @@
             @media only screen and (min-width: 850px) {
                 flex-direction: row;
             }
+            @media only screen and (min-width: $s-deck) {
+                justify-content: space-around;
+            }
             a {
                 border-color: $navy-lighter-color;
-                width: 90px;
-                height: 90px;
+                @include circle(90);
                 border-width: 2px;
                 @media only screen and (min-width: $land-tablet) {
-                    width: 80px;
-                    height: 80px;
+                    @include circle(80);
+                }
+                @media only screen and (min-width: $m-deck) {
+                    @include circle(120);
                 }
                 svg path{
                     fill-opacity: 1;
@@ -145,6 +149,9 @@
                 svg {
                     width: 53px;
                     height: auto;
+                    @media only screen and (min-width: $m-deck) {
+                        width: 70px;
+                    }
                 }
             }
         }
