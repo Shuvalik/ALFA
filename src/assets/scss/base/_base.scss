@@ -18,22 +18,28 @@ body {
       @include font(22, 30);
     }
     @media only screen and (min-width: $land-tablet) {
-			@include font(30, 48);
+			@include font(28, 40);
     }
     @media only screen and (min-width: $s-deck) {
-			@include font(34, 48);
+			//@at-root font(34, 48);
     }
     @media only screen and (min-width: $m-deck) {
-			@include font(54, 76);
+			//@include font(54, 76);
     }
 } 
+section {
+  margin-bottom: 25px;
+  @media only screen and (min-width: $s-deck) {
+    margin-bottom: 40px;
+  }
+}
 .container {
     width: 100%;
     margin-inline: auto;
-    margin: 0 $space-container;
+    //margin: 0 $space-container;
     max-width: calc(100% - 2 * $space-container);
     @media only screen and (min-width: $land-tablet) {
-      margin: 0 $space-container-big;
+      //margin: 0 $space-container-big;
       max-width: calc(100% - 2 * $space-container-big);
     }
     @media only screen and (min-width: $m-deck) {
@@ -47,41 +53,8 @@ body {
   min-height: 100vh;
   position: relative;
 }
-/*
-footer {
-  min-height: 100vh;
-  @media only screen and (max-width: $mobile) {
-      min-height: auto;
-  }
-}*/
 main {
   flex-grow: 1;
-  /*> :first-child {
-    padding-top: 240px;
-    @media only screen and (max-width: $xl-deck) {
-      padding-top: 190px;
-    }
-    @media only screen and (max-width: $l-deck) {
-      padding-top: 150px;
-    }
-    @media only screen and (max-width: $s-deck) {
-      padding-top: 120px;
-    }
-    @media only screen and (max-width: $land-tablet) {
-      padding-top: 220px;
-    }
-    @media only screen and (max-width: $land-tablet) {
-      padding-top: 130px;
-    }
-  }
-  > section {
-    min-height: 100vh;
-    padding-top: 1px;
-    overflow: hidden; /*!!!
-    @media only screen and (max-width: $tablet) {
-      min-height: auto;
-    }
-  }*/
 }
 .screen-reader-text {
     border: 0;
@@ -105,10 +78,10 @@ main {
     @include font(38, 44);
   }
   @media only screen and (min-width: $s-deck) {
-    @include font(50, 66);
+    //@include font(50, 66);
   }
   @media only screen and (min-width: $m-deck) {
-    @include font(70, 80);
+    //@include font(70, 80);
   }
 }
 .h3 {
@@ -121,10 +94,10 @@ main {
     @include font(40, 52);
   }
   @media only screen and (min-width: $s-deck) {
-    @include font(50, 74);
+    @include font(48, 60);
   }
   @media only screen and (min-width: $m-deck) {
-    @include font(70, 70);
+    //@include font(70, 70);
   }
 }
 b {
