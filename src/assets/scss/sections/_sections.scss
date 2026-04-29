@@ -29,8 +29,22 @@
 #who-are-we {
     .colorsBox > div {
         box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+        &.bg-cyan-light {
+            margin-left: 5px;
+        }
+        &:first-child {
+            margin-left: 0;
+            margin-right: 5px;
+        }
         @media only screen and (min-width: $tablet) {
             flex-direction: column;
+            &.bg-cyan-light {
+                margin-left: 10px;
+            }
+            &:first-child {
+                margin-left: 0;
+                margin-right: 10px;
+            }
         }
         @media only screen and (min-width: $land-tablet) {
             flex-direction: row;
@@ -53,15 +67,7 @@
         }
     }
 }
-#why-choose-us {
-    .h2 {
-        margin-bottom: 15px;
-    }
-}
 #our-team {
-    .container {
-        margin-bottom: 30px;
-    } 
     .twoColumns {
         display: block;
         @media only screen and (min-width: $land-tablet) {
@@ -81,6 +87,9 @@
         @media only screen and (min-width: $s-deck) {
             grid-template-columns: 1fr 600px;
             padding: 0;
+        }
+        @media only screen and (min-width: $m-deck) {
+            grid-template-columns: 1fr 700px;
         }
     }
     .h2 {
@@ -133,28 +142,49 @@
         width: auto;
     }
     .smallLogo {
-        height: 78px;
-        flex: 0 0 75px;
-        @media only screen and (min-width: $land-tablet) {
-            height: 187px;
-            flex: 0 0 179px;
-            margin: 20px 15px 0;
+        align-self: flex-end;
+        img {
+            width: 68px;
+            height: 71px;
+            @media only screen and (min-width: $land-tablet) {
+                width: 122px;
+                height: 130px;
+            } 
+            @media only screen and (min-width: $s-deck) {
+                width: 179px;
+                height: 187px;
+                margin-top: -60px;
+            } 
         }
-    }
+    } 
 }
-#free-day .colorsBox {
-    @media only screen and (min-width: $land-tablet) {
-        @include font(34, 40);
-        > * {
-            padding: 15px 20px;
+#free-day {
+    .h2 {
+        @media only screen and (min-width: $s-deck) { 
+            margin-right: 190px;
         }
     }
-    @media only screen and (min-width: $s-deck) {
-        @include font(44, 50);
-        gap: 20px 3%;
-    }
-    @media only screen and (min-width: $l-deck) {
-        @include font(54, 60);
+    .colorsBox {
+        gap: 10px;
+        grid-template-columns: repeat(2, calc(50% - 5px));
+        @media only screen and (min-width: $land-tablet) {
+            gap: 20px;
+            grid-template-columns: repeat(2, calc(50% - 10px));
+            @include font(26, 36);
+            > * {
+                padding: 15px 20px;
+            }
+        }
+        .bigBox {
+            text-align: justify;
+            padding: 10px 15px;
+            @media only screen and (min-width: $land-tablet) {
+                padding: 15px 20px;
+            }
+        }
+        @media only screen and (min-width: $s-deck) {
+            @include font(34, 50);
+        }
     }
 }
 .priceList {
@@ -201,10 +231,6 @@
     
 }
 #price {
-    margin-bottom: 15px;
-    .h2 {
-        margin-bottom: 10px;
-    }
     .spotWithImg:nth-child(2n + 1) {
         flex-direction: row-reverse;
     }

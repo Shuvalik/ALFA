@@ -1,9 +1,9 @@
 
 .colorsBox {
     display: grid;
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, auto);
-    gap: 8px 3%;
+    gap: 10px 0;
     padding: 6px 0;
     @include font(14, 20);
     margin-bottom: 5px;
@@ -58,18 +58,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 14px 8px;
+        gap: 20px 20px;
         @include font(20, 30);
     }
     @media only screen and (min-width: $s-deck) {
         @include font(26, 36);
     }
     @media only screen and (min-width: $m-deck) {
-        @include font(30, 38);
+        //@at-root font(30, 38);
     }
     li {
         position: relative;
-        padding: 10px 10px 10px 55px;
+        padding: 10px 10px 10px 50px;
         border: 2px solid $cyan-light-color;
         border-radius: 15px;
         font-family: 'MontserratAlternates-SemiBold';
@@ -77,12 +77,14 @@
         margin-bottom: 6px;
         @media only screen and (min-width: $land-tablet) {
             border-width: 3px;
-            flex: 0 0 calc(50% - 4px);
-            padding: 15px 15px 15px 95px;
+            flex: 0 0 calc(50% - 10px);
+            padding-left: 72px;
         }
         .title {
+            margin-bottom: 5px;
             @media only screen and (min-width: $land-tablet) {
                 @include font(20, 30);
+                margin-bottom: 10px;
             }
             @media only screen and (min-width: $s-deck) {
                 @include font(30, 38);
@@ -96,12 +98,13 @@
             transform: translateY(-50%);
             width: 37px;
             height: 35px;
-            border-radius: 5px;
+            border-radius: 10px;
             background: $cyan-light-color url("./../../assets/images/white-checked-icon-mob.svg") 50% 50% no-repeat;
             @media only screen and (min-width: $land-tablet) {
                 width: 60px;
                 height: 60px;
-                left: 15px;
+                left: 7px;
+                border-radius: 15px;
                 background-image: url("./../../assets/images/white-checked-icon-tablet.svg");
             }
         }
@@ -184,6 +187,9 @@
         width: 350px;
         height: 550px;
     }
+    @media only screen and (min-width: $m-deck) {
+        width: 400px;
+    }
     .swiper-slide {
         font-family: 'MontserratAlternates-SemiBold';
         display: flex;
@@ -194,10 +200,10 @@
         color: $white-color;
         text-align: center;
         padding: 10px 15px;
-        @media only screen and (min-width: $land-tablet) {
+        @media only screen and (min-width: $tablet) {
             @include font(20, 30);
         }
-        @media only screen and (min-width: $land-tablet) {
+        @media only screen and (min-width: $s-deck) {
             @include font(26, 30);
         }
         .imgHolder {
@@ -216,6 +222,9 @@
             @media only screen and (min-width: $land-tablet) {
                 @include font(30, 36);
             }
+            @media only screen and (min-width: $m-deck) {
+                margin-bottom: 10px;
+            }
         }
         ul {
             list-style-type: disc;
@@ -224,7 +233,10 @@
             @media only screen and (min-width: $tablet) {
                 margin-left: 25px;
             }
-            @media only screen and (min-width: $land-tablet) {
+            @media only screen and (min-width: $s-deck) {
+                margin-left: 30px;
+            }
+            @media only screen and (min-width: $m-deck) {
                 margin-left: 35px;
             }
         }
@@ -248,6 +260,9 @@
             top: 50%;
             transform: translateY(-50px);
             @include circle(66);
+        }
+        @media only screen and (min-width: $s-deck) {
+            left: -130px;
         }
         &:hover {
             background: #868282;

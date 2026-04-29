@@ -70,18 +70,13 @@ main {
 .h2 {
   @include font(18, 24);
   font-family: 'MontserratAlternates-SemiBold';
-  margin: 0 0 5px 8px;
+  margin: 0 0 10px 8px;
   @media only screen and (min-width: $tablet) {
     @include font(36, 42);
+    margin-bottom: 20px;
   }
   @media only screen and (min-width: $land-tablet) {
     @include font(38, 44);
-  }
-  @media only screen and (min-width: $s-deck) {
-    //@include font(50, 66);
-  }
-  @media only screen and (min-width: $m-deck) {
-    //@include font(70, 80);
   }
 }
 .h3 {
