@@ -40,9 +40,16 @@ input:focus {
         left: 14px;
         top: 14px;
         transition: all 0.4s ease;
+        @media only screen and (min-width: $tablet) {
+            top: 10px;
+        }
         @media only screen and (min-width: $land-tablet) {
             left: 6px;
             top: 10px;
+        }
+        @media only screen and (min-width: $s-deck) {
+            left: 12px;
+            top: 15px;
         }
     }
     input:focus + label, input:not(:placeholder-shown) + label {

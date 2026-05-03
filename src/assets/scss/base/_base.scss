@@ -152,10 +152,10 @@ a {
     @include font(30, 28);
   }
   @media only screen and (min-width: $m-deck) {
-      @include font(44, 38);
+      @include font(36, 34);
   }
   @media only screen and (min-width: $l-deck) {
-      @include font(50, 46);
+      //@include font(50, 46);
   }
 }
 .title {

@@ -53,7 +53,7 @@
         }
         &.bigBox {
             @media only screen and (min-width: $land-tablet) {
-                max-width: 50%;
+                max-width: 75%;
                 margin-inline: auto;
                 padding: 25px;
                 margin-top: -35px;
@@ -62,7 +62,6 @@
             }
             @media only screen and (min-width: $s-deck) {
                 padding: 25px 20px;
-                max-width: 70%;
             }
         }
     }
@@ -188,7 +187,7 @@
     }
 }
 .priceList {
-    margin-bottom: 10px;
+    margin: 10px 0;
     li {
         display: block;
         position: relative;
@@ -285,6 +284,9 @@
         max-width: 100%;
         font-family: 'MontserratAlternates-SemiBold';
         margin: 0 0 15px;
+        @media only screen and (min-width: $land-tablet) {
+            @include font(28, 36);
+        }
     }
     .error {
         display: none;
@@ -302,7 +304,7 @@
             @include font(18, 26);
         }
         @media only screen and (min-width: $s-deck) {
-            @include font(24, 36);
+            //@include font(24, 36);
         }
     }
     .twoColumns {
@@ -319,7 +321,6 @@
             }
             @media only screen and (min-width: $s-deck) {
                 @include font(24, 30);
-                flex-grow: 1;
             }
             .holder {
               position: relative;
@@ -341,7 +342,7 @@
                 align-self: flex-start;
             }
             @media only screen and (min-width: $s-deck) {   
-                margin: 0 25px;
+                //margin: 0 25px;
             }
             &::before {
                 content: ' ';

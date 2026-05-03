@@ -18,7 +18,7 @@
             font-family: 'MontserratAlternates-SemiBold';
             margin-bottom: 15px;
             @media only screen and (min-width: $land-tablet) {
-                @include font(36, 40);
+                @include font(34, 40);
             }
         }
     }
@@ -41,9 +41,10 @@
         padding: 13px 15px 1px;
         font-style: normal;
         margin: 20px 0 0;
+        text-align: center;
         @media only screen and (min-width: $land-tablet) {
             border-radius: 15px;
-            width: calc(60% - 20px);
+            width: calc(65% - 20px);
             margin: 0;
         }
         @media only screen and (min-width: $s-deck) {
@@ -58,44 +59,47 @@
                 color: $orange-color;
             }
             @media only screen and (min-width: $land-tablet) {
-                @include font(24, 30);
+                @include font(22, 28);
             }
         }
-        > div {
-            display: flex;
-            overflow: hidden;
-            align-items: center;
-            margin-bottom: 7px;
-            position: relative;
-            padding-bottom: 20px;
-            @media only screen and (min-width: $land-tablet) {
-                margin-inline: auto;
-            }
-            &:not(:last-child):after {
-                content: '';
-                width: 50%;
-                height: 1px;
-                background-color: $grey-color;
-                position: absolute;
-                bottom: 1px;
-                left: 50%;
-                transform: translateX(-50%);
-                opacity: 0.5;
-            }
-            svg {
-                flex: 0 0 40px;
-                margin: 0 10px;
-                order: -1;
-            }
-            span:has( a:hover) + svg {
-                animation: spin 0.6s linear infinite;
-                transform: rotate(0);
-                display: block;
-                 path {
-                    fill: $orange-color;
+        .content {
+            display: inline-block;
+            > div {
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                margin-bottom: 7px;
+                position: relative;
+                padding-bottom: 20px;
+                @media only screen and (min-width: $land-tablet) {
+                    margin-inline: auto;
                 }
+                &:not(:last-child):after {
+                    content: '';
+                    width: 50%;
+                    height: 1px;
+                    background-color: $grey-color;
+                    position: absolute;
+                    bottom: 1px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0.5;
+                }
+                svg {
+                    flex: 0 0 40px;
+                    margin: 0 10px;
+                    order: -1;
+                }
+                span:has( a:hover) + svg {
+                    animation: spin 0.6s linear infinite;
+                    transform: rotate(0);
+                    display: block;
+                    path {
+                        fill: $orange-color;
+                    }
+                }
+                
             }
-            
         }
     }
     .bg-cyan-light {
@@ -106,11 +110,10 @@
         background-color: $cyan-light-color2;
         @media only screen and (min-width: $land-tablet) {
             border-radius: 15px;
-            width: 40%;
+            width: 35%;
         }
         @media only screen and (min-width: $s-deck) {
             order: 1;
-            width: 35%;
         }
         .sotial-links {
             justify-content: space-between;
@@ -120,17 +123,12 @@
             flex-grow: 1;
             align-items: center;
             @media only screen and (min-width: $tablet) {
-                justify-content: space-around;
+                justify-content: center;
+                gap: 20px;
             }
             @media only screen and (min-width: $land-tablet) {
-                justify-content: space-between;
-                flex-direction: column;
-            }
-            @media only screen and (min-width: 850px) {
-                flex-direction: row;
-            }
-            @media only screen and (min-width: $s-deck) {
-                justify-content: space-around;
+                flex-wrap: wrap;
+                align-content: flex-start;
             }
             a {
                 border-color: $navy-lighter-color;
@@ -140,7 +138,7 @@
                     @include circle(80);
                 }
                 @media only screen and (min-width: $m-deck) {
-                    @include circle(120);
+                    //@include circle(120);
                 }
                 svg path{
                     fill-opacity: 1;
@@ -150,7 +148,7 @@
                     width: 53px;
                     height: auto;
                     @media only screen and (min-width: $m-deck) {
-                        width: 70px;
+                        //width: 70px;
                     }
                 }
             }

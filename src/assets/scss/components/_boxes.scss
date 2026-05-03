@@ -32,6 +32,11 @@
             justify-content: center;
         }
     }
+    .textHolder {
+        @media only screen and (min-width: $land-tablet) {
+        flex-grow: 1;
+        }
+    }
     .bigBox {
         grid-column: span 2;
         justify-content: space-evenly;
@@ -63,9 +68,6 @@
     }
     @media only screen and (min-width: $s-deck) {
         @include font(26, 36);
-    }
-    @media only screen and (min-width: $m-deck) {
-        //@at-root font(30, 38);
     }
     li {
         position: relative;
@@ -128,10 +130,7 @@
         @include font(22, 28);
     }
     @media only screen and (min-width: $m-deck) {
-        @include font(30, 38);
-    }
-    @media only screen and (min-width: $l-deck) {
-        @include font(36, 44);
+        @include font(26, 34);
     }
     .imgHolder {
         margin-bottom: 10px;
@@ -153,7 +152,19 @@
     .textHolder {
         padding: 0 10px 16px;
         @media only screen and (min-width: $land-tablet) {
-            padding: 10px 15px 15px 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            .bottomText {
+                flex-grow: 1;
+                align-content: flex-end;
+            }
+        }
+        .bottomText .boxRightText {
+            max-width: 300px;
+            @media only screen and (min-width: $tablet) {
+                max-width: 500px;
+            }
         }
     }
     .h3 {
@@ -164,11 +175,8 @@
             margin-bottom: 15px;
         }
         @media only screen and (min-width: $m-deck) {
-            @include font(44, 50);
+            @include font(36, 42);
             margin-bottom: 20px;
-        }
-        @media only screen and (min-width: $l-deck) {
-            @include font(50, 56);
         }
     }
 }
