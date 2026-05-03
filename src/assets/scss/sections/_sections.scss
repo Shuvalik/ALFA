@@ -188,25 +188,27 @@
     }
 }
 .priceList {
+    margin-bottom: 10px;
     li {
         display: block;
-        margin-left: 10px;
         position: relative;
         > p {
-            display: flex;
-            justify-content: space-between;
-            gap: 8px;
-            align-items: flex-end;
             margin-bottom: 5px;
-            span {
-                flex-grow: 1;
-                &.priceText {
-                    flex-grow: 0;
+            &.twoParts {
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+                align-items: flex-end;
+                span {
+                    flex-grow: 1;
+                    &.priceText {
+                        flex-grow: 0;
+                    }
                 }
             }
         }
-        &::after {
-            content: ' ';
+        /*&::after {
+            //content: ' ';
             position: absolute;
             left: -8px;
             top: 7px;
@@ -226,7 +228,7 @@
                 left: -14px;
                 top: 22px;
             }
-        }
+        }*/
     }
     
 }

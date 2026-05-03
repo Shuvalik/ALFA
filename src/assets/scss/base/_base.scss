@@ -149,7 +149,7 @@ a {
     @include font(22, 30);
   }
   @media only screen and (min-width: $land-tablet) {
-    @include font(32, 30);
+    @include font(30, 28);
   }
   @media only screen and (min-width: $m-deck) {
       @include font(44, 38);
