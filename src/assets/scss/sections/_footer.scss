@@ -63,7 +63,6 @@
             }
         }
         .content {
-            display: inline-block;
             > div {
                 display: flex;
                 overflow: hidden;
@@ -71,6 +70,7 @@
                 margin-bottom: 7px;
                 position: relative;
                 padding-bottom: 20px;
+                white-space: nowrap;
                 @media only screen and (min-width: $land-tablet) {
                     margin-inline: auto;
                 }

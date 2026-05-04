@@ -1,4 +1,3 @@
 .vscode/
 node_modules/
 src/assets/js/pages/telegram_token.js
-docs/assets/js/telegram_token.min.js
