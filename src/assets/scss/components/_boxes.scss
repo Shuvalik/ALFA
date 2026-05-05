@@ -134,11 +134,11 @@
     }
     .imgHolder {
         margin-bottom: 10px;
-        aspect-ratio: 16/9;
         overflow: hidden;
         @media only screen and (min-width: $land-tablet) {
             margin: 0;
             flex: 1 0 45%;
+            aspect-ratio: 16/10;
         }
         img {
             transition: all .3s ease;
@@ -223,7 +223,6 @@
             flex-shrink: 0;
             overflow: hidden;
             margin: 10px 10px 5px;
-            border: 1px solid $white-color;
             @media only screen and (min-width: $land-tablet) {
                 @include circle(216);
             }

@@ -327,22 +327,22 @@
             }
         }
         .imgHolder {
-            width: 217px;
+            width: 200px;
             height: 250px;
             position: relative;
             align-self: center;
             @media only screen and (min-width: $tablet) {
-                width: 317px;
-                height: 337px;
+                width: 300px;
+                height: 375px;
             }
             @media only screen and (min-width: $land-tablet) {
-                width: 298px;
-                height: 370px;
                 margin-inline: auto;
                 align-self: flex-start;
+                margin-bottom: 25px;
             }
             @media only screen and (min-width: $s-deck) {   
-                //margin: 0 25px;
+               width: 375px;
+               height: 470px;
             }
             &::before {
                 content: ' ';
